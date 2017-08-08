@@ -10,7 +10,7 @@
 #import "SegmentView.h"
 #import "PrefixHeader.pch"
 #import "LostTableViewController.h"
-#import "GraduateViewController.h"
+//#import "GraduateViewC ontroller.h"
 #import "IssueTableViewController.h"
 #import <Masonry.h>
 #import "IssueTableViewController.h"
