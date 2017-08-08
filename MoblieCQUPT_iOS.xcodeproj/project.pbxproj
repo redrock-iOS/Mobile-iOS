@@ -12,45 +12,45 @@
 		3B2661091BA6E40A008632F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2661081BA6E40A008632F3 /* CoreGraphics.framework */; };
 		3B26610B1BA6E417008632F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B26610A1BA6E417008632F3 /* UIKit.framework */; };
 		463E0067C92960DB7BB5B9B7 /* libPods-MoblieCQUPT_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9F3927536C5F686AFC86EF /* libPods-MoblieCQUPT_iOS.a */; };
-		6E1D6C2E1F38ACA1005ED0F3 /* StatisticsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C2D1F38ACA1005ED0F3 /* StatisticsTable.m */; };
-		6E1D6C381F38AD13005ED0F3 /* 粉色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C301F38AD13005ED0F3 /* 粉色@2x.png */; };
-		6E1D6C391F38AD13005ED0F3 /* 粉色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C311F38AD13005ED0F3 /* 粉色@3x.png */; };
-		6E1D6C3A1F38AD13005ED0F3 /* 绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C321F38AD13005ED0F3 /* 绿色@2x.png */; };
-		6E1D6C3B1F38AD13005ED0F3 /* 绿色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C331F38AD13005ED0F3 /* 绿色@3x.png */; };
-		6E1D6C3C1F38AD13005ED0F3 /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C341F38AD13005ED0F3 /* 蓝色@2x.png */; };
-		6E1D6C3D1F38AD13005ED0F3 /* 蓝色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C351F38AD13005ED0F3 /* 蓝色@3x.png */; };
-		6E1D6C3E1F38AD13005ED0F3 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C361F38AD13005ED0F3 /* 返回@2x.png */; };
-		6E1D6C3F1F38AD13005ED0F3 /* 黄色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C371F38AD13005ED0F3 /* 黄色@2x.png */; };
-		6E1D6C411F38ADFB005ED0F3 /* 黄色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C401F38ADFB005ED0F3 /* 黄色@3x.png */; };
-		6E1D6C431F38AE01005ED0F3 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C421F38AE01005ED0F3 /* 返回@3x.png */; };
-		6E1D6C4A1F38C38D005ED0F3 /* OriginalCYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C471F38C38D005ED0F3 /* OriginalCYCell.m */; };
-		6E1D6C4B1F38C38D005ED0F3 /* OriginalCY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C491F38C38D005ED0F3 /* OriginalCY.m */; };
-		6E1D6C4E1F38C42B005ED0F3 /* CQUPTStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C4D1F38C42B005ED0F3 /* CQUPTStudentsViewController.m */; };
-		6E1D6C511F38C45A005ED0F3 /* CQUPTStudentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C501F38C45A005ED0F3 /* CQUPTStudentsCell.m */; };
-		6E1D6C541F38C56F005ED0F3 /* StuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C531F38C56F005ED0F3 /* StuRootViewController.m */; };
-		82ACC1131F38636600778511 /* BeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0E71F38636600778511 /* BeautyViewController.m */; };
-		82ACC1141F38636600778511 /* CampusEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0E91F38636600778511 /* CampusEnvironmentViewController.m */; };
-		82ACC1151F38636600778511 /* CanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0EB1F38636600778511 /* CanteenViewController.m */; };
-		82ACC1161F38636600778511 /* CQUPTDataRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0ED1F38636600778511 /* CQUPTDataRootViewController.m */; };
-		82ACC1171F38636600778511 /* DailyLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0EF1F38636600778511 /* DailyLifeViewController.m */; };
-		82ACC1181F38636600778511 /* EmploymentRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0F11F38636600778511 /* EmploymentRateViewController.m */; };
-		82ACC1191F38636600778511 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0F31F38636600778511 /* FoodViewController.m */; };
-		82ACC11B1F38636600778511 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0F61F38636600778511 /* IntroductionViewController.m */; };
-		82ACC11D1F38636600778511 /* MaleToFemaleRatioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0F91F38636600778511 /* MaleToFemaleRatioViewController.m */; };
-		82ACC11E1F38636600778511 /* MostDifficultSubjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0FB1F38636600778511 /* MostDifficultSubjectsViewController.m */; };
-		82ACC11F1F38636600778511 /* QQGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC0FE1F38636600778511 /* QQGroupViewController.m */; };
-		82ACC1211F38636600778511 /* StuBedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC1021F38636600778511 /* StuBedroomViewController.m */; };
-		82ACC1221F38636600778511 /* StuStrategyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC1041F38636600778511 /* StuStrategyRootViewController.m */; };
-		82ACC1231F38636600778511 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ACC1061F38636600778511 /* HomePageViewController.m */; };
-		82ACC1241F38636600778511 /* 军训特辑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC1071F38636600778511 /* 军训特辑@2x.png */; };
-		82ACC1251F38636600778511 /* 军训特辑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC1081F38636600778511 /* 军训特辑@3x.png */; };
-		82ACC1261F38636600778511 /* 邮子攻略@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC1091F38636600778511 /* 邮子攻略@2x.png */; };
-		82ACC1271F38636600778511 /* 邮子攻略@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC10A1F38636600778511 /* 邮子攻略@3x.png */; };
-		82ACC1281F38636600778511 /* 重邮数据@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC10B1F38636600778511 /* 重邮数据@2x.png */; };
-		82ACC1291F38636600778511 /* 重邮数据@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC10C1F38636600778511 /* 重邮数据@3x.png */; };
-		82ACC12A1F38636600778511 /* 重邮风采@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC10D1F38636600778511 /* 重邮风采@2x.png */; };
-		82ACC12B1F38636600778511 /* 重邮风采@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82ACC10E1F38636600778511 /* 重邮风采@3x.png */; };
-		82ECE22C1F388A2C00D9BF7A /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ECE22B1F388A2C00D9BF7A /* SegmentView.m */; };
+		6E1D6C951F3966EF005ED0F3 /* CQUPTStudentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */; };
+		6E1D6C961F3966EF005ED0F3 /* CQUPTStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */; };
+		6E1D6C971F3966EF005ED0F3 /* OriginalCY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */; };
+		6E1D6C981F3966EF005ED0F3 /* OriginalCYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */; };
+		6E1D6C991F3966EF005ED0F3 /* StuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */; };
+		6E1D6C9A1F3966EF005ED0F3 /* CQUPTDataRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */; };
+		6E1D6C9B1F3966EF005ED0F3 /* EmploymentRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */; };
+		6E1D6C9C1F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */; };
+		6E1D6C9D1F3966EF005ED0F3 /* StatisticsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */; };
+		6E1D6C9E1F3966EF005ED0F3 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */; };
+		6E1D6C9F1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */; };
+		6E1D6CA01F3966EF005ED0F3 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */; };
+		6E1D6CA11F3966EF005ED0F3 /* BeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */; };
+		6E1D6CA21F3966EF005ED0F3 /* CampusEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */; };
+		6E1D6CA31F3966EF005ED0F3 /* CanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */; };
+		6E1D6CA41F3966EF005ED0F3 /* DailyLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */; };
+		6E1D6CA51F3966EF005ED0F3 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */; };
+		6E1D6CA61F3966EF005ED0F3 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */; };
+		6E1D6CA71F3966EF005ED0F3 /* QQGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */; };
+		6E1D6CA81F3966EF005ED0F3 /* StuBedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */; };
+		6E1D6CA91F3966EF005ED0F3 /* StuStrategyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */; };
+		6E1D6CAA1F3966EF005ED0F3 /* 军训特辑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */; };
+		6E1D6CAB1F3966EF005ED0F3 /* 军训特辑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */; };
+		6E1D6CAC1F3966EF005ED0F3 /* 粉色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */; };
+		6E1D6CAD1F3966EF005ED0F3 /* 粉色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */; };
+		6E1D6CAE1F3966EF005ED0F3 /* 绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */; };
+		6E1D6CAF1F3966EF005ED0F3 /* 绿色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */; };
+		6E1D6CB01F3966EF005ED0F3 /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */; };
+		6E1D6CB11F3966EF005ED0F3 /* 蓝色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */; };
+		6E1D6CB21F3966EF005ED0F3 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */; };
+		6E1D6CB31F3966EF005ED0F3 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */; };
+		6E1D6CB41F3966EF005ED0F3 /* 邮子攻略@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */; };
+		6E1D6CB51F3966EF005ED0F3 /* 邮子攻略@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */; };
+		6E1D6CB61F3966EF005ED0F3 /* 重邮数据@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */; };
+		6E1D6CB71F3966EF005ED0F3 /* 重邮数据@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */; };
+		6E1D6CB81F3966EF005ED0F3 /* 重邮风采@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */; };
+		6E1D6CB91F3966EF005ED0F3 /* 重邮风采@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */; };
+		6E1D6CBA1F3966EF005ED0F3 /* 黄色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */; };
+		6E1D6CBB1F3966EF005ED0F3 /* 黄色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */; };
 		CE41EE121C1FE1A2004C873A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41EE111C1FE1A2004C873A /* ViewController.m */; };
 		CE4334471BE7C52D000C407D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4334461BE7C52D000C407D /* NotificationCenter.framework */; };
 		CE43344D1BE7C52D000C407D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43344C1BE7C52D000C407D /* TodayViewController.m */; };
@@ -519,66 +519,66 @@
 		3B2661061BA6E401008632F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B2661081BA6E40A008632F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3B26610A1BA6E417008632F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6E1D6C2C1F38ACA1005ED0F3 /* StatisticsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTable.h; sourceTree = "<group>"; };
-		6E1D6C2D1F38ACA1005ED0F3 /* StatisticsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTable.m; sourceTree = "<group>"; };
-		6E1D6C301F38AD13005ED0F3 /* 粉色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C311F38AD13005ED0F3 /* 粉色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C321F38AD13005ED0F3 /* 绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C331F38AD13005ED0F3 /* 绿色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C341F38AD13005ED0F3 /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C351F38AD13005ED0F3 /* 蓝色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C361F38AD13005ED0F3 /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
-		6E1D6C371F38AD13005ED0F3 /* 黄色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C401F38ADFB005ED0F3 /* 黄色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C421F38AE01005ED0F3 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
-		6E1D6C461F38C38D005ED0F3 /* OriginalCYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCYCell.h; sourceTree = "<group>"; };
-		6E1D6C471F38C38D005ED0F3 /* OriginalCYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCYCell.m; sourceTree = "<group>"; };
-		6E1D6C481F38C38D005ED0F3 /* OriginalCY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCY.h; sourceTree = "<group>"; };
-		6E1D6C491F38C38D005ED0F3 /* OriginalCY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCY.m; sourceTree = "<group>"; };
-		6E1D6C4C1F38C42B005ED0F3 /* CQUPTStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsViewController.h; sourceTree = "<group>"; };
-		6E1D6C4D1F38C42B005ED0F3 /* CQUPTStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsViewController.m; sourceTree = "<group>"; };
-		6E1D6C4F1F38C45A005ED0F3 /* CQUPTStudentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsCell.h; sourceTree = "<group>"; };
-		6E1D6C501F38C45A005ED0F3 /* CQUPTStudentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsCell.m; sourceTree = "<group>"; };
-		6E1D6C521F38C56F005ED0F3 /* StuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuRootViewController.h; sourceTree = "<group>"; };
-		6E1D6C531F38C56F005ED0F3 /* StuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuRootViewController.m; sourceTree = "<group>"; };
-		82ACC0E61F38636600778511 /* BeautyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyViewController.h; sourceTree = "<group>"; };
-		82ACC0E71F38636600778511 /* BeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyViewController.m; sourceTree = "<group>"; };
-		82ACC0E81F38636600778511 /* CampusEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusEnvironmentViewController.h; sourceTree = "<group>"; };
-		82ACC0E91F38636600778511 /* CampusEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusEnvironmentViewController.m; sourceTree = "<group>"; };
-		82ACC0EA1F38636600778511 /* CanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenViewController.h; sourceTree = "<group>"; };
-		82ACC0EB1F38636600778511 /* CanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanteenViewController.m; sourceTree = "<group>"; };
-		82ACC0EC1F38636600778511 /* CQUPTDataRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTDataRootViewController.h; sourceTree = "<group>"; };
-		82ACC0ED1F38636600778511 /* CQUPTDataRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTDataRootViewController.m; sourceTree = "<group>"; };
-		82ACC0EE1F38636600778511 /* DailyLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyLifeViewController.h; sourceTree = "<group>"; };
-		82ACC0EF1F38636600778511 /* DailyLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyLifeViewController.m; sourceTree = "<group>"; };
-		82ACC0F01F38636600778511 /* EmploymentRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmploymentRateViewController.h; sourceTree = "<group>"; };
-		82ACC0F11F38636600778511 /* EmploymentRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmploymentRateViewController.m; sourceTree = "<group>"; };
-		82ACC0F21F38636600778511 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
-		82ACC0F31F38636600778511 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
-		82ACC0F51F38636600778511 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
-		82ACC0F61F38636600778511 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
-		82ACC0F81F38636600778511 /* MaleToFemaleRatioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleToFemaleRatioViewController.h; sourceTree = "<group>"; };
-		82ACC0F91F38636600778511 /* MaleToFemaleRatioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleToFemaleRatioViewController.m; sourceTree = "<group>"; };
-		82ACC0FA1F38636600778511 /* MostDifficultSubjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostDifficultSubjectsViewController.h; sourceTree = "<group>"; };
-		82ACC0FB1F38636600778511 /* MostDifficultSubjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostDifficultSubjectsViewController.m; sourceTree = "<group>"; };
-		82ACC0FD1F38636600778511 /* QQGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQGroupViewController.h; sourceTree = "<group>"; };
-		82ACC0FE1F38636600778511 /* QQGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQGroupViewController.m; sourceTree = "<group>"; };
-		82ACC1011F38636600778511 /* StuBedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuBedroomViewController.h; sourceTree = "<group>"; };
-		82ACC1021F38636600778511 /* StuBedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuBedroomViewController.m; sourceTree = "<group>"; };
-		82ACC1031F38636600778511 /* StuStrategyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuStrategyRootViewController.h; sourceTree = "<group>"; };
-		82ACC1041F38636600778511 /* StuStrategyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuStrategyRootViewController.m; sourceTree = "<group>"; };
-		82ACC1051F38636600778511 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageViewController.h; path = shake/TestLayoutButton/HomePageViewController.h; sourceTree = "<group>"; };
-		82ACC1061F38636600778511 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageViewController.m; path = shake/TestLayoutButton/HomePageViewController.m; sourceTree = "<group>"; };
-		82ACC1071F38636600778511 /* 军训特辑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@2x.png"; sourceTree = "<group>"; };
-		82ACC1081F38636600778511 /* 军训特辑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@3x.png"; sourceTree = "<group>"; };
-		82ACC1091F38636600778511 /* 邮子攻略@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@2x.png"; sourceTree = "<group>"; };
-		82ACC10A1F38636600778511 /* 邮子攻略@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@3x.png"; sourceTree = "<group>"; };
-		82ACC10B1F38636600778511 /* 重邮数据@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@2x.png"; sourceTree = "<group>"; };
-		82ACC10C1F38636600778511 /* 重邮数据@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@3x.png"; sourceTree = "<group>"; };
-		82ACC10D1F38636600778511 /* 重邮风采@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@2x.png"; sourceTree = "<group>"; };
-		82ACC10E1F38636600778511 /* 重邮风采@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@3x.png"; sourceTree = "<group>"; };
-		82ECE22A1F388A2C00D9BF7A /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentView.h; path = shake/TestLayoutButton/SegmentView.h; sourceTree = "<group>"; };
-		82ECE22B1F388A2C00D9BF7A /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentView.m; path = shake/TestLayoutButton/SegmentView.m; sourceTree = "<group>"; };
+		6E1D6C571F3966EF005ED0F3 /* CQUPTStudentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsCell.h; sourceTree = "<group>"; };
+		6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsCell.m; sourceTree = "<group>"; };
+		6E1D6C591F3966EF005ED0F3 /* CQUPTStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsViewController.h; sourceTree = "<group>"; };
+		6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsViewController.m; sourceTree = "<group>"; };
+		6E1D6C5B1F3966EF005ED0F3 /* OriginalCY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCY.h; sourceTree = "<group>"; };
+		6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCY.m; sourceTree = "<group>"; };
+		6E1D6C5D1F3966EF005ED0F3 /* OriginalCYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCYCell.h; sourceTree = "<group>"; };
+		6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCYCell.m; sourceTree = "<group>"; };
+		6E1D6C5F1F3966EF005ED0F3 /* StuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuRootViewController.h; sourceTree = "<group>"; };
+		6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuRootViewController.m; sourceTree = "<group>"; };
+		6E1D6C621F3966EF005ED0F3 /* CQUPTDataRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTDataRootViewController.h; sourceTree = "<group>"; };
+		6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTDataRootViewController.m; sourceTree = "<group>"; };
+		6E1D6C641F3966EF005ED0F3 /* EmploymentRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmploymentRateViewController.h; sourceTree = "<group>"; };
+		6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmploymentRateViewController.m; sourceTree = "<group>"; };
+		6E1D6C661F3966EF005ED0F3 /* MostDifficultSubjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostDifficultSubjectsViewController.h; sourceTree = "<group>"; };
+		6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostDifficultSubjectsViewController.m; sourceTree = "<group>"; };
+		6E1D6C681F3966EF005ED0F3 /* StatisticsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTable.h; sourceTree = "<group>"; };
+		6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTable.m; sourceTree = "<group>"; };
+		6E1D6C6A1F3966EF005ED0F3 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		6E1D6C6C1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleToFemaleRatioViewController.h; sourceTree = "<group>"; };
+		6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleToFemaleRatioViewController.m; sourceTree = "<group>"; };
+		6E1D6C6E1F3966EF005ED0F3 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyViewController.m; sourceTree = "<group>"; };
+		6E1D6C721F3966EF005ED0F3 /* CampusEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusEnvironmentViewController.h; sourceTree = "<group>"; };
+		6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusEnvironmentViewController.m; sourceTree = "<group>"; };
+		6E1D6C741F3966EF005ED0F3 /* CanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenViewController.h; sourceTree = "<group>"; };
+		6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanteenViewController.m; sourceTree = "<group>"; };
+		6E1D6C761F3966EF005ED0F3 /* DailyLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyLifeViewController.h; sourceTree = "<group>"; };
+		6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyLifeViewController.m; sourceTree = "<group>"; };
+		6E1D6C781F3966EF005ED0F3 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		6E1D6C7A1F3966EF005ED0F3 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		6E1D6C7C1F3966EF005ED0F3 /* QQGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQGroupViewController.h; sourceTree = "<group>"; };
+		6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQGroupViewController.m; sourceTree = "<group>"; };
+		6E1D6C7E1F3966EF005ED0F3 /* StuBedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuBedroomViewController.h; sourceTree = "<group>"; };
+		6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuBedroomViewController.m; sourceTree = "<group>"; };
+		6E1D6C801F3966EF005ED0F3 /* StuStrategyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuStrategyRootViewController.h; sourceTree = "<group>"; };
+		6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuStrategyRootViewController.m; sourceTree = "<group>"; };
+		6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@2x.png"; sourceTree = "<group>"; };
+		6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@3x.png"; sourceTree = "<group>"; };
+		6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@2x.png"; sourceTree = "<group>"; };
+		6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@3x.png"; sourceTree = "<group>"; };
+		6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@2x.png"; sourceTree = "<group>"; };
+		6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@3x.png"; sourceTree = "<group>"; };
+		6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
+		6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@3x.png"; sourceTree = "<group>"; };
+		6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
+		6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
+		6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@2x.png"; sourceTree = "<group>"; };
+		6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@3x.png"; sourceTree = "<group>"; };
+		6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@2x.png"; sourceTree = "<group>"; };
+		6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@3x.png"; sourceTree = "<group>"; };
+		6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@2x.png"; sourceTree = "<group>"; };
+		6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@3x.png"; sourceTree = "<group>"; };
+		6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@2x.png"; sourceTree = "<group>"; };
+		6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@3x.png"; sourceTree = "<group>"; };
+		6E1D6CBC1F3967A2005ED0F3 /* BeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautyViewController.h; sourceTree = "<group>"; };
 		BA10D639E65F33ACE628A0EB /* Pods-MoblieCQUPT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoblieCQUPT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoblieCQUPT_iOS/Pods-MoblieCQUPT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CE25501F1C15BD9500BCDDB8 /* ClassWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassWidget.entitlements; sourceTree = "<group>"; };
 		CE41EE101C1FE1A2004C873A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -1228,100 +1228,104 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
-		6E1D6C2F1F38ACBC005ED0F3 /* 图标 */ = {
+		6E1D6C551F3966EF005ED0F3 /* FreshMan_2017 */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6C301F38AD13005ED0F3 /* 粉色@2x.png */,
-				6E1D6C311F38AD13005ED0F3 /* 粉色@3x.png */,
-				6E1D6C401F38ADFB005ED0F3 /* 黄色@3x.png */,
-				6E1D6C321F38AD13005ED0F3 /* 绿色@2x.png */,
-				6E1D6C331F38AD13005ED0F3 /* 绿色@3x.png */,
-				6E1D6C421F38AE01005ED0F3 /* 返回@3x.png */,
-				6E1D6C341F38AD13005ED0F3 /* 蓝色@2x.png */,
-				6E1D6C351F38AD13005ED0F3 /* 蓝色@3x.png */,
-				6E1D6C361F38AD13005ED0F3 /* 返回@2x.png */,
-				6E1D6C371F38AD13005ED0F3 /* 黄色@2x.png */,
-				82ACC1081F38636600778511 /* 军训特辑@3x.png */,
-				82ACC1071F38636600778511 /* 军训特辑@2x.png */,
-				82ACC1091F38636600778511 /* 邮子攻略@2x.png */,
-				82ACC10A1F38636600778511 /* 邮子攻略@3x.png */,
-				82ACC10B1F38636600778511 /* 重邮数据@2x.png */,
-				82ACC10C1F38636600778511 /* 重邮数据@3x.png */,
-				82ACC10D1F38636600778511 /* 重邮风采@2x.png */,
-				82ACC10E1F38636600778511 /* 重邮风采@3x.png */,
-			);
-			name = "图标";
-			sourceTree = "<group>";
-		};
-		6E1D6C451F38C365005ED0F3 /* CQUPTBeauty */ = {
-			isa = PBXGroup;
-			children = (
-				6E1D6C461F38C38D005ED0F3 /* OriginalCYCell.h */,
-				6E1D6C471F38C38D005ED0F3 /* OriginalCYCell.m */,
-				6E1D6C481F38C38D005ED0F3 /* OriginalCY.h */,
-				6E1D6C491F38C38D005ED0F3 /* OriginalCY.m */,
-				6E1D6C4F1F38C45A005ED0F3 /* CQUPTStudentsCell.h */,
-				6E1D6C501F38C45A005ED0F3 /* CQUPTStudentsCell.m */,
-				6E1D6C4C1F38C42B005ED0F3 /* CQUPTStudentsViewController.h */,
-				6E1D6C4D1F38C42B005ED0F3 /* CQUPTStudentsViewController.m */,
-				6E1D6C521F38C56F005ED0F3 /* StuRootViewController.h */,
-				6E1D6C531F38C56F005ED0F3 /* StuRootViewController.m */,
-			);
-			name = CQUPTBeauty;
-			sourceTree = "<group>";
-		};
-		82ACC0DE1F38636600778511 /* FreshMan_2017 */ = {
-			isa = PBXGroup;
-			children = (
-				6E1D6C451F38C365005ED0F3 /* CQUPTBeauty */,
-				82ACC12C1F38641F00778511 /* CQUPTData */,
-				82ACC12D1F38643600778511 /* StuStrategyDetailVC */,
-				6E1D6C2F1F38ACBC005ED0F3 /* 图标 */,
+				6E1D6C561F3966EF005ED0F3 /* CQUPTBeauty */,
+				6E1D6C611F3966EF005ED0F3 /* CQUPTData */,
+				6E1D6C6A1F3966EF005ED0F3 /* HomePageViewController.h */,
+				6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */,
+				6E1D6C6C1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.h */,
+				6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */,
+				6E1D6C6E1F3966EF005ED0F3 /* SegmentView.h */,
+				6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */,
+				6E1D6C701F3966EF005ED0F3 /* StuStrategyDetailVC */,
+				6E1D6C821F3966EF005ED0F3 /* 图标 */,
 			);
 			name = FreshMan_2017;
-			path = shake/TestLayoutButton;
+			path = shake/FreshMan_2017;
 			sourceTree = "<group>";
 		};
-		82ACC12C1F38641F00778511 /* CQUPTData */ = {
+		6E1D6C561F3966EF005ED0F3 /* CQUPTBeauty */ = {
 			isa = PBXGroup;
 			children = (
-				82ACC0EC1F38636600778511 /* CQUPTDataRootViewController.h */,
-				82ACC0ED1F38636600778511 /* CQUPTDataRootViewController.m */,
-				82ACC0F81F38636600778511 /* MaleToFemaleRatioViewController.h */,
-				82ACC0F91F38636600778511 /* MaleToFemaleRatioViewController.m */,
-				82ACC0FA1F38636600778511 /* MostDifficultSubjectsViewController.h */,
-				82ACC0FB1F38636600778511 /* MostDifficultSubjectsViewController.m */,
-				82ACC0F01F38636600778511 /* EmploymentRateViewController.h */,
-				82ACC0F11F38636600778511 /* EmploymentRateViewController.m */,
-				6E1D6C2C1F38ACA1005ED0F3 /* StatisticsTable.h */,
-				6E1D6C2D1F38ACA1005ED0F3 /* StatisticsTable.m */,
+				6E1D6C571F3966EF005ED0F3 /* CQUPTStudentsCell.h */,
+				6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */,
+				6E1D6C591F3966EF005ED0F3 /* CQUPTStudentsViewController.h */,
+				6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */,
+				6E1D6C5B1F3966EF005ED0F3 /* OriginalCY.h */,
+				6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */,
+				6E1D6C5D1F3966EF005ED0F3 /* OriginalCYCell.h */,
+				6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */,
+				6E1D6C5F1F3966EF005ED0F3 /* StuRootViewController.h */,
+				6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */,
 			);
-			name = CQUPTData;
+			path = CQUPTBeauty;
 			sourceTree = "<group>";
 		};
-		82ACC12D1F38643600778511 /* StuStrategyDetailVC */ = {
+		6E1D6C611F3966EF005ED0F3 /* CQUPTData */ = {
 			isa = PBXGroup;
 			children = (
-				82ACC0E61F38636600778511 /* BeautyViewController.h */,
-				82ACC0E71F38636600778511 /* BeautyViewController.m */,
-				82ACC0E81F38636600778511 /* CampusEnvironmentViewController.h */,
-				82ACC0E91F38636600778511 /* CampusEnvironmentViewController.m */,
-				82ACC0EA1F38636600778511 /* CanteenViewController.h */,
-				82ACC0EB1F38636600778511 /* CanteenViewController.m */,
-				82ACC0EE1F38636600778511 /* DailyLifeViewController.h */,
-				82ACC0EF1F38636600778511 /* DailyLifeViewController.m */,
-				82ACC0F21F38636600778511 /* FoodViewController.h */,
-				82ACC0F31F38636600778511 /* FoodViewController.m */,
-				82ACC0F51F38636600778511 /* IntroductionViewController.h */,
-				82ACC0F61F38636600778511 /* IntroductionViewController.m */,
-				82ACC0FD1F38636600778511 /* QQGroupViewController.h */,
-				82ACC0FE1F38636600778511 /* QQGroupViewController.m */,
-				82ACC1011F38636600778511 /* StuBedroomViewController.h */,
-				82ACC1021F38636600778511 /* StuBedroomViewController.m */,
-				82ACC1031F38636600778511 /* StuStrategyRootViewController.h */,
-				82ACC1041F38636600778511 /* StuStrategyRootViewController.m */,
+				6E1D6C621F3966EF005ED0F3 /* CQUPTDataRootViewController.h */,
+				6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */,
+				6E1D6C641F3966EF005ED0F3 /* EmploymentRateViewController.h */,
+				6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */,
+				6E1D6C661F3966EF005ED0F3 /* MostDifficultSubjectsViewController.h */,
+				6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */,
+				6E1D6C681F3966EF005ED0F3 /* StatisticsTable.h */,
+				6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */,
 			);
-			name = StuStrategyDetailVC;
+			path = CQUPTData;
+			sourceTree = "<group>";
+		};
+		6E1D6C701F3966EF005ED0F3 /* StuStrategyDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D6CBC1F3967A2005ED0F3 /* BeautyViewController.h */,
+				6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */,
+				6E1D6C721F3966EF005ED0F3 /* CampusEnvironmentViewController.h */,
+				6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */,
+				6E1D6C741F3966EF005ED0F3 /* CanteenViewController.h */,
+				6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */,
+				6E1D6C761F3966EF005ED0F3 /* DailyLifeViewController.h */,
+				6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */,
+				6E1D6C781F3966EF005ED0F3 /* FoodViewController.h */,
+				6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */,
+				6E1D6C7A1F3966EF005ED0F3 /* IntroductionViewController.h */,
+				6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */,
+				6E1D6C7C1F3966EF005ED0F3 /* QQGroupViewController.h */,
+				6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */,
+				6E1D6C7E1F3966EF005ED0F3 /* StuBedroomViewController.h */,
+				6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */,
+				6E1D6C801F3966EF005ED0F3 /* StuStrategyRootViewController.h */,
+				6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */,
+			);
+			path = StuStrategyDetailVC;
+			sourceTree = "<group>";
+		};
+		6E1D6C821F3966EF005ED0F3 /* 图标 */ = {
+			isa = PBXGroup;
+			children = (
+				6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */,
+				6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */,
+				6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */,
+				6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */,
+				6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */,
+				6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */,
+				6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */,
+				6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */,
+				6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */,
+				6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */,
+				6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */,
+				6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */,
+				6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */,
+				6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */,
+				6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */,
+				6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */,
+				6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */,
+				6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */,
+			);
+			path = "图标";
 			sourceTree = "<group>";
 		};
 		C66265BA2143171179039C97 /* Pods */ = {
@@ -1489,11 +1493,7 @@
 				F242DACB1EBCB2BB005AC411 /* Resource */,
 				F242DAFE1EBCB2BB005AC411 /* shake(give up) */,
 				F242DB021EBCB2BB005AC411 /* Shop */,
-				82ACC0DE1F38636600778511 /* FreshMan_2017 */,
-				82ECE22A1F388A2C00D9BF7A /* SegmentView.h */,
-				82ACC1051F38636600778511 /* HomePageViewController.h */,
-				82ACC1061F38636600778511 /* HomePageViewController.m */,
-				82ECE22B1F388A2C00D9BF7A /* SegmentView.m */,
+				6E1D6C551F3966EF005ED0F3 /* FreshMan_2017 */,
 				F242DA701EBCB2BB005AC411 /* FinderViewController.h */,
 				F242DA711EBCB2BB005AC411 /* FinderViewController.m */,
 				F242DB111EBCB2BB005AC411 /* View.xib */,
@@ -2664,7 +2664,7 @@
 					};
 					CEF61B291B82BC950014B980 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = HPM8HVK7C6;
+						DevelopmentTeam = WTP66K3RCH;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -2714,12 +2714,10 @@
 				F242DDE71EBCB2BB005AC411 /* lost_image_time@2x.png in Resources */,
 				F242DFAF1EBD9E2C005AC411 /* LZIssueSucceedViewController.xib in Resources */,
 				F242DE9B1EBCB2BC005AC411 /* 无课@3x.png in Resources */,
-				82ACC1241F38636600778511 /* 军训特辑@2x.png in Resources */,
 				F242DDC81EBCB2BB005AC411 /* cqupt3@2x.jpg in Resources */,
 				F242DDD81EBCB2BB005AC411 /* lost_image_lackplace@3x.png in Resources */,
 				F242DE9E1EBCB2BC005AC411 /* 椭圆@2x.png in Resources */,
 				F242DF3D1EBCB2BC005AC411 /* 期末成绩@2x.png in Resources */,
-				6E1D6C3A1F38AD13005ED0F3 /* 绿色@2x.png in Resources */,
 				F242DDE81EBCB2BB005AC411 /* lost_image_time@3x.png in Resources */,
 				F242DE731EBCB2BC005AC411 /* remind0@2x.png in Resources */,
 				F242DED81EBCB2BC005AC411 /* headImage.png in Resources */,
@@ -2728,7 +2726,6 @@
 				F242DFA91EBD9E2C005AC411 /* DetailLostViewController.xib in Resources */,
 				F242DE971EBCB2BC005AC411 /* 无事项@3x.png in Resources */,
 				F242DDAB1EBCB2BB005AC411 /* buildIcon.png in Resources */,
-				6E1D6C3E1F38AD13005ED0F3 /* 返回@2x.png in Resources */,
 				F242DE8C1EBCB2BC005AC411 /* 多课1@2x.png in Resources */,
 				F2DC2ADA1EEEDC8000389A85 /* settingIcon@2x.png in Resources */,
 				F242DEEC1EBCB2BC005AC411 /* xia.png in Resources */,
@@ -2737,6 +2734,7 @@
 				F242DD921EBCB2BB005AC411 /* CommunityViewController.xib in Resources */,
 				F242DF2F1EBCB2BC005AC411 /* logo.png in Resources */,
 				F22286B61EED39840017516C /* icon_share_wechatTimeLine@3x.png in Resources */,
+				6E1D6CBA1F3966EF005ED0F3 /* 黄色@2x.png in Resources */,
 				F242DE7C1EBCB2BC005AC411 /* 上拉@3x.png in Resources */,
 				F242DEAC1EBCB2BC005AC411 /* 返回箭头@2x.png in Resources */,
 				F242DE8A1EBCB2BC005AC411 /* 多课0@2x.png in Resources */,
@@ -2746,29 +2744,32 @@
 				F242DEDE1EBCB2BC005AC411 /* support.png in Resources */,
 				F242DF121EBCB2BC005AC411 /* QGERestDetailViewController.xib in Resources */,
 				F242DDCD1EBCB2BB005AC411 /* lost_image_com@2x.png in Resources */,
+				6E1D6CAB1F3966EF005ED0F3 /* 军训特辑@3x.png in Resources */,
 				F242DDF71EBCB2BB005AC411 /* 电费查询@3x.png in Resources */,
 				F242DF441EBCB2BC005AC411 /* icon_menu_3@2x.png in Resources */,
 				F242DE931EBCB2BC005AC411 /* 左三角@3x.png in Resources */,
 				F242DF451EBCB2BC005AC411 /* icon_menu_4@2x.png in Resources */,
 				F242DEFA1EBCB2BC005AC411 /* AboutMePraiseTableViewCell.xib in Resources */,
+				6E1D6CB51F3966EF005ED0F3 /* 邮子攻略@3x.png in Resources */,
 				F242DFAB1EBD9E2C005AC411 /* IssueTableViewController.xib in Resources */,
 				F242DDEC1EBCB2BB005AC411 /* redrock@2x.png in Resources */,
 				F242DF3F1EBCB2BC005AC411 /* 空教室@2x.png in Resources */,
 				F2DA60CA1ED03A5F0049E681 /* DetailTopicViewController.xib in Resources */,
 				F22286B71EED39840017516C /* icon_share_wechatTimeLine@2x.png in Resources */,
+				6E1D6CB21F3966EF005ED0F3 /* 返回@2x.png in Resources */,
 				F242DDD21EBCB2BB005AC411 /* lost_image_infocategory@3x.png in Resources */,
 				F242DDCC1EBCB2BB005AC411 /* lost_image_add@3x.png in Resources */,
 				F242DEA91EBCB2BC005AC411 /* 编辑箭头@3x.png in Resources */,
 				F2DC2ADC1EEEDC8000389A85 /* searchIcon@3x.png in Resources */,
-				6E1D6C3C1F38AD13005ED0F3 /* 蓝色@2x.png in Resources */,
 				F242DDC51EBCB2BB005AC411 /* WebViewController.xib in Resources */,
-				82ACC12B1F38636600778511 /* 重邮风采@3x.png in Resources */,
 				F242DF3E1EBCB2BC005AC411 /* 校历@2x.png in Resources */,
 				F242DE9F1EBCB2BC005AC411 /* 椭圆@3x.png in Resources */,
 				F242DE9D1EBCB2BC005AC411 /* 时间@3x.png in Resources */,
 				F242DE011EBCB2BB005AC411 /* ShopTableViewCell.xib in Resources */,
+				6E1D6CB01F3966EF005ED0F3 /* 蓝色@2x.png in Resources */,
 				F242DE951EBCB2BC005AC411 /* 提醒@3x.png in Resources */,
 				F242DF361EBCB2BC005AC411 /* GQsection.png in Resources */,
+				6E1D6CAF1F3966EF005ED0F3 /* 绿色@3x.png in Resources */,
 				F242DF3B1EBCB2BC005AC411 /* 夜间模式@2x.png in Resources */,
 				F242DE821EBCB2BC005AC411 /* 书@3x.png in Resources */,
 				F242DE9C1EBCB2BC005AC411 /* 时间@2x.png in Resources */,
@@ -2789,10 +2790,11 @@
 				F242DDFB1EBCB2BB005AC411 /* loading@2x.png in Resources */,
 				F242DF031EBCB2BC005AC411 /* ExamScheduleViewController.xib in Resources */,
 				F242DE881EBCB2BC005AC411 /* 地点@2x.png in Resources */,
+				6E1D6CAE1F3966EF005ED0F3 /* 绿色@2x.png in Resources */,
 				F242DE7D1EBCB2BC005AC411 /* 下拉@2x.png in Resources */,
 				F242DE9A1EBCB2BC005AC411 /* 无课@2x.png in Resources */,
-				82ACC12A1F38636600778511 /* 重邮风采@2x.png in Resources */,
 				F242DDEB1EBCB2BB005AC411 /* ok.png in Resources */,
+				6E1D6CB41F3966EF005ED0F3 /* 邮子攻略@2x.png in Resources */,
 				F22286B11EED39840017516C /* icon_share_weibo@2x.png in Resources */,
 				F242DEAD1EBCB2BC005AC411 /* 返回箭头@3x.png in Resources */,
 				F242DF281EBCB2BC005AC411 /* iconfont-more.png in Resources */,
@@ -2804,7 +2806,6 @@
 				F2DC2ADB1EEEDC8000389A85 /* settingIcon@3x.png in Resources */,
 				F242DDC31EBCB2BB005AC411 /* remindImage.png in Resources */,
 				F242DE921EBCB2BC005AC411 /* 左三角@2x.png in Resources */,
-				82ACC1251F38636600778511 /* 军训特辑@3x.png in Resources */,
 				F242DEA71EBCB2BC005AC411 /* 编辑完成@3x.png in Resources */,
 				F242DF401EBCB2BC005AC411 /* 考试安排@2x.png in Resources */,
 				F242DEF11EBCB2BC005AC411 /* 图片4.jpg in Resources */,
@@ -2819,8 +2820,8 @@
 				F21A8FA91ED9679F0093FBC4 /* noTopicIcon.png in Resources */,
 				F242DF201EBCB2BC005AC411 /* calendar.png in Resources */,
 				F242DE651EBCB2BC005AC411 /* DetailPageController.xib in Resources */,
+				6E1D6CB61F3966EF005ED0F3 /* 重邮数据@2x.png in Resources */,
 				F242DDE41EBCB2BB005AC411 /* lost_image_success@3x.png in Resources */,
-				82ACC1281F38636600778511 /* 重邮数据@2x.png in Resources */,
 				F242DE761EBCB2BC005AC411 /* remind1@3x.png in Resources */,
 				F242DE611EBCB2BC005AC411 /* AddRemindViewController.xib in Resources */,
 				F242DEED1EBCB2BC005AC411 /* 叉叉.png in Resources */,
@@ -2834,6 +2835,7 @@
 				F242DE981EBCB2BC005AC411 /* 无考试@2x.png in Resources */,
 				F242DF351EBCB2BC005AC411 /* GQclass.png in Resources */,
 				F2DC2ADD1EEEDC8000389A85 /* searchIcon@2x.png in Resources */,
+				6E1D6CB11F3966EF005ED0F3 /* 蓝色@3x.png in Resources */,
 				F242DEC41EBCB2BC005AC411 /* 1智妍.jpg in Resources */,
 				F242DEAF1EBCB2BC005AC411 /* 选择@3x.png in Resources */,
 				F242DDFD1EBCB2BB005AC411 /* MenuViewController.xib in Resources */,
@@ -2853,6 +2855,7 @@
 				F242DF481EBCB2BC005AC411 /* icon_menu_selected_3@2x.png in Resources */,
 				F242DDCF1EBCB2BB005AC411 /* lost_image_describe@2x.png in Resources */,
 				F242DE941EBCB2BC005AC411 /* 提醒@2x.png in Resources */,
+				6E1D6CAD1F3966EF005ED0F3 /* 粉色@3x.png in Resources */,
 				F242DE691EBCB2BC005AC411 /* ExamViewController.xib in Resources */,
 				F242DF311EBCB2BC005AC411 /* emptyClass.png in Resources */,
 				F242DDC01EBCB2BB005AC411 /* unitImage.png in Resources */,
@@ -2874,15 +2877,13 @@
 				F242DDE61EBCB2BB005AC411 /* lost_image_tel@3x.png in Resources */,
 				F242DF4C1EBCB2BC005AC411 /* iconfont-menuiconaccount.png in Resources */,
 				F242DE8F1EBCB2BC005AC411 /* 多课2@3x.png in Resources */,
-				82ACC1261F38636600778511 /* 邮子攻略@2x.png in Resources */,
 				F242DF1A1EBCB2BC005AC411 /* iconfont.ttf in Resources */,
-				6E1D6C3F1F38AD13005ED0F3 /* 黄色@2x.png in Resources */,
 				F242DD891EBCB2BB005AC411 /* Main.storyboard in Resources */,
+				6E1D6CB71F3966EF005ED0F3 /* 重邮数据@3x.png in Resources */,
 				F242DF511EBCB2BC005AC411 /* Mobile_CQUPT_iOS.db in Resources */,
 				F242DDD61EBCB2BB005AC411 /* lost_image_lackcate@3x.png in Resources */,
 				F242DFB71EBD9E2C005AC411 /* LostTableViewCell.xib in Resources */,
 				F242DDF01EBCB2BB005AC411 /* shakeForShop@2x.png in Resources */,
-				82ACC1271F38636600778511 /* 邮子攻略@3x.png in Resources */,
 				F242DDE21EBCB2BB005AC411 /* lost_image_QQ@3x.png in Resources */,
 				F242DEA81EBCB2BC005AC411 /* 编辑箭头@2x.png in Resources */,
 				F242DEA31EBCB2BC005AC411 /* 类型@3x.png in Resources */,
@@ -2891,21 +2892,20 @@
 				F242DEA11EBCB2BC005AC411 /* 箭头@3x.png in Resources */,
 				F242DDF41EBCB2BB005AC411 /* 失物招领@2x.png in Resources */,
 				F242DF221EBCB2BC005AC411 /* 智妍2.jpg in Resources */,
-				6E1D6C431F38AE01005ED0F3 /* 返回@3x.png in Resources */,
 				F242DDCA1EBCB2BB005AC411 /* iconfont-shop2.png in Resources */,
 				F242DE8E1EBCB2BC005AC411 /* 多课2@2x.png in Resources */,
 				F242DDDC1EBCB2BB005AC411 /* lost_image_little@3x.png in Resources */,
+				6E1D6CBB1F3966EF005ED0F3 /* 黄色@3x.png in Resources */,
 				F242DDEA1EBCB2BB005AC411 /* map_new@2x.png in Resources */,
-				6E1D6C381F38AD13005ED0F3 /* 粉色@2x.png in Resources */,
 				F242DE811EBCB2BC005AC411 /* 书@2x.png in Resources */,
 				F242DF1C1EBCB2BC005AC411 /* 29-3.png in Resources */,
 				F242DE891EBCB2BC005AC411 /* 地点@3x.png in Resources */,
 				F242DEFC1EBCB2BC005AC411 /* AboutMeTableViewCell.xib in Resources */,
 				F2BE9C251EDB047200569A2B /* topic_image_ frame@2x.png in Resources */,
-				6E1D6C3B1F38AD13005ED0F3 /* 绿色@3x.png in Resources */,
 				F242DECE1EBCB2BC005AC411 /* MBCommentCell.xib in Resources */,
 				F242DDED1EBCB2BB005AC411 /* redrock_new@2x.png in Resources */,
 				F242DF391EBCB2BC005AC411 /* 关于@2x.png in Resources */,
+				6E1D6CAA1F3966EF005ED0F3 /* 军训特辑@2x.png in Resources */,
 				F242DE531EBCB2BC005AC411 /* LoginViewController.xib in Resources */,
 				F242DEF31EBCB2BC005AC411 /* 图片6.jpg in Resources */,
 				F242DE851EBCB2BC005AC411 /* 启动页.jpg in Resources */,
@@ -2916,6 +2916,8 @@
 				F242DF2A1EBCB2BC005AC411 /* iconfont-titleTag.png in Resources */,
 				F242DDC21EBCB2BB005AC411 /* reinstallImage.png in Resources */,
 				F242DEC51EBCB2BC005AC411 /* 65ee37a1gw1ewyf1530npj20tm18gwl9.jpg in Resources */,
+				6E1D6CB81F3966EF005ED0F3 /* 重邮风采@2x.png in Resources */,
+				6E1D6CB91F3966EF005ED0F3 /* 重邮风采@3x.png in Resources */,
 				F242DE911EBCB2BC005AC411 /* 完成@3x.png in Resources */,
 				F242DF321EBCB2BC005AC411 /* emptyClassTag.png in Resources */,
 				F242DF4E1EBCB2BC005AC411 /* iconfont-week.png in Resources */,
@@ -2953,14 +2955,12 @@
 				F242DEAB1EBCB2BC005AC411 /* 老师@3x.png in Resources */,
 				F242DE771EBCB2BC005AC411 /* remind2@2x.png in Resources */,
 				F242DF1E1EBCB2BC005AC411 /* 40-3.png in Resources */,
-				6E1D6C391F38AD13005ED0F3 /* 粉色@3x.png in Resources */,
 				F242DE7E1EBCB2BC005AC411 /* 下拉@3x.png in Resources */,
 				F242DED31EBCB2BC005AC411 /* MBCommuityDetailsViewController.xib in Resources */,
 				F22286B01EED39840017516C /* icon_share_more@2x.png in Resources */,
 				F242DDAA1EBCB2BB005AC411 /* angleImage.png in Resources */,
 				F21A8FAA1ED9679F0093FBC4 /* arrowIcon.png in Resources */,
 				F242DF3A1EBCB2BC005AC411 /* 反馈信息@2x.png in Resources */,
-				6E1D6C411F38ADFB005ED0F3 /* 黄色@3x.png in Resources */,
 				F21A8FAB1ED9679F0093FBC4 /* aNumIcon.png in Resources */,
 				F242DDE11EBCB2BB005AC411 /* lost_image_QQ@2x.png in Resources */,
 				F242DDA81EBCB2BB005AC411 /* MapViewController.xib in Resources */,
@@ -2971,17 +2971,17 @@
 				F242DDDF1EBCB2BB005AC411 /* lost_image_place@2x.png in Resources */,
 				F242DDD41EBCB2BB005AC411 /* lost_image_itemcategory@3x.png in Resources */,
 				F242DF421EBCB2BC005AC411 /* icon_menu_1@2x.png in Resources */,
+				6E1D6CAC1F3966EF005ED0F3 /* 粉色@2x.png in Resources */,
 				F289CF941ED6E20D00373595 /* topic_image_alltopic@3x.png in Resources */,
-				6E1D6C3D1F38AD13005ED0F3 /* 蓝色@3x.png in Resources */,
 				F242DED01EBCB2BC005AC411 /* MBCommunityCellTableViewCell.xib in Resources */,
 				F2BE9C1A1EDAEC7D00569A2B /* topic_image_join@3x.png in Resources */,
 				F242DE861EBCB2BC005AC411 /* 周数@2x.png in Resources */,
 				F242DEAE1EBCB2BC005AC411 /* 选择@2x.png in Resources */,
 				F242DDF61EBCB2BB005AC411 /* 电费查询@2x.png in Resources */,
-				82ACC1291F38636600778511 /* 重邮数据@3x.png in Resources */,
 				F242DDEE1EBCB2BB005AC411 /* shake@2x.png in Resources */,
 				F242DEC71EBCB2BC005AC411 /* addPhoto.jpg in Resources */,
 				F242DEEF1EBCB2BC005AC411 /* 图片2.jpg in Resources */,
+				6E1D6CB31F3966EF005ED0F3 /* 返回@3x.png in Resources */,
 				F242DED71EBCB2BC005AC411 /* MBReleaseViewController.xib in Resources */,
 				F242DDE31EBCB2BB005AC411 /* lost_image_success@2x.png in Resources */,
 				F242DEA01EBCB2BC005AC411 /* 箭头@2x.png in Resources */,
@@ -3073,6 +3073,7 @@
 				F242DED61EBCB2BC005AC411 /* MBReleaseViewController.m in Sources */,
 				F242DE671EBCB2BC005AC411 /* DetailViewController.m in Sources */,
 				F242DECA1EBCB2BC005AC411 /* UIColor+Helper.m in Sources */,
+				6E1D6C991F3966EF005ED0F3 /* StuRootViewController.m in Sources */,
 				F242DEF71EBCB2BC005AC411 /* XBSAboutViewController.m in Sources */,
 				F242DEFD1EBCB2BC005AC411 /* AboutMeViewController.m in Sources */,
 				F242DD8E1EBCB2BB005AC411 /* Course.m in Sources */,
@@ -3081,27 +3082,29 @@
 				F242DED41EBCB2BC005AC411 /* MBCommunityViewController.m in Sources */,
 				F242DE621EBCB2BC005AC411 /* DetailLessonController.m in Sources */,
 				F242DDB11EBCB2BB005AC411 /* IntallFailViewController.m in Sources */,
+				6E1D6C971F3966EF005ED0F3 /* OriginalCY.m in Sources */,
 				F242DE5A1EBCB2BC005AC411 /* UIFont+AdaptiveFont.m in Sources */,
 				F242DEC31EBCB2BC005AC411 /* main.m in Sources */,
-				82ACC1151F38636600778511 /* CanteenViewController.m in Sources */,
 				F22286A21EED33510017516C /* ImageWithLabel.m in Sources */,
-				82ACC11D1F38636600778511 /* MaleToFemaleRatioViewController.m in Sources */,
+				6E1D6C9F1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m in Sources */,
 				F242DFBA1EBD9E2C005AC411 /* LZLostRemindView.m in Sources */,
+				6E1D6CA51F3966EF005ED0F3 /* FoodViewController.m in Sources */,
 				F242DEDC1EBCB2BC005AC411 /* MBTextView.m in Sources */,
 				F242DDB91EBCB2BB005AC411 /* QuerInfo.m in Sources */,
+				6E1D6CA91F3966EF005ED0F3 /* StuStrategyRootViewController.m in Sources */,
 				F242DEC21EBCB2BC005AC411 /* MainViewController.m in Sources */,
+				6E1D6C9B1F3966EF005ED0F3 /* EmploymentRateViewController.m in Sources */,
 				F242DDAF1EBCB2BB005AC411 /* InstallRoomDoneViewController.m in Sources */,
 				F242DE6E1EBCB2BC005AC411 /* LessonHandle.m in Sources */,
 				F242DF101EBCB2BC005AC411 /* MyMessagesViewController.m in Sources */,
+				6E1D6C9E1F3966EF005ED0F3 /* HomePageViewController.m in Sources */,
 				F242DEB61EBCB2BC005AC411 /* RemindNotification.m in Sources */,
 				F2DA60C51ED033E40049E681 /* TopicModel.m in Sources */,
 				F242DE6C1EBCB2BC005AC411 /* TimeChooseViewController.m in Sources */,
 				F242DFB11EBD9E2C005AC411 /* LostModel.m in Sources */,
 				F242DEFF1EBCB2BC005AC411 /* CalendarViewController.m in Sources */,
-				6E1D6C4A1F38C38D005ED0F3 /* OriginalCYCell.m in Sources */,
 				F242DEB41EBCB2BC005AC411 /* HttpClient.m in Sources */,
 				F242DECC1EBCB2BC005AC411 /* UIImage+ImageEffects.m in Sources */,
-				82ACC1141F38636600778511 /* CampusEnvironmentViewController.m in Sources */,
 				F2BE9C291EDB064F00569A2B /* CAShapeLayer+ViewMask.m in Sources */,
 				F242DDAE1EBCB2BB005AC411 /* InstallcurrentViewController.m in Sources */,
 				F242DE021EBCB2BB005AC411 /* ShopViewController.m in Sources */,
@@ -3120,80 +3123,77 @@
 				F242DEB81EBCB2BC005AC411 /* CoverView.m in Sources */,
 				F21DA5CB1ED17A9C003EE411 /* TopicBtn.m in Sources */,
 				F242DE601EBCB2BC005AC411 /* AddRemindViewController.m in Sources */,
+				6E1D6C951F3966EF005ED0F3 /* CQUPTStudentsCell.m in Sources */,
 				F242DE681EBCB2BC005AC411 /* ExamViewController.m in Sources */,
+				6E1D6C9A1F3966EF005ED0F3 /* CQUPTDataRootViewController.m in Sources */,
 				F242DDA71EBCB2BB005AC411 /* MapViewController.m in Sources */,
 				F242DE6D1EBCB2BC005AC411 /* WeekChooseViewController.m in Sources */,
+				6E1D6CA41F3966EF005ED0F3 /* DailyLifeViewController.m in Sources */,
 				F242DEDA1EBCB2BC005AC411 /* MBCommunityModel.m in Sources */,
 				F242DDB71EBCB2BB005AC411 /* QuerCircleView.m in Sources */,
 				F242DDF81EBCB2BB005AC411 /* ShakeViewController.m in Sources */,
 				F242DECB1EBCB2BC005AC411 /* UIImage+Helper.m in Sources */,
 				F242DDBA1EBCB2BB005AC411 /* QuerLoginModel.m in Sources */,
 				F242DEBC1EBCB2BC005AC411 /* MainView.m in Sources */,
-				82ACC11B1F38636600778511 /* IntroductionViewController.m in Sources */,
-				6E1D6C2E1F38ACA1005ED0F3 /* StatisticsTable.m in Sources */,
 				F242DEDD1EBCB2BC005AC411 /* UIShortTapGestureRecognizer.m in Sources */,
 				F242DF801EBCB2BC005AC411 /* ViewController.m in Sources */,
 				F242DDB41EBCB2BB005AC411 /* buildCircleView.m in Sources */,
 				F242DDBB1EBCB2BB005AC411 /* QuerLoginViewController.m in Sources */,
 				F242DF7E1EBCB2BC005AC411 /* NetWork.m in Sources */,
-				82ACC1131F38636600778511 /* BeautyViewController.m in Sources */,
 				F242DEE11EBCB2BC005AC411 /* MBAddPhotoContainerView.m in Sources */,
 				F242DEC01EBCB2BC005AC411 /* WeekChooseButton.m in Sources */,
 				F242DDBD1EBCB2BB005AC411 /* QuerPullTableViewCell.m in Sources */,
-				82ACC1221F38636600778511 /* StuStrategyRootViewController.m in Sources */,
-				82ACC1161F38636600778511 /* CQUPTDataRootViewController.m in Sources */,
 				F2DA60C91ED03A5F0049E681 /* DetailTopicViewController.m in Sources */,
 				F242DF0E1EBCB2BC005AC411 /* UITextField+Custom.m in Sources */,
 				F242DD931EBCB2BB005AC411 /* FinderViewController.m in Sources */,
 				F242DD8B1EBCB2BB005AC411 /* CourseView.m in Sources */,
 				F242DEF91EBCB2BC005AC411 /* AboutMePraiseTableViewCell.m in Sources */,
+				6E1D6C981F3966EF005ED0F3 /* OriginalCYCell.m in Sources */,
 				F242DFB51EBD9E2C005AC411 /* LostAndFoundButton.m in Sources */,
 				F222868B1EED21260017516C /* HZLShareView.m in Sources */,
-				6E1D6C541F38C56F005ED0F3 /* StuRootViewController.m in Sources */,
 				F242DE5E1EBCB2BC005AC411 /* RemindTableViewCell.m in Sources */,
 				F242DDFA1EBCB2BB005AC411 /* DetailDishView.m in Sources */,
-				6E1D6C511F38C45A005ED0F3 /* CQUPTStudentsCell.m in Sources */,
 				F242DEC91EBCB2BC005AC411 /* NSNull+Helper.m in Sources */,
 				F242DF171EBCB2BC005AC411 /* SettingViewController.m in Sources */,
 				F242DEE61EBCB2BC005AC411 /* MBPhotoContainerView.m in Sources */,
+				6E1D6CA21F3966EF005ED0F3 /* CampusEnvironmentViewController.m in Sources */,
 				F242DE521EBCB2BC005AC411 /* LoginViewController.m in Sources */,
 				F242DDB81EBCB2BB005AC411 /* QuerCurveView.m in Sources */,
-				82ACC1191F38636600778511 /* FoodViewController.m in Sources */,
 				F289CFC11ED71F6F00373595 /* TopicSearchViewController.m in Sources */,
 				F242DEE91EBCB2BC005AC411 /* MBComment_ViewModel.m in Sources */,
-				82ACC1171F38636600778511 /* DailyLifeViewController.m in Sources */,
 				F242DF061EBCB2BC005AC411 /* PickView.m in Sources */,
 				F22286A31EED33510017516C /* ImageWithLabels.m in Sources */,
 				F242DE551EBCB2BC005AC411 /* BaseMatter.m in Sources */,
 				F242DE561EBCB2BC005AC411 /* BaseTableViewController.m in Sources */,
 				F242DF0F1EBCB2BC005AC411 /* MyMessagesTableViewCell.m in Sources */,
+				6E1D6CA01F3966EF005ED0F3 /* SegmentView.m in Sources */,
+				6E1D6CA61F3966EF005ED0F3 /* IntroductionViewController.m in Sources */,
 				F242DF071EBCB2BC005AC411 /* ExamGradeViewController.m in Sources */,
 				F242DED21EBCB2BC005AC411 /* MBCommuityDetailsViewController.m in Sources */,
 				F242DE6A1EBCB2BC005AC411 /* LessonButtonController.m in Sources */,
 				F242DE6B1EBCB2BC005AC411 /* LessonController.m in Sources */,
 				F242DF0B1EBCB2BC005AC411 /* MyInfoModel.m in Sources */,
 				F242DD8C1EBCB2BB005AC411 /* CourseViewController.m in Sources */,
-				82ECE22C1F388A2C00D9BF7A /* SegmentView.m in Sources */,
 				F242DF041EBCB2BC005AC411 /* EmptyClassViewController.m in Sources */,
 				F242DF7F1EBCB2BC005AC411 /* ORWRequestCache.m in Sources */,
 				F242DE541EBCB2BC005AC411 /* VerifyMyInfoViewController.m in Sources */,
 				F242DE571EBCB2BC005AC411 /* BaseViewController.m in Sources */,
+				6E1D6CA31F3966EF005ED0F3 /* CanteenViewController.m in Sources */,
 				F242DE5C1EBCB2BC005AC411 /* DetailRemindTableViewCell.m in Sources */,
+				6E1D6C9C1F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m in Sources */,
 				F242DED91EBCB2BC005AC411 /* MBCommentModel.m in Sources */,
-				82ACC1231F38636600778511 /* HomePageViewController.m in Sources */,
 				F242DEE81EBCB2BC005AC411 /* MBSegmentedView.m in Sources */,
 				F242DEE71EBCB2BC005AC411 /* MBReplyView.m in Sources */,
 				F242DE001EBCB2BB005AC411 /* ShopTableViewCell.m in Sources */,
 				F242DFB61EBD9E2C005AC411 /* LostTableViewCell.m in Sources */,
 				F242DEB51EBCB2BC005AC411 /* LessonRemindNotification.m in Sources */,
 				F242DEBF1EBCB2BC005AC411 /* TimeChooseScrollView.m in Sources */,
+				6E1D6CA11F3966EF005ED0F3 /* BeautyViewController.m in Sources */,
 				F242DEBA1EBCB2BC005AC411 /* LessonButton.m in Sources */,
 				F242DE661EBCB2BC005AC411 /* DetailRemindViewController.m in Sources */,
 				F242DFB81EBD9E2C005AC411 /* LZConfirmButton.m in Sources */,
-				82ACC1181F38636600778511 /* EmploymentRateViewController.m in Sources */,
 				F242DEEA1EBCB2BC005AC411 /* MBCommunity_ViewModel.m in Sources */,
 				F242DFAE1EBD9E2C005AC411 /* LZIssueSucceedViewController.m in Sources */,
-				82ACC11F1F38636600778511 /* QQGroupViewController.m in Sources */,
 				F242DE641EBCB2BC005AC411 /* DetailPageController.m in Sources */,
 				F242DFB01EBD9E2C005AC411 /* LostItem.m in Sources */,
 				F242DF001EBCB2BC005AC411 /* ExamScheduleTableViewCell.m in Sources */,
@@ -3201,23 +3201,21 @@
 				F242DDB61EBCB2BB005AC411 /* PointingCircleView.m in Sources */,
 				F289CFBB1ED71F6800373595 /* TopicRequest.m in Sources */,
 				F242DFAD1EBD9E2C005AC411 /* LostViewController.m in Sources */,
+				6E1D6CA71F3966EF005ED0F3 /* QQGroupViewController.m in Sources */,
 				F242DD911EBCB2BB005AC411 /* CommunityViewController.m in Sources */,
 				F242DFA81EBD9E2C005AC411 /* DetailLostViewController.m in Sources */,
 				F242DF7D1EBCB2BC005AC411 /* MOHImageParamModel.m in Sources */,
 				F242DD8F1EBCB2BB005AC411 /* TitleBaseViewController.m in Sources */,
-				6E1D6C4E1F38C42B005ED0F3 /* CQUPTStudentsViewController.m in Sources */,
-				82ACC1211F38636600778511 /* StuBedroomViewController.m in Sources */,
 				F242DE581EBCB2BC005AC411 /* UILabel+Adapter.m in Sources */,
 				F242DEB31EBCB2BC005AC411 /* RemindMatter.m in Sources */,
 				F289CFB71ED71F6200373595 /* TopicSearchCollectionViewCell.m in Sources */,
-				82ACC11E1F38636600778511 /* MostDifficultSubjectsViewController.m in Sources */,
 				F242DEB91EBCB2BC005AC411 /* DayLabel.m in Sources */,
 				F242DEE51EBCB2BC005AC411 /* MBPhotoBrowser.m in Sources */,
 				F242DF091EBCB2BC005AC411 /* GradeView.m in Sources */,
 				F242DDC41EBCB2BB005AC411 /* WebViewController.m in Sources */,
+				6E1D6CA81F3966EF005ED0F3 /* StuBedroomViewController.m in Sources */,
 				F242DECD1EBCB2BC005AC411 /* MBCommentCell.m in Sources */,
 				F242DE701EBCB2BC005AC411 /* TimeHandle.m in Sources */,
-				6E1D6C4B1F38C38D005ED0F3 /* OriginalCY.m in Sources */,
 				F242DFB91EBD9E2C005AC411 /* LZDatePicker.m in Sources */,
 				F242DEB01EBCB2BC005AC411 /* ExamMatter.m in Sources */,
 				F242DEBD1EBCB2BC005AC411 /* NoLoginView.m in Sources */,
@@ -3227,6 +3225,7 @@
 				F242DDC11EBCB2BB005AC411 /* QuerRemindViewController.m in Sources */,
 				F242DEBB1EBCB2BC005AC411 /* LessonNumLabel.m in Sources */,
 				F242DFAC1EBD9E2C005AC411 /* LostTableViewController.m in Sources */,
+				6E1D6C9D1F3966EF005ED0F3 /* StatisticsTable.m in Sources */,
 				F242DF131EBCB2BC005AC411 /* QGERestTimeCourseViewController.m in Sources */,
 				F242DEE21EBCB2BC005AC411 /* MBBrowserItem.m in Sources */,
 				F242DFAA1EBD9E2C005AC411 /* IssueTableViewController.m in Sources */,
@@ -3240,6 +3239,7 @@
 				F289CF851ED5637800373595 /* DetailBannnerView.m in Sources */,
 				F242DF0C1EBCB2BC005AC411 /* MyInfoViewController.m in Sources */,
 				F242DFB21EBD9E2C005AC411 /* CategoryChooseView.m in Sources */,
+				6E1D6C961F3966EF005ED0F3 /* CQUPTStudentsViewController.m in Sources */,
 				F242DDB01EBCB2BB005AC411 /* InstallRoomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3409,7 +3409,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MoblieCQUPT_iOS/掌上重邮.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HPM8HVK7C6;
+				DEVELOPMENT_TEAM = WTP66K3RCH;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoblieCQUPT_iOS/PrefixHeader.pch";
@@ -3449,7 +3449,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MoblieCQUPT_iOS/掌上重邮.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HPM8HVK7C6;
+				DEVELOPMENT_TEAM = WTP66K3RCH;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoblieCQUPT_iOS/PrefixHeader.pch";
