@@ -12,45 +12,110 @@
 		3B2661091BA6E40A008632F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2661081BA6E40A008632F3 /* CoreGraphics.framework */; };
 		3B26610B1BA6E417008632F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B26610A1BA6E417008632F3 /* UIKit.framework */; };
 		463E0067C92960DB7BB5B9B7 /* libPods-MoblieCQUPT_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9F3927536C5F686AFC86EF /* libPods-MoblieCQUPT_iOS.a */; };
-		6E1D6C951F3966EF005ED0F3 /* CQUPTStudentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */; };
-		6E1D6C961F3966EF005ED0F3 /* CQUPTStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */; };
-		6E1D6C971F3966EF005ED0F3 /* OriginalCY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */; };
-		6E1D6C981F3966EF005ED0F3 /* OriginalCYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */; };
-		6E1D6C991F3966EF005ED0F3 /* StuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */; };
-		6E1D6C9A1F3966EF005ED0F3 /* CQUPTDataRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */; };
-		6E1D6C9B1F3966EF005ED0F3 /* EmploymentRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */; };
-		6E1D6C9C1F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */; };
-		6E1D6C9D1F3966EF005ED0F3 /* StatisticsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */; };
-		6E1D6C9E1F3966EF005ED0F3 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */; };
-		6E1D6C9F1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */; };
-		6E1D6CA01F3966EF005ED0F3 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */; };
-		6E1D6CA11F3966EF005ED0F3 /* BeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */; };
-		6E1D6CA21F3966EF005ED0F3 /* CampusEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */; };
-		6E1D6CA31F3966EF005ED0F3 /* CanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */; };
-		6E1D6CA41F3966EF005ED0F3 /* DailyLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */; };
-		6E1D6CA51F3966EF005ED0F3 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */; };
-		6E1D6CA61F3966EF005ED0F3 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */; };
-		6E1D6CA71F3966EF005ED0F3 /* QQGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */; };
-		6E1D6CA81F3966EF005ED0F3 /* StuBedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */; };
-		6E1D6CA91F3966EF005ED0F3 /* StuStrategyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */; };
-		6E1D6CAA1F3966EF005ED0F3 /* 军训特辑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */; };
-		6E1D6CAB1F3966EF005ED0F3 /* 军训特辑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */; };
-		6E1D6CAC1F3966EF005ED0F3 /* 粉色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */; };
-		6E1D6CAD1F3966EF005ED0F3 /* 粉色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */; };
-		6E1D6CAE1F3966EF005ED0F3 /* 绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */; };
-		6E1D6CAF1F3966EF005ED0F3 /* 绿色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */; };
-		6E1D6CB01F3966EF005ED0F3 /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */; };
-		6E1D6CB11F3966EF005ED0F3 /* 蓝色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */; };
-		6E1D6CB21F3966EF005ED0F3 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */; };
-		6E1D6CB31F3966EF005ED0F3 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */; };
-		6E1D6CB41F3966EF005ED0F3 /* 邮子攻略@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */; };
-		6E1D6CB51F3966EF005ED0F3 /* 邮子攻略@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */; };
-		6E1D6CB61F3966EF005ED0F3 /* 重邮数据@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */; };
-		6E1D6CB71F3966EF005ED0F3 /* 重邮数据@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */; };
-		6E1D6CB81F3966EF005ED0F3 /* 重邮风采@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */; };
-		6E1D6CB91F3966EF005ED0F3 /* 重邮风采@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */; };
-		6E1D6CBA1F3966EF005ED0F3 /* 黄色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */; };
-		6E1D6CBB1F3966EF005ED0F3 /* 黄色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */; };
+		6E18ECC21F3AFCE90014B177 /* AppearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC3D1F3AFCE90014B177 /* AppearView.m */; };
+		6E18ECC31F3AFCE90014B177 /* CQUPTBeautyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC3F1F3AFCE90014B177 /* CQUPTBeautyCell.m */; };
+		6E18ECC41F3AFCE90014B177 /* CQUPTBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC411F3AFCE90014B177 /* CQUPTBeautyViewController.m */; };
+		6E18ECC51F3AFCE90014B177 /* CQUPTStudentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC431F3AFCE90014B177 /* CQUPTStudentsCell.m */; };
+		6E18ECC61F3AFCE90014B177 /* CQUPTStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC451F3AFCE90014B177 /* CQUPTStudentsViewController.m */; };
+		6E18ECC71F3AFCE90014B177 /* OriginalCY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC471F3AFCE90014B177 /* OriginalCY.m */; };
+		6E18ECC81F3AFCE90014B177 /* OriginalCYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC491F3AFCE90014B177 /* OriginalCYCell.m */; };
+		6E18ECC91F3AFCE90014B177 /* StuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC4B1F3AFCE90014B177 /* StuRootViewController.m */; };
+		6E18ECCA1F3AFCE90014B177 /* UIImage+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */; };
+		6E18ECCB1F3AFCE90014B177 /* CQUPTDataRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC501F3AFCE90014B177 /* CQUPTDataRootViewController.m */; };
+		6E18ECCC1F3AFCE90014B177 /* EmploymentRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC521F3AFCE90014B177 /* EmploymentRateViewController.m */; };
+		6E18ECCD1F3AFCE90014B177 /* MostDifficultSubjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC541F3AFCE90014B177 /* MostDifficultSubjectsViewController.m */; };
+		6E18ECCE1F3AFCE90014B177 /* StatisticsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC561F3AFCE90014B177 /* StatisticsTable.m */; };
+		6E18ECCF1F3AFCE90014B177 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC581F3AFCE90014B177 /* HomePageViewController.m */; };
+		6E18ECD01F3AFCE90014B177 /* MaleToFemaleRatioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC5A1F3AFCE90014B177 /* MaleToFemaleRatioViewController.m */; };
+		6E18ECD11F3AFCE90014B177 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC5C1F3AFCE90014B177 /* SegmentView.m */; };
+		6E18ECD21F3AFCE90014B177 /* BeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC5F1F3AFCE90014B177 /* BeautyViewController.m */; };
+		6E18ECD31F3AFCE90014B177 /* CampusEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC611F3AFCE90014B177 /* CampusEnvironmentViewController.m */; };
+		6E18ECD41F3AFCE90014B177 /* CanteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC631F3AFCE90014B177 /* CanteenViewController.m */; };
+		6E18ECD51F3AFCE90014B177 /* DailyLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC651F3AFCE90014B177 /* DailyLifeViewController.m */; };
+		6E18ECD61F3AFCE90014B177 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC671F3AFCE90014B177 /* FoodViewController.m */; };
+		6E18ECD71F3AFCE90014B177 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC691F3AFCE90014B177 /* IntroductionViewController.m */; };
+		6E18ECD81F3AFCE90014B177 /* QQGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC6B1F3AFCE90014B177 /* QQGroupViewController.m */; };
+		6E18ECD91F3AFCE90014B177 /* StuBedroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC6D1F3AFCE90014B177 /* StuBedroomViewController.m */; };
+		6E18ECDA1F3AFCE90014B177 /* StuStrategyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18EC6F1F3AFCE90014B177 /* StuStrategyRootViewController.m */; };
+		6E18ECDB1F3AFCE90014B177 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC711F3AFCE90014B177 /* close@2x.png */; };
+		6E18ECDC1F3AFCE90014B177 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC721F3AFCE90014B177 /* close@3x.png */; };
+		6E18ECDD1F3AFCE90014B177 /* 军训特辑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */; };
+		6E18ECDE1F3AFCE90014B177 /* 军训特辑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */; };
+		6E18ECDF1F3AFCE90014B177 /* 0491201班.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC761F3AFCE90014B177 /* 0491201班.png */; };
+		6E18ECE01F3AFCE90014B177 /* 0491201班.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC771F3AFCE90014B177 /* 0491201班.txt */; };
+		6E18ECE11F3AFCE90014B177 /* 04991401班.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC781F3AFCE90014B177 /* 04991401班.png */; };
+		6E18ECE21F3AFCE90014B177 /* 04991401班.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC791F3AFCE90014B177 /* 04991401班.txt */; };
+		6E18ECE31F3AFCE90014B177 /* 20-810宿舍.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */; };
+		6E18ECE41F3AFCE90014B177 /* 20-810宿舍.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */; };
+		6E18ECE51F3AFCE90014B177 /* 丛广林.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7C1F3AFCE90014B177 /* 丛广林.png */; };
+		6E18ECE61F3AFCE90014B177 /* 丛广林.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */; };
+		6E18ECE71F3AFCE90014B177 /* 冯益青.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7E1F3AFCE90014B177 /* 冯益青.png */; };
+		6E18ECE81F3AFCE90014B177 /* 冯益青.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */; };
+		6E18ECE91F3AFCE90014B177 /* 刘国栋.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC801F3AFCE90014B177 /* 刘国栋.png */; };
+		6E18ECEA1F3AFCE90014B177 /* 刘国栋.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC811F3AFCE90014B177 /* 刘国栋.txt */; };
+		6E18ECEB1F3AFCE90014B177 /* 刘志凡.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC821F3AFCE90014B177 /* 刘志凡.png */; };
+		6E18ECEC1F3AFCE90014B177 /* 刘志凡.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC831F3AFCE90014B177 /* 刘志凡.txt */; };
+		6E18ECED1F3AFCE90014B177 /* 刘志宗.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC841F3AFCE90014B177 /* 刘志宗.png */; };
+		6E18ECEE1F3AFCE90014B177 /* 刘志宗.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC851F3AFCE90014B177 /* 刘志宗.txt */; };
+		6E18ECEF1F3AFCE90014B177 /* 刘慧鹏.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */; };
+		6E18ECF01F3AFCE90014B177 /* 刘慧鹏.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */; };
+		6E18ECF11F3AFCE90014B177 /* 刘锐.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC881F3AFCE90014B177 /* 刘锐.png */; };
+		6E18ECF21F3AFCE90014B177 /* 刘锐.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC891F3AFCE90014B177 /* 刘锐.txt */; };
+		6E18ECF31F3AFCE90014B177 /* 姜玉琦.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */; };
+		6E18ECF41F3AFCE90014B177 /* 姜玉琦.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */; };
+		6E18ECF51F3AFCE90014B177 /* 热则耶·吐尔洪.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */; };
+		6E18ECF61F3AFCE90014B177 /* 热则耶·吐尔洪.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */; };
+		6E18ECF71F3AFCE90014B177 /* 王婷.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8E1F3AFCE90014B177 /* 王婷.png */; };
+		6E18ECF81F3AFCE90014B177 /* 王婷.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8F1F3AFCE90014B177 /* 王婷.txt */; };
+		6E18ECF91F3AFCE90014B177 /* 王秋毅.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC901F3AFCE90014B177 /* 王秋毅.png */; };
+		6E18ECFA1F3AFCE90014B177 /* 王秋毅.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC911F3AFCE90014B177 /* 王秋毅.txt */; };
+		6E18ECFB1F3AFCE90014B177 /* 王金鸡.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC921F3AFCE90014B177 /* 王金鸡.png */; };
+		6E18ECFC1F3AFCE90014B177 /* 王金鸡.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC931F3AFCE90014B177 /* 王金鸡.txt */; };
+		6E18ECFD1F3AFCE90014B177 /* 田彬人.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC941F3AFCE90014B177 /* 田彬人.png */; };
+		6E18ECFE1F3AFCE90014B177 /* 田彬人.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC951F3AFCE90014B177 /* 田彬人.txt */; };
+		6E18ECFF1F3AFCE90014B177 /* 谢贵燕.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC961F3AFCE90014B177 /* 谢贵燕.png */; };
+		6E18ED001F3AFCE90014B177 /* 谢贵燕.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */; };
+		6E18ED011F3AFCE90014B177 /* 谭威.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC981F3AFCE90014B177 /* 谭威.png */; };
+		6E18ED021F3AFCE90014B177 /* 谭威.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC991F3AFCE90014B177 /* 谭威.txt */; };
+		6E18ED031F3AFCE90014B177 /* 郭鑫.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */; };
+		6E18ED041F3AFCE90014B177 /* 郭鑫.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */; };
+		6E18ED051F3AFCE90014B177 /* 马晨歌.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */; };
+		6E18ED061F3AFCE90014B177 /* 马晨歌.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */; };
+		6E18ED071F3AFCE90014B177 /* 粉色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */; };
+		6E18ED081F3AFCE90014B177 /* 粉色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */; };
+		6E18ED091F3AFCE90014B177 /* 绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */; };
+		6E18ED0A1F3AFCE90014B177 /* 绿色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA11F3AFCE90014B177 /* 绿色@3x.png */; };
+		6E18ED0B1F3AFCE90014B177 /* 付蔚.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA31F3AFCE90014B177 /* 付蔚.jpg */; };
+		6E18ED0C1F3AFCE90014B177 /* 周兴茂.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA41F3AFCE90014B177 /* 周兴茂.jpg */; };
+		6E18ED0D1F3AFCE90014B177 /* 张清华.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA51F3AFCE90014B177 /* 张清华.jpg */; };
+		6E18ED0E1F3AFCE90014B177 /* 张琬悦.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA61F3AFCE90014B177 /* 张琬悦.jpg */; };
+		6E18ED0F1F3AFCE90014B177 /* 彭语良.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA71F3AFCE90014B177 /* 彭语良.jpg */; };
+		6E18ED101F3AFCE90014B177 /* 朱伟.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA81F3AFCE90014B177 /* 朱伟.jpg */; };
+		6E18ED111F3AFCE90014B177 /* 漆晶.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA91F3AFCE90014B177 /* 漆晶.jpg */; };
+		6E18ED121F3AFCE90014B177 /* 熊安萍.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAA1F3AFCE90014B177 /* 熊安萍.jpg */; };
+		6E18ED131F3AFCE90014B177 /* 王樱桃.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAB1F3AFCE90014B177 /* 王樱桃.jpg */; };
+		6E18ED141F3AFCE90014B177 /* 王睿.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAC1F3AFCE90014B177 /* 王睿.jpg */; };
+		6E18ED151F3AFCE90014B177 /* 罗元.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAD1F3AFCE90014B177 /* 罗元.jpg */; };
+		6E18ED161F3AFCE90014B177 /* 胡庆.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAE1F3AFCE90014B177 /* 胡庆.jpg */; };
+		6E18ED171F3AFCE90014B177 /* 蒋青.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECAF1F3AFCE90014B177 /* 蒋青.jpg */; };
+		6E18ED181F3AFCE90014B177 /* 袁帅.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB01F3AFCE90014B177 /* 袁帅.jpg */; };
+		6E18ED191F3AFCE90014B177 /* 郑继明.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB11F3AFCE90014B177 /* 郑继明.jpg */; };
+		6E18ED1A1F3AFCE90014B177 /* 闵绪国.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB21F3AFCE90014B177 /* 闵绪国.jpg */; };
+		6E18ED1B1F3AFCE90014B177 /* 陈痒痒.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB31F3AFCE90014B177 /* 陈痒痒.jpg */; };
+		6E18ED1C1F3AFCE90014B177 /* 高东.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB41F3AFCE90014B177 /* 高东.jpg */; };
+		6E18ED1D1F3AFCE90014B177 /* 高非.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB51F3AFCE90014B177 /* 高非.jpg */; };
+		6E18ED1E1F3AFCE90014B177 /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB61F3AFCE90014B177 /* 蓝色@2x.png */; };
+		6E18ED1F1F3AFCE90014B177 /* 蓝色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB71F3AFCE90014B177 /* 蓝色@3x.png */; };
+		6E18ED201F3AFCE90014B177 /* 返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB81F3AFCE90014B177 /* 返回@2x.png */; };
+		6E18ED211F3AFCE90014B177 /* 返回@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECB91F3AFCE90014B177 /* 返回@3x.png */; };
+		6E18ED221F3AFCE90014B177 /* 邮子攻略@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBA1F3AFCE90014B177 /* 邮子攻略@2x.png */; };
+		6E18ED231F3AFCE90014B177 /* 邮子攻略@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBB1F3AFCE90014B177 /* 邮子攻略@3x.png */; };
+		6E18ED241F3AFCE90014B177 /* 重邮数据@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBC1F3AFCE90014B177 /* 重邮数据@2x.png */; };
+		6E18ED251F3AFCE90014B177 /* 重邮数据@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBD1F3AFCE90014B177 /* 重邮数据@3x.png */; };
+		6E18ED261F3AFCE90014B177 /* 重邮风采@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBE1F3AFCE90014B177 /* 重邮风采@2x.png */; };
+		6E18ED271F3AFCE90014B177 /* 重邮风采@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBF1F3AFCE90014B177 /* 重邮风采@3x.png */; };
+		6E18ED281F3AFCE90014B177 /* 黄色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECC01F3AFCE90014B177 /* 黄色@2x.png */; };
+		6E18ED291F3AFCE90014B177 /* 黄色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECC11F3AFCE90014B177 /* 黄色@3x.png */; };
 		CE41EE121C1FE1A2004C873A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41EE111C1FE1A2004C873A /* ViewController.m */; };
 		CE4334471BE7C52D000C407D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4334461BE7C52D000C407D /* NotificationCenter.framework */; };
 		CE43344D1BE7C52D000C407D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43344C1BE7C52D000C407D /* TodayViewController.m */; };
@@ -519,66 +584,135 @@
 		3B2661061BA6E401008632F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B2661081BA6E40A008632F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3B26610A1BA6E417008632F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6E1D6C571F3966EF005ED0F3 /* CQUPTStudentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsCell.h; sourceTree = "<group>"; };
-		6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsCell.m; sourceTree = "<group>"; };
-		6E1D6C591F3966EF005ED0F3 /* CQUPTStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsViewController.h; sourceTree = "<group>"; };
-		6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsViewController.m; sourceTree = "<group>"; };
-		6E1D6C5B1F3966EF005ED0F3 /* OriginalCY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCY.h; sourceTree = "<group>"; };
-		6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCY.m; sourceTree = "<group>"; };
-		6E1D6C5D1F3966EF005ED0F3 /* OriginalCYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCYCell.h; sourceTree = "<group>"; };
-		6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCYCell.m; sourceTree = "<group>"; };
-		6E1D6C5F1F3966EF005ED0F3 /* StuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuRootViewController.h; sourceTree = "<group>"; };
-		6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuRootViewController.m; sourceTree = "<group>"; };
-		6E1D6C621F3966EF005ED0F3 /* CQUPTDataRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTDataRootViewController.h; sourceTree = "<group>"; };
-		6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTDataRootViewController.m; sourceTree = "<group>"; };
-		6E1D6C641F3966EF005ED0F3 /* EmploymentRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmploymentRateViewController.h; sourceTree = "<group>"; };
-		6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmploymentRateViewController.m; sourceTree = "<group>"; };
-		6E1D6C661F3966EF005ED0F3 /* MostDifficultSubjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostDifficultSubjectsViewController.h; sourceTree = "<group>"; };
-		6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostDifficultSubjectsViewController.m; sourceTree = "<group>"; };
-		6E1D6C681F3966EF005ED0F3 /* StatisticsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTable.h; sourceTree = "<group>"; };
-		6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTable.m; sourceTree = "<group>"; };
-		6E1D6C6A1F3966EF005ED0F3 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
-		6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		6E1D6C6C1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleToFemaleRatioViewController.h; sourceTree = "<group>"; };
-		6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleToFemaleRatioViewController.m; sourceTree = "<group>"; };
-		6E1D6C6E1F3966EF005ED0F3 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
-		6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
-		6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyViewController.m; sourceTree = "<group>"; };
-		6E1D6C721F3966EF005ED0F3 /* CampusEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusEnvironmentViewController.h; sourceTree = "<group>"; };
-		6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusEnvironmentViewController.m; sourceTree = "<group>"; };
-		6E1D6C741F3966EF005ED0F3 /* CanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenViewController.h; sourceTree = "<group>"; };
-		6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanteenViewController.m; sourceTree = "<group>"; };
-		6E1D6C761F3966EF005ED0F3 /* DailyLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyLifeViewController.h; sourceTree = "<group>"; };
-		6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyLifeViewController.m; sourceTree = "<group>"; };
-		6E1D6C781F3966EF005ED0F3 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
-		6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
-		6E1D6C7A1F3966EF005ED0F3 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
-		6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
-		6E1D6C7C1F3966EF005ED0F3 /* QQGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQGroupViewController.h; sourceTree = "<group>"; };
-		6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQGroupViewController.m; sourceTree = "<group>"; };
-		6E1D6C7E1F3966EF005ED0F3 /* StuBedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuBedroomViewController.h; sourceTree = "<group>"; };
-		6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuBedroomViewController.m; sourceTree = "<group>"; };
-		6E1D6C801F3966EF005ED0F3 /* StuStrategyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuStrategyRootViewController.h; sourceTree = "<group>"; };
-		6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuStrategyRootViewController.m; sourceTree = "<group>"; };
-		6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@2x.png"; sourceTree = "<group>"; };
-		6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@3x.png"; sourceTree = "<group>"; };
-		6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@3x.png"; sourceTree = "<group>"; };
-		6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
-		6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
-		6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@2x.png"; sourceTree = "<group>"; };
-		6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@3x.png"; sourceTree = "<group>"; };
-		6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@2x.png"; sourceTree = "<group>"; };
-		6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@3x.png"; sourceTree = "<group>"; };
-		6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@2x.png"; sourceTree = "<group>"; };
-		6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@3x.png"; sourceTree = "<group>"; };
-		6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@2x.png"; sourceTree = "<group>"; };
-		6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@3x.png"; sourceTree = "<group>"; };
-		6E1D6CBC1F3967A2005ED0F3 /* BeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautyViewController.h; sourceTree = "<group>"; };
+		6E18EC3C1F3AFCE90014B177 /* AppearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearView.h; sourceTree = "<group>"; };
+		6E18EC3D1F3AFCE90014B177 /* AppearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearView.m; sourceTree = "<group>"; };
+		6E18EC3E1F3AFCE90014B177 /* CQUPTBeautyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTBeautyCell.h; sourceTree = "<group>"; };
+		6E18EC3F1F3AFCE90014B177 /* CQUPTBeautyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTBeautyCell.m; sourceTree = "<group>"; };
+		6E18EC401F3AFCE90014B177 /* CQUPTBeautyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTBeautyViewController.h; sourceTree = "<group>"; };
+		6E18EC411F3AFCE90014B177 /* CQUPTBeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTBeautyViewController.m; sourceTree = "<group>"; };
+		6E18EC421F3AFCE90014B177 /* CQUPTStudentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsCell.h; sourceTree = "<group>"; };
+		6E18EC431F3AFCE90014B177 /* CQUPTStudentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsCell.m; sourceTree = "<group>"; };
+		6E18EC441F3AFCE90014B177 /* CQUPTStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTStudentsViewController.h; sourceTree = "<group>"; };
+		6E18EC451F3AFCE90014B177 /* CQUPTStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTStudentsViewController.m; sourceTree = "<group>"; };
+		6E18EC461F3AFCE90014B177 /* OriginalCY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCY.h; sourceTree = "<group>"; };
+		6E18EC471F3AFCE90014B177 /* OriginalCY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCY.m; sourceTree = "<group>"; };
+		6E18EC481F3AFCE90014B177 /* OriginalCYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalCYCell.h; sourceTree = "<group>"; };
+		6E18EC491F3AFCE90014B177 /* OriginalCYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalCYCell.m; sourceTree = "<group>"; };
+		6E18EC4A1F3AFCE90014B177 /* StuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuRootViewController.h; sourceTree = "<group>"; };
+		6E18EC4B1F3AFCE90014B177 /* StuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuRootViewController.m; sourceTree = "<group>"; };
+		6E18EC4C1F3AFCE90014B177 /* UIImage+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Circle.h"; sourceTree = "<group>"; };
+		6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Circle.m"; sourceTree = "<group>"; };
+		6E18EC4F1F3AFCE90014B177 /* CQUPTDataRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQUPTDataRootViewController.h; sourceTree = "<group>"; };
+		6E18EC501F3AFCE90014B177 /* CQUPTDataRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQUPTDataRootViewController.m; sourceTree = "<group>"; };
+		6E18EC511F3AFCE90014B177 /* EmploymentRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmploymentRateViewController.h; sourceTree = "<group>"; };
+		6E18EC521F3AFCE90014B177 /* EmploymentRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmploymentRateViewController.m; sourceTree = "<group>"; };
+		6E18EC531F3AFCE90014B177 /* MostDifficultSubjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostDifficultSubjectsViewController.h; sourceTree = "<group>"; };
+		6E18EC541F3AFCE90014B177 /* MostDifficultSubjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostDifficultSubjectsViewController.m; sourceTree = "<group>"; };
+		6E18EC551F3AFCE90014B177 /* StatisticsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTable.h; sourceTree = "<group>"; };
+		6E18EC561F3AFCE90014B177 /* StatisticsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTable.m; sourceTree = "<group>"; };
+		6E18EC571F3AFCE90014B177 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		6E18EC581F3AFCE90014B177 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		6E18EC591F3AFCE90014B177 /* MaleToFemaleRatioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleToFemaleRatioViewController.h; sourceTree = "<group>"; };
+		6E18EC5A1F3AFCE90014B177 /* MaleToFemaleRatioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleToFemaleRatioViewController.m; sourceTree = "<group>"; };
+		6E18EC5B1F3AFCE90014B177 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		6E18EC5C1F3AFCE90014B177 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		6E18EC5E1F3AFCE90014B177 /* BeautyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyViewController.h; sourceTree = "<group>"; };
+		6E18EC5F1F3AFCE90014B177 /* BeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyViewController.m; sourceTree = "<group>"; };
+		6E18EC601F3AFCE90014B177 /* CampusEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusEnvironmentViewController.h; sourceTree = "<group>"; };
+		6E18EC611F3AFCE90014B177 /* CampusEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusEnvironmentViewController.m; sourceTree = "<group>"; };
+		6E18EC621F3AFCE90014B177 /* CanteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenViewController.h; sourceTree = "<group>"; };
+		6E18EC631F3AFCE90014B177 /* CanteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanteenViewController.m; sourceTree = "<group>"; };
+		6E18EC641F3AFCE90014B177 /* DailyLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyLifeViewController.h; sourceTree = "<group>"; };
+		6E18EC651F3AFCE90014B177 /* DailyLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyLifeViewController.m; sourceTree = "<group>"; };
+		6E18EC661F3AFCE90014B177 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		6E18EC671F3AFCE90014B177 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		6E18EC681F3AFCE90014B177 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		6E18EC691F3AFCE90014B177 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		6E18EC6A1F3AFCE90014B177 /* QQGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQGroupViewController.h; sourceTree = "<group>"; };
+		6E18EC6B1F3AFCE90014B177 /* QQGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQGroupViewController.m; sourceTree = "<group>"; };
+		6E18EC6C1F3AFCE90014B177 /* StuBedroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuBedroomViewController.h; sourceTree = "<group>"; };
+		6E18EC6D1F3AFCE90014B177 /* StuBedroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuBedroomViewController.m; sourceTree = "<group>"; };
+		6E18EC6E1F3AFCE90014B177 /* StuStrategyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuStrategyRootViewController.h; sourceTree = "<group>"; };
+		6E18EC6F1F3AFCE90014B177 /* StuStrategyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuStrategyRootViewController.m; sourceTree = "<group>"; };
+		6E18EC711F3AFCE90014B177 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		6E18EC721F3AFCE90014B177 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
+		6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@2x.png"; sourceTree = "<group>"; };
+		6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@3x.png"; sourceTree = "<group>"; };
+		6E18EC761F3AFCE90014B177 /* 0491201班.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0491201班.png"; sourceTree = "<group>"; };
+		6E18EC771F3AFCE90014B177 /* 0491201班.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "0491201班.txt"; sourceTree = "<group>"; };
+		6E18EC781F3AFCE90014B177 /* 04991401班.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04991401班.png"; sourceTree = "<group>"; };
+		6E18EC791F3AFCE90014B177 /* 04991401班.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "04991401班.txt"; sourceTree = "<group>"; };
+		6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-810宿舍.png"; sourceTree = "<group>"; };
+		6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20-810宿舍.txt"; sourceTree = "<group>"; };
+		6E18EC7C1F3AFCE90014B177 /* 丛广林.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "丛广林.png"; sourceTree = "<group>"; };
+		6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丛广林.txt"; sourceTree = "<group>"; };
+		6E18EC7E1F3AFCE90014B177 /* 冯益青.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冯益青.png"; sourceTree = "<group>"; };
+		6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冯益青.txt"; sourceTree = "<group>"; };
+		6E18EC801F3AFCE90014B177 /* 刘国栋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘国栋.png"; sourceTree = "<group>"; };
+		6E18EC811F3AFCE90014B177 /* 刘国栋.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘国栋.txt"; sourceTree = "<group>"; };
+		6E18EC821F3AFCE90014B177 /* 刘志凡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘志凡.png"; sourceTree = "<group>"; };
+		6E18EC831F3AFCE90014B177 /* 刘志凡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘志凡.txt"; sourceTree = "<group>"; };
+		6E18EC841F3AFCE90014B177 /* 刘志宗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘志宗.png"; sourceTree = "<group>"; };
+		6E18EC851F3AFCE90014B177 /* 刘志宗.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘志宗.txt"; sourceTree = "<group>"; };
+		6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘慧鹏.png"; sourceTree = "<group>"; };
+		6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘慧鹏.txt"; sourceTree = "<group>"; };
+		6E18EC881F3AFCE90014B177 /* 刘锐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘锐.png"; sourceTree = "<group>"; };
+		6E18EC891F3AFCE90014B177 /* 刘锐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘锐.txt"; sourceTree = "<group>"; };
+		6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "姜玉琦.png"; sourceTree = "<group>"; };
+		6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "姜玉琦.txt"; sourceTree = "<group>"; };
+		6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "热则耶·吐尔洪.png"; sourceTree = "<group>"; };
+		6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "热则耶·吐尔洪.txt"; sourceTree = "<group>"; };
+		6E18EC8E1F3AFCE90014B177 /* 王婷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王婷.png"; sourceTree = "<group>"; };
+		6E18EC8F1F3AFCE90014B177 /* 王婷.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王婷.txt"; sourceTree = "<group>"; };
+		6E18EC901F3AFCE90014B177 /* 王秋毅.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王秋毅.png"; sourceTree = "<group>"; };
+		6E18EC911F3AFCE90014B177 /* 王秋毅.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王秋毅.txt"; sourceTree = "<group>"; };
+		6E18EC921F3AFCE90014B177 /* 王金鸡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王金鸡.png"; sourceTree = "<group>"; };
+		6E18EC931F3AFCE90014B177 /* 王金鸡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王金鸡.txt"; sourceTree = "<group>"; };
+		6E18EC941F3AFCE90014B177 /* 田彬人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "田彬人.png"; sourceTree = "<group>"; };
+		6E18EC951F3AFCE90014B177 /* 田彬人.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "田彬人.txt"; sourceTree = "<group>"; };
+		6E18EC961F3AFCE90014B177 /* 谢贵燕.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "谢贵燕.png"; sourceTree = "<group>"; };
+		6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "谢贵燕.txt"; sourceTree = "<group>"; };
+		6E18EC981F3AFCE90014B177 /* 谭威.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "谭威.png"; sourceTree = "<group>"; };
+		6E18EC991F3AFCE90014B177 /* 谭威.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "谭威.txt"; sourceTree = "<group>"; };
+		6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "郭鑫.png"; sourceTree = "<group>"; };
+		6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "郭鑫.txt"; sourceTree = "<group>"; };
+		6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "马晨歌.png"; sourceTree = "<group>"; };
+		6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "马晨歌.txt"; sourceTree = "<group>"; };
+		6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@2x.png"; sourceTree = "<group>"; };
+		6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@3x.png"; sourceTree = "<group>"; };
+		6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@2x.png"; sourceTree = "<group>"; };
+		6E18ECA11F3AFCE90014B177 /* 绿色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@3x.png"; sourceTree = "<group>"; };
+		6E18ECA31F3AFCE90014B177 /* 付蔚.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "付蔚.jpg"; sourceTree = "<group>"; };
+		6E18ECA41F3AFCE90014B177 /* 周兴茂.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "周兴茂.jpg"; sourceTree = "<group>"; };
+		6E18ECA51F3AFCE90014B177 /* 张清华.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "张清华.jpg"; sourceTree = "<group>"; };
+		6E18ECA61F3AFCE90014B177 /* 张琬悦.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "张琬悦.jpg"; sourceTree = "<group>"; };
+		6E18ECA71F3AFCE90014B177 /* 彭语良.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "彭语良.jpg"; sourceTree = "<group>"; };
+		6E18ECA81F3AFCE90014B177 /* 朱伟.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "朱伟.jpg"; sourceTree = "<group>"; };
+		6E18ECA91F3AFCE90014B177 /* 漆晶.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "漆晶.jpg"; sourceTree = "<group>"; };
+		6E18ECAA1F3AFCE90014B177 /* 熊安萍.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "熊安萍.jpg"; sourceTree = "<group>"; };
+		6E18ECAB1F3AFCE90014B177 /* 王樱桃.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "王樱桃.jpg"; sourceTree = "<group>"; };
+		6E18ECAC1F3AFCE90014B177 /* 王睿.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "王睿.jpg"; sourceTree = "<group>"; };
+		6E18ECAD1F3AFCE90014B177 /* 罗元.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "罗元.jpg"; sourceTree = "<group>"; };
+		6E18ECAE1F3AFCE90014B177 /* 胡庆.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "胡庆.jpg"; sourceTree = "<group>"; };
+		6E18ECAF1F3AFCE90014B177 /* 蒋青.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "蒋青.jpg"; sourceTree = "<group>"; };
+		6E18ECB01F3AFCE90014B177 /* 袁帅.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "袁帅.jpg"; sourceTree = "<group>"; };
+		6E18ECB11F3AFCE90014B177 /* 郑继明.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "郑继明.jpg"; sourceTree = "<group>"; };
+		6E18ECB21F3AFCE90014B177 /* 闵绪国.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "闵绪国.jpg"; sourceTree = "<group>"; };
+		6E18ECB31F3AFCE90014B177 /* 陈痒痒.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "陈痒痒.jpg"; sourceTree = "<group>"; };
+		6E18ECB41F3AFCE90014B177 /* 高东.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "高东.jpg"; sourceTree = "<group>"; };
+		6E18ECB51F3AFCE90014B177 /* 高非.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "高非.jpg"; sourceTree = "<group>"; };
+		6E18ECB61F3AFCE90014B177 /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
+		6E18ECB71F3AFCE90014B177 /* 蓝色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@3x.png"; sourceTree = "<group>"; };
+		6E18ECB81F3AFCE90014B177 /* 返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@2x.png"; sourceTree = "<group>"; };
+		6E18ECB91F3AFCE90014B177 /* 返回@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回@3x.png"; sourceTree = "<group>"; };
+		6E18ECBA1F3AFCE90014B177 /* 邮子攻略@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@2x.png"; sourceTree = "<group>"; };
+		6E18ECBB1F3AFCE90014B177 /* 邮子攻略@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮子攻略@3x.png"; sourceTree = "<group>"; };
+		6E18ECBC1F3AFCE90014B177 /* 重邮数据@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@2x.png"; sourceTree = "<group>"; };
+		6E18ECBD1F3AFCE90014B177 /* 重邮数据@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮数据@3x.png"; sourceTree = "<group>"; };
+		6E18ECBE1F3AFCE90014B177 /* 重邮风采@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@2x.png"; sourceTree = "<group>"; };
+		6E18ECBF1F3AFCE90014B177 /* 重邮风采@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@3x.png"; sourceTree = "<group>"; };
+		6E18ECC01F3AFCE90014B177 /* 黄色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@2x.png"; sourceTree = "<group>"; };
+		6E18ECC11F3AFCE90014B177 /* 黄色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@3x.png"; sourceTree = "<group>"; };
 		BA10D639E65F33ACE628A0EB /* Pods-MoblieCQUPT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoblieCQUPT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoblieCQUPT_iOS/Pods-MoblieCQUPT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CE25501F1C15BD9500BCDDB8 /* ClassWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassWidget.entitlements; sourceTree = "<group>"; };
 		CE41EE101C1FE1A2004C873A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -1228,104 +1362,188 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
-		6E1D6C551F3966EF005ED0F3 /* FreshMan_2017 */ = {
+		6E18EC3A1F3AFCE90014B177 /* FreshMan_2017 */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6C561F3966EF005ED0F3 /* CQUPTBeauty */,
-				6E1D6C611F3966EF005ED0F3 /* CQUPTData */,
-				6E1D6C6A1F3966EF005ED0F3 /* HomePageViewController.h */,
-				6E1D6C6B1F3966EF005ED0F3 /* HomePageViewController.m */,
-				6E1D6C6C1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.h */,
-				6E1D6C6D1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m */,
-				6E1D6C6E1F3966EF005ED0F3 /* SegmentView.h */,
-				6E1D6C6F1F3966EF005ED0F3 /* SegmentView.m */,
-				6E1D6C701F3966EF005ED0F3 /* StuStrategyDetailVC */,
-				6E1D6C821F3966EF005ED0F3 /* 图标 */,
+				6E18EC3B1F3AFCE90014B177 /* CQUPTBeauty */,
+				6E18EC4E1F3AFCE90014B177 /* CQUPTData */,
+				6E18EC571F3AFCE90014B177 /* HomePageViewController.h */,
+				6E18EC581F3AFCE90014B177 /* HomePageViewController.m */,
+				6E18EC591F3AFCE90014B177 /* MaleToFemaleRatioViewController.h */,
+				6E18EC5A1F3AFCE90014B177 /* MaleToFemaleRatioViewController.m */,
+				6E18EC5B1F3AFCE90014B177 /* SegmentView.h */,
+				6E18EC5C1F3AFCE90014B177 /* SegmentView.m */,
+				6E18EC5D1F3AFCE90014B177 /* StuStrategyDetailVC */,
+				6E18EC701F3AFCE90014B177 /* 图标 */,
 			);
-			name = FreshMan_2017;
-			path = shake/FreshMan_2017;
+			path = FreshMan_2017;
 			sourceTree = "<group>";
 		};
-		6E1D6C561F3966EF005ED0F3 /* CQUPTBeauty */ = {
+		6E18EC3B1F3AFCE90014B177 /* CQUPTBeauty */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6C571F3966EF005ED0F3 /* CQUPTStudentsCell.h */,
-				6E1D6C581F3966EF005ED0F3 /* CQUPTStudentsCell.m */,
-				6E1D6C591F3966EF005ED0F3 /* CQUPTStudentsViewController.h */,
-				6E1D6C5A1F3966EF005ED0F3 /* CQUPTStudentsViewController.m */,
-				6E1D6C5B1F3966EF005ED0F3 /* OriginalCY.h */,
-				6E1D6C5C1F3966EF005ED0F3 /* OriginalCY.m */,
-				6E1D6C5D1F3966EF005ED0F3 /* OriginalCYCell.h */,
-				6E1D6C5E1F3966EF005ED0F3 /* OriginalCYCell.m */,
-				6E1D6C5F1F3966EF005ED0F3 /* StuRootViewController.h */,
-				6E1D6C601F3966EF005ED0F3 /* StuRootViewController.m */,
+				6E18EC3C1F3AFCE90014B177 /* AppearView.h */,
+				6E18EC3D1F3AFCE90014B177 /* AppearView.m */,
+				6E18EC3E1F3AFCE90014B177 /* CQUPTBeautyCell.h */,
+				6E18EC3F1F3AFCE90014B177 /* CQUPTBeautyCell.m */,
+				6E18EC401F3AFCE90014B177 /* CQUPTBeautyViewController.h */,
+				6E18EC411F3AFCE90014B177 /* CQUPTBeautyViewController.m */,
+				6E18EC421F3AFCE90014B177 /* CQUPTStudentsCell.h */,
+				6E18EC431F3AFCE90014B177 /* CQUPTStudentsCell.m */,
+				6E18EC441F3AFCE90014B177 /* CQUPTStudentsViewController.h */,
+				6E18EC451F3AFCE90014B177 /* CQUPTStudentsViewController.m */,
+				6E18EC461F3AFCE90014B177 /* OriginalCY.h */,
+				6E18EC471F3AFCE90014B177 /* OriginalCY.m */,
+				6E18EC481F3AFCE90014B177 /* OriginalCYCell.h */,
+				6E18EC491F3AFCE90014B177 /* OriginalCYCell.m */,
+				6E18EC4A1F3AFCE90014B177 /* StuRootViewController.h */,
+				6E18EC4B1F3AFCE90014B177 /* StuRootViewController.m */,
+				6E18EC4C1F3AFCE90014B177 /* UIImage+Circle.h */,
+				6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */,
 			);
 			path = CQUPTBeauty;
 			sourceTree = "<group>";
 		};
-		6E1D6C611F3966EF005ED0F3 /* CQUPTData */ = {
+		6E18EC4E1F3AFCE90014B177 /* CQUPTData */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6C621F3966EF005ED0F3 /* CQUPTDataRootViewController.h */,
-				6E1D6C631F3966EF005ED0F3 /* CQUPTDataRootViewController.m */,
-				6E1D6C641F3966EF005ED0F3 /* EmploymentRateViewController.h */,
-				6E1D6C651F3966EF005ED0F3 /* EmploymentRateViewController.m */,
-				6E1D6C661F3966EF005ED0F3 /* MostDifficultSubjectsViewController.h */,
-				6E1D6C671F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m */,
-				6E1D6C681F3966EF005ED0F3 /* StatisticsTable.h */,
-				6E1D6C691F3966EF005ED0F3 /* StatisticsTable.m */,
+				6E18EC4F1F3AFCE90014B177 /* CQUPTDataRootViewController.h */,
+				6E18EC501F3AFCE90014B177 /* CQUPTDataRootViewController.m */,
+				6E18EC511F3AFCE90014B177 /* EmploymentRateViewController.h */,
+				6E18EC521F3AFCE90014B177 /* EmploymentRateViewController.m */,
+				6E18EC531F3AFCE90014B177 /* MostDifficultSubjectsViewController.h */,
+				6E18EC541F3AFCE90014B177 /* MostDifficultSubjectsViewController.m */,
+				6E18EC551F3AFCE90014B177 /* StatisticsTable.h */,
+				6E18EC561F3AFCE90014B177 /* StatisticsTable.m */,
 			);
 			path = CQUPTData;
 			sourceTree = "<group>";
 		};
-		6E1D6C701F3966EF005ED0F3 /* StuStrategyDetailVC */ = {
+		6E18EC5D1F3AFCE90014B177 /* StuStrategyDetailVC */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6CBC1F3967A2005ED0F3 /* BeautyViewController.h */,
-				6E1D6C711F3966EF005ED0F3 /* BeautyViewController.m */,
-				6E1D6C721F3966EF005ED0F3 /* CampusEnvironmentViewController.h */,
-				6E1D6C731F3966EF005ED0F3 /* CampusEnvironmentViewController.m */,
-				6E1D6C741F3966EF005ED0F3 /* CanteenViewController.h */,
-				6E1D6C751F3966EF005ED0F3 /* CanteenViewController.m */,
-				6E1D6C761F3966EF005ED0F3 /* DailyLifeViewController.h */,
-				6E1D6C771F3966EF005ED0F3 /* DailyLifeViewController.m */,
-				6E1D6C781F3966EF005ED0F3 /* FoodViewController.h */,
-				6E1D6C791F3966EF005ED0F3 /* FoodViewController.m */,
-				6E1D6C7A1F3966EF005ED0F3 /* IntroductionViewController.h */,
-				6E1D6C7B1F3966EF005ED0F3 /* IntroductionViewController.m */,
-				6E1D6C7C1F3966EF005ED0F3 /* QQGroupViewController.h */,
-				6E1D6C7D1F3966EF005ED0F3 /* QQGroupViewController.m */,
-				6E1D6C7E1F3966EF005ED0F3 /* StuBedroomViewController.h */,
-				6E1D6C7F1F3966EF005ED0F3 /* StuBedroomViewController.m */,
-				6E1D6C801F3966EF005ED0F3 /* StuStrategyRootViewController.h */,
-				6E1D6C811F3966EF005ED0F3 /* StuStrategyRootViewController.m */,
+				6E18EC5E1F3AFCE90014B177 /* BeautyViewController.h */,
+				6E18EC5F1F3AFCE90014B177 /* BeautyViewController.m */,
+				6E18EC601F3AFCE90014B177 /* CampusEnvironmentViewController.h */,
+				6E18EC611F3AFCE90014B177 /* CampusEnvironmentViewController.m */,
+				6E18EC621F3AFCE90014B177 /* CanteenViewController.h */,
+				6E18EC631F3AFCE90014B177 /* CanteenViewController.m */,
+				6E18EC641F3AFCE90014B177 /* DailyLifeViewController.h */,
+				6E18EC651F3AFCE90014B177 /* DailyLifeViewController.m */,
+				6E18EC661F3AFCE90014B177 /* FoodViewController.h */,
+				6E18EC671F3AFCE90014B177 /* FoodViewController.m */,
+				6E18EC681F3AFCE90014B177 /* IntroductionViewController.h */,
+				6E18EC691F3AFCE90014B177 /* IntroductionViewController.m */,
+				6E18EC6A1F3AFCE90014B177 /* QQGroupViewController.h */,
+				6E18EC6B1F3AFCE90014B177 /* QQGroupViewController.m */,
+				6E18EC6C1F3AFCE90014B177 /* StuBedroomViewController.h */,
+				6E18EC6D1F3AFCE90014B177 /* StuBedroomViewController.m */,
+				6E18EC6E1F3AFCE90014B177 /* StuStrategyRootViewController.h */,
+				6E18EC6F1F3AFCE90014B177 /* StuStrategyRootViewController.m */,
 			);
 			path = StuStrategyDetailVC;
 			sourceTree = "<group>";
 		};
-		6E1D6C821F3966EF005ED0F3 /* 图标 */ = {
+		6E18EC701F3AFCE90014B177 /* 图标 */ = {
 			isa = PBXGroup;
 			children = (
-				6E1D6C831F3966EF005ED0F3 /* 军训特辑@2x.png */,
-				6E1D6C841F3966EF005ED0F3 /* 军训特辑@3x.png */,
-				6E1D6C851F3966EF005ED0F3 /* 粉色@2x.png */,
-				6E1D6C861F3966EF005ED0F3 /* 粉色@3x.png */,
-				6E1D6C871F3966EF005ED0F3 /* 绿色@2x.png */,
-				6E1D6C881F3966EF005ED0F3 /* 绿色@3x.png */,
-				6E1D6C891F3966EF005ED0F3 /* 蓝色@2x.png */,
-				6E1D6C8A1F3966EF005ED0F3 /* 蓝色@3x.png */,
-				6E1D6C8B1F3966EF005ED0F3 /* 返回@2x.png */,
-				6E1D6C8C1F3966EF005ED0F3 /* 返回@3x.png */,
-				6E1D6C8D1F3966EF005ED0F3 /* 邮子攻略@2x.png */,
-				6E1D6C8E1F3966EF005ED0F3 /* 邮子攻略@3x.png */,
-				6E1D6C8F1F3966EF005ED0F3 /* 重邮数据@2x.png */,
-				6E1D6C901F3966EF005ED0F3 /* 重邮数据@3x.png */,
-				6E1D6C911F3966EF005ED0F3 /* 重邮风采@2x.png */,
-				6E1D6C921F3966EF005ED0F3 /* 重邮风采@3x.png */,
-				6E1D6C931F3966EF005ED0F3 /* 黄色@2x.png */,
-				6E1D6C941F3966EF005ED0F3 /* 黄色@3x.png */,
+				6E18EC711F3AFCE90014B177 /* close@2x.png */,
+				6E18EC721F3AFCE90014B177 /* close@3x.png */,
+				6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */,
+				6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */,
+				6E18EC751F3AFCE90014B177 /* 同学 */,
+				6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */,
+				6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */,
+				6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */,
+				6E18ECA11F3AFCE90014B177 /* 绿色@3x.png */,
+				6E18ECA21F3AFCE90014B177 /* 老师 */,
+				6E18ECB61F3AFCE90014B177 /* 蓝色@2x.png */,
+				6E18ECB71F3AFCE90014B177 /* 蓝色@3x.png */,
+				6E18ECB81F3AFCE90014B177 /* 返回@2x.png */,
+				6E18ECB91F3AFCE90014B177 /* 返回@3x.png */,
+				6E18ECBA1F3AFCE90014B177 /* 邮子攻略@2x.png */,
+				6E18ECBB1F3AFCE90014B177 /* 邮子攻略@3x.png */,
+				6E18ECBC1F3AFCE90014B177 /* 重邮数据@2x.png */,
+				6E18ECBD1F3AFCE90014B177 /* 重邮数据@3x.png */,
+				6E18ECBE1F3AFCE90014B177 /* 重邮风采@2x.png */,
+				6E18ECBF1F3AFCE90014B177 /* 重邮风采@3x.png */,
+				6E18ECC01F3AFCE90014B177 /* 黄色@2x.png */,
+				6E18ECC11F3AFCE90014B177 /* 黄色@3x.png */,
 			);
 			path = "图标";
+			sourceTree = "<group>";
+		};
+		6E18EC751F3AFCE90014B177 /* 同学 */ = {
+			isa = PBXGroup;
+			children = (
+				6E18EC761F3AFCE90014B177 /* 0491201班.png */,
+				6E18EC771F3AFCE90014B177 /* 0491201班.txt */,
+				6E18EC781F3AFCE90014B177 /* 04991401班.png */,
+				6E18EC791F3AFCE90014B177 /* 04991401班.txt */,
+				6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */,
+				6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */,
+				6E18EC7C1F3AFCE90014B177 /* 丛广林.png */,
+				6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */,
+				6E18EC7E1F3AFCE90014B177 /* 冯益青.png */,
+				6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */,
+				6E18EC801F3AFCE90014B177 /* 刘国栋.png */,
+				6E18EC811F3AFCE90014B177 /* 刘国栋.txt */,
+				6E18EC821F3AFCE90014B177 /* 刘志凡.png */,
+				6E18EC831F3AFCE90014B177 /* 刘志凡.txt */,
+				6E18EC841F3AFCE90014B177 /* 刘志宗.png */,
+				6E18EC851F3AFCE90014B177 /* 刘志宗.txt */,
+				6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */,
+				6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */,
+				6E18EC881F3AFCE90014B177 /* 刘锐.png */,
+				6E18EC891F3AFCE90014B177 /* 刘锐.txt */,
+				6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */,
+				6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */,
+				6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */,
+				6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */,
+				6E18EC8E1F3AFCE90014B177 /* 王婷.png */,
+				6E18EC8F1F3AFCE90014B177 /* 王婷.txt */,
+				6E18EC901F3AFCE90014B177 /* 王秋毅.png */,
+				6E18EC911F3AFCE90014B177 /* 王秋毅.txt */,
+				6E18EC921F3AFCE90014B177 /* 王金鸡.png */,
+				6E18EC931F3AFCE90014B177 /* 王金鸡.txt */,
+				6E18EC941F3AFCE90014B177 /* 田彬人.png */,
+				6E18EC951F3AFCE90014B177 /* 田彬人.txt */,
+				6E18EC961F3AFCE90014B177 /* 谢贵燕.png */,
+				6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */,
+				6E18EC981F3AFCE90014B177 /* 谭威.png */,
+				6E18EC991F3AFCE90014B177 /* 谭威.txt */,
+				6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */,
+				6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */,
+				6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */,
+				6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */,
+			);
+			path = "同学";
+			sourceTree = "<group>";
+		};
+		6E18ECA21F3AFCE90014B177 /* 老师 */ = {
+			isa = PBXGroup;
+			children = (
+				6E18ECA31F3AFCE90014B177 /* 付蔚.jpg */,
+				6E18ECA41F3AFCE90014B177 /* 周兴茂.jpg */,
+				6E18ECA51F3AFCE90014B177 /* 张清华.jpg */,
+				6E18ECA61F3AFCE90014B177 /* 张琬悦.jpg */,
+				6E18ECA71F3AFCE90014B177 /* 彭语良.jpg */,
+				6E18ECA81F3AFCE90014B177 /* 朱伟.jpg */,
+				6E18ECA91F3AFCE90014B177 /* 漆晶.jpg */,
+				6E18ECAA1F3AFCE90014B177 /* 熊安萍.jpg */,
+				6E18ECAB1F3AFCE90014B177 /* 王樱桃.jpg */,
+				6E18ECAC1F3AFCE90014B177 /* 王睿.jpg */,
+				6E18ECAD1F3AFCE90014B177 /* 罗元.jpg */,
+				6E18ECAE1F3AFCE90014B177 /* 胡庆.jpg */,
+				6E18ECAF1F3AFCE90014B177 /* 蒋青.jpg */,
+				6E18ECB01F3AFCE90014B177 /* 袁帅.jpg */,
+				6E18ECB11F3AFCE90014B177 /* 郑继明.jpg */,
+				6E18ECB21F3AFCE90014B177 /* 闵绪国.jpg */,
+				6E18ECB31F3AFCE90014B177 /* 陈痒痒.jpg */,
+				6E18ECB41F3AFCE90014B177 /* 高东.jpg */,
+				6E18ECB51F3AFCE90014B177 /* 高非.jpg */,
+			);
+			path = "老师";
 			sourceTree = "<group>";
 		};
 		C66265BA2143171179039C97 /* Pods */ = {
@@ -1485,6 +1703,7 @@
 		F242DA6B1EBCB2BB005AC411 /* Finder */ = {
 			isa = PBXGroup;
 			children = (
+				6E18EC3A1F3AFCE90014B177 /* FreshMan_2017 */,
 				F242DF831EBD9E2C005AC411 /* LostAndFound */,
 				F242DA6C1EBCB2BB005AC411 /* Community */,
 				F242DA941EBCB2BB005AC411 /* Map */,
@@ -1493,7 +1712,6 @@
 				F242DACB1EBCB2BB005AC411 /* Resource */,
 				F242DAFE1EBCB2BB005AC411 /* shake(give up) */,
 				F242DB021EBCB2BB005AC411 /* Shop */,
-				6E1D6C551F3966EF005ED0F3 /* FreshMan_2017 */,
 				F242DA701EBCB2BB005AC411 /* FinderViewController.h */,
 				F242DA711EBCB2BB005AC411 /* FinderViewController.m */,
 				F242DB111EBCB2BB005AC411 /* View.xib */,
@@ -2710,78 +2928,94 @@
 				F242DEF41EBCB2BC005AC411 /* 图片7.jpg in Resources */,
 				F242DEF01EBCB2BC005AC411 /* 图片3.jpg in Resources */,
 				F242DF341EBCB2BC005AC411 /* emptyClassTag2.png in Resources */,
+				6E18ECEC1F3AFCE90014B177 /* 刘志凡.txt in Resources */,
+				6E18ED151F3AFCE90014B177 /* 罗元.jpg in Resources */,
 				F242DDE01EBCB2BB005AC411 /* lost_image_place@3x.png in Resources */,
 				F242DDE71EBCB2BB005AC411 /* lost_image_time@2x.png in Resources */,
+				6E18ED251F3AFCE90014B177 /* 重邮数据@3x.png in Resources */,
 				F242DFAF1EBD9E2C005AC411 /* LZIssueSucceedViewController.xib in Resources */,
 				F242DE9B1EBCB2BC005AC411 /* 无课@3x.png in Resources */,
 				F242DDC81EBCB2BB005AC411 /* cqupt3@2x.jpg in Resources */,
 				F242DDD81EBCB2BB005AC411 /* lost_image_lackplace@3x.png in Resources */,
 				F242DE9E1EBCB2BC005AC411 /* 椭圆@2x.png in Resources */,
 				F242DF3D1EBCB2BC005AC411 /* 期末成绩@2x.png in Resources */,
+				6E18ED0D1F3AFCE90014B177 /* 张清华.jpg in Resources */,
+				6E18ED231F3AFCE90014B177 /* 邮子攻略@3x.png in Resources */,
 				F242DDE81EBCB2BB005AC411 /* lost_image_time@3x.png in Resources */,
 				F242DE731EBCB2BC005AC411 /* remind0@2x.png in Resources */,
 				F242DED81EBCB2BC005AC411 /* headImage.png in Resources */,
+				6E18ED1B1F3AFCE90014B177 /* 陈痒痒.jpg in Resources */,
 				F242DDC91EBCB2BB005AC411 /* iconfont-shop1.png in Resources */,
 				F242DF2D1EBCB2BC005AC411 /* iconfont-name.png in Resources */,
 				F242DFA91EBD9E2C005AC411 /* DetailLostViewController.xib in Resources */,
+				6E18ED221F3AFCE90014B177 /* 邮子攻略@2x.png in Resources */,
 				F242DE971EBCB2BC005AC411 /* 无事项@3x.png in Resources */,
+				6E18ECE31F3AFCE90014B177 /* 20-810宿舍.png in Resources */,
 				F242DDAB1EBCB2BB005AC411 /* buildIcon.png in Resources */,
 				F242DE8C1EBCB2BC005AC411 /* 多课1@2x.png in Resources */,
 				F2DC2ADA1EEEDC8000389A85 /* settingIcon@2x.png in Resources */,
+				6E18ED0C1F3AFCE90014B177 /* 周兴茂.jpg in Resources */,
 				F242DEEC1EBCB2BC005AC411 /* xia.png in Resources */,
+				6E18ED121F3AFCE90014B177 /* 熊安萍.jpg in Resources */,
 				F242DF411EBCB2BC005AC411 /* 补考安排@2x.png in Resources */,
 				F242DDD31EBCB2BB005AC411 /* lost_image_itemcategory@2x.png in Resources */,
 				F242DD921EBCB2BB005AC411 /* CommunityViewController.xib in Resources */,
 				F242DF2F1EBCB2BC005AC411 /* logo.png in Resources */,
 				F22286B61EED39840017516C /* icon_share_wechatTimeLine@3x.png in Resources */,
-				6E1D6CBA1F3966EF005ED0F3 /* 黄色@2x.png in Resources */,
 				F242DE7C1EBCB2BC005AC411 /* 上拉@3x.png in Resources */,
 				F242DEAC1EBCB2BC005AC411 /* 返回箭头@2x.png in Resources */,
 				F242DE8A1EBCB2BC005AC411 /* 多课0@2x.png in Resources */,
 				F242DEA51EBCB2BC005AC411 /* 编辑@3x.png in Resources */,
+				6E18ED131F3AFCE90014B177 /* 王樱桃.jpg in Resources */,
 				F242DEF51EBCB2BC005AC411 /* 智妍1.jpg in Resources */,
 				F242DDFF1EBCB2BB005AC411 /* ShopDetailViewController.xib in Resources */,
 				F242DEDE1EBCB2BC005AC411 /* support.png in Resources */,
 				F242DF121EBCB2BC005AC411 /* QGERestDetailViewController.xib in Resources */,
 				F242DDCD1EBCB2BB005AC411 /* lost_image_com@2x.png in Resources */,
-				6E1D6CAB1F3966EF005ED0F3 /* 军训特辑@3x.png in Resources */,
 				F242DDF71EBCB2BB005AC411 /* 电费查询@3x.png in Resources */,
 				F242DF441EBCB2BC005AC411 /* icon_menu_3@2x.png in Resources */,
 				F242DE931EBCB2BC005AC411 /* 左三角@3x.png in Resources */,
+				6E18ED061F3AFCE90014B177 /* 马晨歌.txt in Resources */,
 				F242DF451EBCB2BC005AC411 /* icon_menu_4@2x.png in Resources */,
 				F242DEFA1EBCB2BC005AC411 /* AboutMePraiseTableViewCell.xib in Resources */,
-				6E1D6CB51F3966EF005ED0F3 /* 邮子攻略@3x.png in Resources */,
 				F242DFAB1EBD9E2C005AC411 /* IssueTableViewController.xib in Resources */,
+				6E18ED011F3AFCE90014B177 /* 谭威.png in Resources */,
 				F242DDEC1EBCB2BB005AC411 /* redrock@2x.png in Resources */,
 				F242DF3F1EBCB2BC005AC411 /* 空教室@2x.png in Resources */,
 				F2DA60CA1ED03A5F0049E681 /* DetailTopicViewController.xib in Resources */,
 				F22286B71EED39840017516C /* icon_share_wechatTimeLine@2x.png in Resources */,
-				6E1D6CB21F3966EF005ED0F3 /* 返回@2x.png in Resources */,
 				F242DDD21EBCB2BB005AC411 /* lost_image_infocategory@3x.png in Resources */,
 				F242DDCC1EBCB2BB005AC411 /* lost_image_add@3x.png in Resources */,
 				F242DEA91EBCB2BC005AC411 /* 编辑箭头@3x.png in Resources */,
 				F2DC2ADC1EEEDC8000389A85 /* searchIcon@3x.png in Resources */,
+				6E18ECF31F3AFCE90014B177 /* 姜玉琦.png in Resources */,
+				6E18ED1F1F3AFCE90014B177 /* 蓝色@3x.png in Resources */,
 				F242DDC51EBCB2BB005AC411 /* WebViewController.xib in Resources */,
+				6E18ECED1F3AFCE90014B177 /* 刘志宗.png in Resources */,
 				F242DF3E1EBCB2BC005AC411 /* 校历@2x.png in Resources */,
 				F242DE9F1EBCB2BC005AC411 /* 椭圆@3x.png in Resources */,
 				F242DE9D1EBCB2BC005AC411 /* 时间@3x.png in Resources */,
 				F242DE011EBCB2BB005AC411 /* ShopTableViewCell.xib in Resources */,
-				6E1D6CB01F3966EF005ED0F3 /* 蓝色@2x.png in Resources */,
 				F242DE951EBCB2BC005AC411 /* 提醒@3x.png in Resources */,
+				6E18ED291F3AFCE90014B177 /* 黄色@3x.png in Resources */,
 				F242DF361EBCB2BC005AC411 /* GQsection.png in Resources */,
-				6E1D6CAF1F3966EF005ED0F3 /* 绿色@3x.png in Resources */,
 				F242DF3B1EBCB2BC005AC411 /* 夜间模式@2x.png in Resources */,
 				F242DE821EBCB2BC005AC411 /* 书@3x.png in Resources */,
+				6E18ECF81F3AFCE90014B177 /* 王婷.txt in Resources */,
 				F242DE9C1EBCB2BC005AC411 /* 时间@2x.png in Resources */,
 				F242DF1F1EBCB2BC005AC411 /* 60-2.png in Resources */,
 				F242DF241EBCB2BC005AC411 /* 智妍4.jpg in Resources */,
 				F242DDD51EBCB2BB005AC411 /* lost_image_lackcate@2x.png in Resources */,
+				6E18ED271F3AFCE90014B177 /* 重邮风采@3x.png in Resources */,
 				F242DEC81EBCB2BC005AC411 /* cancel.png in Resources */,
 				F242DED51EBCB2BC005AC411 /* MBCommunityViewController.xib in Resources */,
 				F242DE711EBCB2BC005AC411 /* add@2x.png in Resources */,
+				6E18ECE61F3AFCE90014B177 /* 丛广林.txt in Resources */,
 				F242DF3C1EBCB2BC005AC411 /* 我的动态@2x.png in Resources */,
+				6E18ECEF1F3AFCE90014B177 /* 刘慧鹏.png in Resources */,
 				F242DDAC1EBCB2BB005AC411 /* doneImage.png in Resources */,
 				F242DE501EBCB2BC005AC411 /* Images.xcassets in Resources */,
+				6E18ED111F3AFCE90014B177 /* 漆晶.jpg in Resources */,
 				F242DDD11EBCB2BB005AC411 /* lost_image_infocategory@2x.png in Resources */,
 				F242DF2B1EBCB2BC005AC411 /* iconfont_meizhou.png in Resources */,
 				F242DEFE1EBCB2BC005AC411 /* AboutMeViewController.xib in Resources */,
@@ -2790,17 +3024,20 @@
 				F242DDFB1EBCB2BB005AC411 /* loading@2x.png in Resources */,
 				F242DF031EBCB2BC005AC411 /* ExamScheduleViewController.xib in Resources */,
 				F242DE881EBCB2BC005AC411 /* 地点@2x.png in Resources */,
-				6E1D6CAE1F3966EF005ED0F3 /* 绿色@2x.png in Resources */,
+				6E18ED1E1F3AFCE90014B177 /* 蓝色@2x.png in Resources */,
+				6E18ECF41F3AFCE90014B177 /* 姜玉琦.txt in Resources */,
 				F242DE7D1EBCB2BC005AC411 /* 下拉@2x.png in Resources */,
+				6E18ECFE1F3AFCE90014B177 /* 田彬人.txt in Resources */,
 				F242DE9A1EBCB2BC005AC411 /* 无课@2x.png in Resources */,
 				F242DDEB1EBCB2BB005AC411 /* ok.png in Resources */,
-				6E1D6CB41F3966EF005ED0F3 /* 邮子攻略@2x.png in Resources */,
 				F22286B11EED39840017516C /* icon_share_weibo@2x.png in Resources */,
 				F242DEAD1EBCB2BC005AC411 /* 返回箭头@3x.png in Resources */,
 				F242DF281EBCB2BC005AC411 /* iconfont-more.png in Resources */,
 				F242DED11EBCB2BC005AC411 /* comment1.png in Resources */,
+				6E18ECE01F3AFCE90014B177 /* 0491201班.txt in Resources */,
 				F242DF011EBCB2BC005AC411 /* ExamScheduleTableViewCell.xib in Resources */,
 				F242DDEF1EBCB2BB005AC411 /* shake_match.mp3 in Resources */,
+				6E18ED281F3AFCE90014B177 /* 黄色@2x.png in Resources */,
 				F242DE031EBCB2BB005AC411 /* View.xib in Resources */,
 				F242DF141EBCB2BC005AC411 /* QGERestTimeCourseViewController.xib in Resources */,
 				F2DC2ADB1EEEDC8000389A85 /* settingIcon@3x.png in Resources */,
@@ -2811,6 +3048,7 @@
 				F242DEF11EBCB2BC005AC411 /* 图片4.jpg in Resources */,
 				F242DE8B1EBCB2BC005AC411 /* 多课0@3x.png in Resources */,
 				F242DF1D1EBCB2BC005AC411 /* 40-2.png in Resources */,
+				6E18ECE41F3AFCE90014B177 /* 20-810宿舍.txt in Resources */,
 				F242DF4B1EBCB2BC005AC411 /* iconfont-location.png in Resources */,
 				F242DD881EBCB2BB005AC411 /* LaunchScreen.xib in Resources */,
 				F242DF251EBCB2BC005AC411 /* courseMengbi.jpg in Resources */,
@@ -2819,34 +3057,46 @@
 				F242DF471EBCB2BC005AC411 /* icon_menu_selected_2@2x.png in Resources */,
 				F21A8FA91ED9679F0093FBC4 /* noTopicIcon.png in Resources */,
 				F242DF201EBCB2BC005AC411 /* calendar.png in Resources */,
+				6E18ECE71F3AFCE90014B177 /* 冯益青.png in Resources */,
+				6E18ECEA1F3AFCE90014B177 /* 刘国栋.txt in Resources */,
 				F242DE651EBCB2BC005AC411 /* DetailPageController.xib in Resources */,
-				6E1D6CB61F3966EF005ED0F3 /* 重邮数据@2x.png in Resources */,
+				6E18ED051F3AFCE90014B177 /* 马晨歌.png in Resources */,
 				F242DDE41EBCB2BB005AC411 /* lost_image_success@3x.png in Resources */,
+				6E18ECE91F3AFCE90014B177 /* 刘国栋.png in Resources */,
+				6E18ECFC1F3AFCE90014B177 /* 王金鸡.txt in Resources */,
 				F242DE761EBCB2BC005AC411 /* remind1@3x.png in Resources */,
 				F242DE611EBCB2BC005AC411 /* AddRemindViewController.xib in Resources */,
 				F242DEED1EBCB2BC005AC411 /* 叉叉.png in Resources */,
+				6E18ED101F3AFCE90014B177 /* 朱伟.jpg in Resources */,
+				6E18ECF21F3AFCE90014B177 /* 刘锐.txt in Resources */,
 				F242DE991EBCB2BC005AC411 /* 无考试@3x.png in Resources */,
 				F242DF051EBCB2BC005AC411 /* EmptyClassViewController.xib in Resources */,
 				F242DF2E1EBCB2BC005AC411 /* iconfont-password.png in Resources */,
 				F242DEF61EBCB2BC005AC411 /* 熊.jpg in Resources */,
 				F242DEA21EBCB2BC005AC411 /* 类型@2x.png in Resources */,
 				F242DE7A1EBCB2BC005AC411 /* remind@3x.png in Resources */,
+				6E18ED191F3AFCE90014B177 /* 郑继明.jpg in Resources */,
+				6E18ECE21F3AFCE90014B177 /* 04991401班.txt in Resources */,
 				F242DF0D1EBCB2BC005AC411 /* MyInfoViewController.xib in Resources */,
 				F242DE981EBCB2BC005AC411 /* 无考试@2x.png in Resources */,
 				F242DF351EBCB2BC005AC411 /* GQclass.png in Resources */,
 				F2DC2ADD1EEEDC8000389A85 /* searchIcon@2x.png in Resources */,
-				6E1D6CB11F3966EF005ED0F3 /* 蓝色@3x.png in Resources */,
+				6E18ECFB1F3AFCE90014B177 /* 王金鸡.png in Resources */,
 				F242DEC41EBCB2BC005AC411 /* 1智妍.jpg in Resources */,
 				F242DEAF1EBCB2BC005AC411 /* 选择@3x.png in Resources */,
 				F242DDFD1EBCB2BB005AC411 /* MenuViewController.xib in Resources */,
 				F242DDF21EBCB2BB005AC411 /* shop@2x.png in Resources */,
+				6E18ED261F3AFCE90014B177 /* 重邮风采@2x.png in Resources */,
 				F242DE741EBCB2BC005AC411 /* remind0@3x.png in Resources */,
 				F242DDF11EBCB2BB005AC411 /* shakeForShop_new@2x.png in Resources */,
+				6E18ED161F3AFCE90014B177 /* 胡庆.jpg in Resources */,
 				F22286B41EED39840017516C /* icon_share_wechat@3x.png in Resources */,
 				F242DDE91EBCB2BB005AC411 /* map@2x.png in Resources */,
 				F242DE781EBCB2BC005AC411 /* remind2@3x.png in Resources */,
 				F242DDC71EBCB2BB005AC411 /* cqupt2@2x.jpg in Resources */,
+				6E18ECEB1F3AFCE90014B177 /* 刘志凡.png in Resources */,
 				F242DE961EBCB2BC005AC411 /* 无事项@2x.png in Resources */,
+				6E18ED201F3AFCE90014B177 /* 返回@2x.png in Resources */,
 				F242DE831EBCB2BC005AC411 /* 删除@2x.png in Resources */,
 				F242DD901EBCB2BB005AC411 /* TitleBaseViewController.xib in Resources */,
 				F242DDF91EBCB2BB005AC411 /* ShakeViewController.xib in Resources */,
@@ -2854,8 +3104,8 @@
 				F242DDF31EBCB2BB005AC411 /* shop_new@2x.png in Resources */,
 				F242DF481EBCB2BC005AC411 /* icon_menu_selected_3@2x.png in Resources */,
 				F242DDCF1EBCB2BB005AC411 /* lost_image_describe@2x.png in Resources */,
+				6E18ECF51F3AFCE90014B177 /* 热则耶·吐尔洪.png in Resources */,
 				F242DE941EBCB2BC005AC411 /* 提醒@2x.png in Resources */,
-				6E1D6CAD1F3966EF005ED0F3 /* 粉色@3x.png in Resources */,
 				F242DE691EBCB2BC005AC411 /* ExamViewController.xib in Resources */,
 				F242DF311EBCB2BC005AC411 /* emptyClass.png in Resources */,
 				F242DDC01EBCB2BB005AC411 /* unitImage.png in Resources */,
@@ -2863,95 +3113,116 @@
 				F242DEA61EBCB2BC005AC411 /* 编辑完成@2x.png in Resources */,
 				F242DF231EBCB2BC005AC411 /* 智妍3.jpg in Resources */,
 				F242DDDB1EBCB2BB005AC411 /* lost_image_little@2x.png in Resources */,
+				6E18ECFF1F3AFCE90014B177 /* 谢贵燕.png in Resources */,
 				F2DC2AD91EEEDC8000389A85 /* appIcon@2x.png in Resources */,
 				F242DEA41EBCB2BC005AC411 /* 编辑@2x.png in Resources */,
 				F242DDDA1EBCB2BB005AC411 /* lost_image_lacktel@3x.png in Resources */,
 				F242DDB21EBCB2BB005AC411 /* querElecIcon.png in Resources */,
 				F242DEEE1EBCB2BC005AC411 /* 图片1.jpg in Resources */,
+				6E18ED091F3AFCE90014B177 /* 绿色@2x.png in Resources */,
 				F242DDE51EBCB2BB005AC411 /* lost_image_tel@2x.png in Resources */,
 				F242DD8D1EBCB2BB005AC411 /* CourseViewController.xib in Resources */,
 				F242DF271EBCB2BC005AC411 /* iconfont-meixueqi.png in Resources */,
+				6E18ECDD1F3AFCE90014B177 /* 军训特辑@2x.png in Resources */,
 				F242DF081EBCB2BC005AC411 /* ExamGradeViewController.xib in Resources */,
 				F242DF1B1EBCB2BC005AC411 /* 29-2.png in Resources */,
+				6E18ED171F3AFCE90014B177 /* 蒋青.jpg in Resources */,
 				F242DE791EBCB2BC005AC411 /* remind@2x.png in Resources */,
 				F242DDE61EBCB2BB005AC411 /* lost_image_tel@3x.png in Resources */,
+				6E18ED1D1F3AFCE90014B177 /* 高非.jpg in Resources */,
 				F242DF4C1EBCB2BC005AC411 /* iconfont-menuiconaccount.png in Resources */,
 				F242DE8F1EBCB2BC005AC411 /* 多课2@3x.png in Resources */,
 				F242DF1A1EBCB2BC005AC411 /* iconfont.ttf in Resources */,
 				F242DD891EBCB2BB005AC411 /* Main.storyboard in Resources */,
-				6E1D6CB71F3966EF005ED0F3 /* 重邮数据@3x.png in Resources */,
 				F242DF511EBCB2BC005AC411 /* Mobile_CQUPT_iOS.db in Resources */,
 				F242DDD61EBCB2BB005AC411 /* lost_image_lackcate@3x.png in Resources */,
 				F242DFB71EBD9E2C005AC411 /* LostTableViewCell.xib in Resources */,
 				F242DDF01EBCB2BB005AC411 /* shakeForShop@2x.png in Resources */,
+				6E18ECE51F3AFCE90014B177 /* 丛广林.png in Resources */,
 				F242DDE21EBCB2BB005AC411 /* lost_image_QQ@3x.png in Resources */,
 				F242DEA81EBCB2BC005AC411 /* 编辑箭头@2x.png in Resources */,
 				F242DEA31EBCB2BC005AC411 /* 类型@3x.png in Resources */,
 				F242DEC61EBCB2BC005AC411 /* add.png in Resources */,
 				F22286B51EED39840017516C /* icon_share_wechat@2x.png in Resources */,
+				6E18ED071F3AFCE90014B177 /* 粉色@2x.png in Resources */,
 				F242DEA11EBCB2BC005AC411 /* 箭头@3x.png in Resources */,
 				F242DDF41EBCB2BB005AC411 /* 失物招领@2x.png in Resources */,
+				6E18ECF11F3AFCE90014B177 /* 刘锐.png in Resources */,
 				F242DF221EBCB2BC005AC411 /* 智妍2.jpg in Resources */,
 				F242DDCA1EBCB2BB005AC411 /* iconfont-shop2.png in Resources */,
 				F242DE8E1EBCB2BC005AC411 /* 多课2@2x.png in Resources */,
 				F242DDDC1EBCB2BB005AC411 /* lost_image_little@3x.png in Resources */,
-				6E1D6CBB1F3966EF005ED0F3 /* 黄色@3x.png in Resources */,
 				F242DDEA1EBCB2BB005AC411 /* map_new@2x.png in Resources */,
+				6E18ECDE1F3AFCE90014B177 /* 军训特辑@3x.png in Resources */,
 				F242DE811EBCB2BC005AC411 /* 书@2x.png in Resources */,
 				F242DF1C1EBCB2BC005AC411 /* 29-3.png in Resources */,
+				6E18ED211F3AFCE90014B177 /* 返回@3x.png in Resources */,
 				F242DE891EBCB2BC005AC411 /* 地点@3x.png in Resources */,
 				F242DEFC1EBCB2BC005AC411 /* AboutMeTableViewCell.xib in Resources */,
+				6E18ECE11F3AFCE90014B177 /* 04991401班.png in Resources */,
 				F2BE9C251EDB047200569A2B /* topic_image_ frame@2x.png in Resources */,
 				F242DECE1EBCB2BC005AC411 /* MBCommentCell.xib in Resources */,
 				F242DDED1EBCB2BB005AC411 /* redrock_new@2x.png in Resources */,
 				F242DF391EBCB2BC005AC411 /* 关于@2x.png in Resources */,
-				6E1D6CAA1F3966EF005ED0F3 /* 军训特辑@2x.png in Resources */,
+				6E18ECEE1F3AFCE90014B177 /* 刘志宗.txt in Resources */,
 				F242DE531EBCB2BC005AC411 /* LoginViewController.xib in Resources */,
 				F242DEF31EBCB2BC005AC411 /* 图片6.jpg in Resources */,
 				F242DE851EBCB2BC005AC411 /* 启动页.jpg in Resources */,
 				F242DDD01EBCB2BB005AC411 /* lost_image_describe@3x.png in Resources */,
 				F242DF431EBCB2BC005AC411 /* icon_menu_2@2x.png in Resources */,
+				6E18ECE81F3AFCE90014B177 /* 冯益青.txt in Resources */,
 				F242DDD91EBCB2BB005AC411 /* lost_image_lacktel@2x.png in Resources */,
 				F242DE871EBCB2BC005AC411 /* 周数@3x.png in Resources */,
+				6E18ED241F3AFCE90014B177 /* 重邮数据@2x.png in Resources */,
 				F242DF2A1EBCB2BC005AC411 /* iconfont-titleTag.png in Resources */,
 				F242DDC21EBCB2BB005AC411 /* reinstallImage.png in Resources */,
+				6E18ED081F3AFCE90014B177 /* 粉色@3x.png in Resources */,
 				F242DEC51EBCB2BC005AC411 /* 65ee37a1gw1ewyf1530npj20tm18gwl9.jpg in Resources */,
-				6E1D6CB81F3966EF005ED0F3 /* 重邮风采@2x.png in Resources */,
-				6E1D6CB91F3966EF005ED0F3 /* 重邮风采@3x.png in Resources */,
 				F242DE911EBCB2BC005AC411 /* 完成@3x.png in Resources */,
+				6E18ED0A1F3AFCE90014B177 /* 绿色@3x.png in Resources */,
 				F242DF321EBCB2BC005AC411 /* emptyClassTag.png in Resources */,
 				F242DF4E1EBCB2BC005AC411 /* iconfont-week.png in Resources */,
 				F242DDF51EBCB2BB005AC411 /* 失物招领@3x.png in Resources */,
 				F242DE841EBCB2BC005AC411 /* 删除@3x.png in Resources */,
 				F242DDC61EBCB2BB005AC411 /* cqupt1@2x.jpg in Resources */,
 				F2BE9C261EDB047200569A2B /* topic_image_frame@3x.png in Resources */,
+				6E18ECDF1F3AFCE90014B177 /* 0491201班.png in Resources */,
+				6E18ED1A1F3AFCE90014B177 /* 闵绪国.jpg in Resources */,
 				F242DF331EBCB2BC005AC411 /* emptyClassTag1.png in Resources */,
 				F242DF291EBCB2BC005AC411 /* iconfont-tag.png in Resources */,
 				F242DE7F1EBCB2BC005AC411 /* 不提醒@2x.png in Resources */,
 				F242DDDE1EBCB2BB005AC411 /* lost_image_many@3x.png in Resources */,
 				F242DF521EBCB2BC005AC411 /* splash.jpg in Resources */,
 				F22286AF1EED39840017516C /* icon_share_more@3x.png in Resources */,
+				6E18ED1C1F3AFCE90014B177 /* 高东.jpg in Resources */,
 				F242DF211EBCB2BC005AC411 /* 智妍1.jpg in Resources */,
 				F242DF491EBCB2BC005AC411 /* icon_menu_selected_4@2x.png in Resources */,
 				F242DF501EBCB2BC005AC411 /* 掌上重邮60-3.png in Resources */,
 				F242DEF21EBCB2BC005AC411 /* 图片5.jpg in Resources */,
 				F289CF951ED6E20D00373595 /* topic_image_alltopic@2x.png in Resources */,
+				6E18ED001F3AFCE90014B177 /* 谢贵燕.txt in Resources */,
 				F242DEAA1EBCB2BC005AC411 /* 老师@2x.png in Resources */,
 				F242DDD71EBCB2BB005AC411 /* lost_image_lackplace@2x.png in Resources */,
 				F242DFB41EBD9E2C005AC411 /* IconTableViewCell.xib in Resources */,
 				F242DDBE1EBCB2BB005AC411 /* rightIcon.png in Resources */,
 				F242DE7B1EBCB2BC005AC411 /* 上拉@2x.png in Resources */,
+				6E18ED141F3AFCE90014B177 /* 王睿.jpg in Resources */,
+				6E18ECFD1F3AFCE90014B177 /* 田彬人.png in Resources */,
 				F242DE631EBCB2BC005AC411 /* DetailLessonController.xib in Resources */,
 				F242DEDF1EBCB2BC005AC411 /* support1.png in Resources */,
+				6E18ECFA1F3AFCE90014B177 /* 王秋毅.txt in Resources */,
 				F242DF261EBCB2BC005AC411 /* iconfont-backTag.png in Resources */,
 				F242DE5D1EBCB2BC005AC411 /* DetailRemindTableViewCell.xib in Resources */,
 				F242DDCE1EBCB2BB005AC411 /* lost_image_com@3x.png in Resources */,
 				F242DF371EBCB2BC005AC411 /* GQtime.png in Resources */,
+				6E18ED041F3AFCE90014B177 /* 郭鑫.txt in Resources */,
 				F242DF4A1EBCB2BC005AC411 /* iconfont-clock.png in Resources */,
 				F242DEF81EBCB2BC005AC411 /* XBSAboutViewController.xib in Resources */,
 				F22286B31EED39840017516C /* icon_share_qq@2x.png in Resources */,
+				6E18ECF61F3AFCE90014B177 /* 热则耶·吐尔洪.txt in Resources */,
 				F242DF381EBCB2BC005AC411 /* 与我相关@2x.png in Resources */,
 				F242DF161EBCB2BC005AC411 /* RestTimeDetailView.xib in Resources */,
+				6E18ECF71F3AFCE90014B177 /* 王婷.png in Resources */,
 				F242DEAB1EBCB2BC005AC411 /* 老师@3x.png in Resources */,
 				F242DE771EBCB2BC005AC411 /* remind2@2x.png in Resources */,
 				F242DF1E1EBCB2BC005AC411 /* 40-3.png in Resources */,
@@ -2960,33 +3231,41 @@
 				F22286B01EED39840017516C /* icon_share_more@2x.png in Resources */,
 				F242DDAA1EBCB2BB005AC411 /* angleImage.png in Resources */,
 				F21A8FAA1ED9679F0093FBC4 /* arrowIcon.png in Resources */,
+				6E18ED031F3AFCE90014B177 /* 郭鑫.png in Resources */,
+				6E18ECF01F3AFCE90014B177 /* 刘慧鹏.txt in Resources */,
 				F242DF3A1EBCB2BC005AC411 /* 反馈信息@2x.png in Resources */,
 				F21A8FAB1ED9679F0093FBC4 /* aNumIcon.png in Resources */,
+				6E18ED021F3AFCE90014B177 /* 谭威.txt in Resources */,
+				6E18ECDC1F3AFCE90014B177 /* close@3x.png in Resources */,
 				F242DDE11EBCB2BB005AC411 /* lost_image_QQ@2x.png in Resources */,
 				F242DDA81EBCB2BB005AC411 /* MapViewController.xib in Resources */,
 				F242DE721EBCB2BC005AC411 /* add@3x.png in Resources */,
 				F242DE751EBCB2BC005AC411 /* remind1@2x.png in Resources */,
 				F242DE8D1EBCB2BC005AC411 /* 多课1@3x.png in Resources */,
 				F2BE9C1B1EDAEC7D00569A2B /* topic_image_join@2x.png in Resources */,
+				6E18ECF91F3AFCE90014B177 /* 王秋毅.png in Resources */,
 				F242DDDF1EBCB2BB005AC411 /* lost_image_place@2x.png in Resources */,
+				6E18ED0E1F3AFCE90014B177 /* 张琬悦.jpg in Resources */,
 				F242DDD41EBCB2BB005AC411 /* lost_image_itemcategory@3x.png in Resources */,
+				6E18ED0B1F3AFCE90014B177 /* 付蔚.jpg in Resources */,
 				F242DF421EBCB2BC005AC411 /* icon_menu_1@2x.png in Resources */,
-				6E1D6CAC1F3966EF005ED0F3 /* 粉色@2x.png in Resources */,
 				F289CF941ED6E20D00373595 /* topic_image_alltopic@3x.png in Resources */,
 				F242DED01EBCB2BC005AC411 /* MBCommunityCellTableViewCell.xib in Resources */,
 				F2BE9C1A1EDAEC7D00569A2B /* topic_image_join@3x.png in Resources */,
 				F242DE861EBCB2BC005AC411 /* 周数@2x.png in Resources */,
 				F242DEAE1EBCB2BC005AC411 /* 选择@2x.png in Resources */,
 				F242DDF61EBCB2BB005AC411 /* 电费查询@2x.png in Resources */,
+				6E18ECDB1F3AFCE90014B177 /* close@2x.png in Resources */,
 				F242DDEE1EBCB2BB005AC411 /* shake@2x.png in Resources */,
+				6E18ED181F3AFCE90014B177 /* 袁帅.jpg in Resources */,
 				F242DEC71EBCB2BC005AC411 /* addPhoto.jpg in Resources */,
 				F242DEEF1EBCB2BC005AC411 /* 图片2.jpg in Resources */,
-				6E1D6CB31F3966EF005ED0F3 /* 返回@3x.png in Resources */,
 				F242DED71EBCB2BC005AC411 /* MBReleaseViewController.xib in Resources */,
 				F242DDE31EBCB2BB005AC411 /* lost_image_success@2x.png in Resources */,
 				F242DEA01EBCB2BC005AC411 /* 箭头@2x.png in Resources */,
 				F22286B91EED39840017516C /* icon_share_qq@3x.png in Resources */,
 				F242DE5F1EBCB2BC005AC411 /* RemindTableViewCell.xib in Resources */,
+				6E18ED0F1F3AFCE90014B177 /* 彭语良.jpg in Resources */,
 				F242DDB51EBCB2BB005AC411 /* leftIcon.png in Resources */,
 				F242DDB31EBCB2BB005AC411 /* roomIcon.png in Resources */,
 				F242DF4F1EBCB2BC005AC411 /* iconfont-wodekecheng.png in Resources */,
@@ -3069,12 +3348,13 @@
 				F242DF181EBCB2BC005AC411 /* ORWInputTextView.m in Sources */,
 				F242DE6F1EBCB2BC005AC411 /* RemindHandle.m in Sources */,
 				F242DEE01EBCB2BC005AC411 /* MBAddImageView.m in Sources */,
+				6E18ECDA1F3AFCE90014B177 /* StuStrategyRootViewController.m in Sources */,
 				F242DF151EBCB2BC005AC411 /* QGERestTimeDetailView.m in Sources */,
 				F242DED61EBCB2BC005AC411 /* MBReleaseViewController.m in Sources */,
 				F242DE671EBCB2BC005AC411 /* DetailViewController.m in Sources */,
 				F242DECA1EBCB2BC005AC411 /* UIColor+Helper.m in Sources */,
-				6E1D6C991F3966EF005ED0F3 /* StuRootViewController.m in Sources */,
 				F242DEF71EBCB2BC005AC411 /* XBSAboutViewController.m in Sources */,
+				6E18ECD41F3AFCE90014B177 /* CanteenViewController.m in Sources */,
 				F242DEFD1EBCB2BC005AC411 /* AboutMeViewController.m in Sources */,
 				F242DD8E1EBCB2BB005AC411 /* Course.m in Sources */,
 				F242DF7C1EBCB2BC005AC411 /* HCHttp.m in Sources */,
@@ -3082,35 +3362,35 @@
 				F242DED41EBCB2BC005AC411 /* MBCommunityViewController.m in Sources */,
 				F242DE621EBCB2BC005AC411 /* DetailLessonController.m in Sources */,
 				F242DDB11EBCB2BB005AC411 /* IntallFailViewController.m in Sources */,
-				6E1D6C971F3966EF005ED0F3 /* OriginalCY.m in Sources */,
 				F242DE5A1EBCB2BC005AC411 /* UIFont+AdaptiveFont.m in Sources */,
 				F242DEC31EBCB2BC005AC411 /* main.m in Sources */,
 				F22286A21EED33510017516C /* ImageWithLabel.m in Sources */,
-				6E1D6C9F1F3966EF005ED0F3 /* MaleToFemaleRatioViewController.m in Sources */,
 				F242DFBA1EBD9E2C005AC411 /* LZLostRemindView.m in Sources */,
-				6E1D6CA51F3966EF005ED0F3 /* FoodViewController.m in Sources */,
 				F242DEDC1EBCB2BC005AC411 /* MBTextView.m in Sources */,
 				F242DDB91EBCB2BB005AC411 /* QuerInfo.m in Sources */,
-				6E1D6CA91F3966EF005ED0F3 /* StuStrategyRootViewController.m in Sources */,
+				6E18ECD01F3AFCE90014B177 /* MaleToFemaleRatioViewController.m in Sources */,
 				F242DEC21EBCB2BC005AC411 /* MainViewController.m in Sources */,
-				6E1D6C9B1F3966EF005ED0F3 /* EmploymentRateViewController.m in Sources */,
 				F242DDAF1EBCB2BB005AC411 /* InstallRoomDoneViewController.m in Sources */,
 				F242DE6E1EBCB2BC005AC411 /* LessonHandle.m in Sources */,
 				F242DF101EBCB2BC005AC411 /* MyMessagesViewController.m in Sources */,
-				6E1D6C9E1F3966EF005ED0F3 /* HomePageViewController.m in Sources */,
 				F242DEB61EBCB2BC005AC411 /* RemindNotification.m in Sources */,
 				F2DA60C51ED033E40049E681 /* TopicModel.m in Sources */,
 				F242DE6C1EBCB2BC005AC411 /* TimeChooseViewController.m in Sources */,
 				F242DFB11EBD9E2C005AC411 /* LostModel.m in Sources */,
+				6E18ECC91F3AFCE90014B177 /* StuRootViewController.m in Sources */,
 				F242DEFF1EBCB2BC005AC411 /* CalendarViewController.m in Sources */,
 				F242DEB41EBCB2BC005AC411 /* HttpClient.m in Sources */,
+				6E18ECD51F3AFCE90014B177 /* DailyLifeViewController.m in Sources */,
+				6E18ECC31F3AFCE90014B177 /* CQUPTBeautyCell.m in Sources */,
 				F242DECC1EBCB2BC005AC411 /* UIImage+ImageEffects.m in Sources */,
 				F2BE9C291EDB064F00569A2B /* CAShapeLayer+ViewMask.m in Sources */,
 				F242DDAE1EBCB2BB005AC411 /* InstallcurrentViewController.m in Sources */,
 				F242DE021EBCB2BB005AC411 /* ShopViewController.m in Sources */,
 				F242DEBE1EBCB2BC005AC411 /* TickButton.m in Sources */,
+				6E18ECCB1F3AFCE90014B177 /* CQUPTDataRootViewController.m in Sources */,
 				F2DA60C21ECF0CF80049E681 /* BannerScrollView.m in Sources */,
 				F242DD871EBCB2BB005AC411 /* AppDelegate.m in Sources */,
+				6E18ECC41F3AFCE90014B177 /* CQUPTBeautyViewController.m in Sources */,
 				F242DF0A1EBCB2BC005AC411 /* MineViewController.m in Sources */,
 				F242DEB71EBCB2BC005AC411 /* ChooseButton.m in Sources */,
 				F242DDBF1EBCB2BB005AC411 /* triangleView.m in Sources */,
@@ -3118,22 +3398,25 @@
 				F242DEB11EBCB2BC005AC411 /* LessonBtnModel.m in Sources */,
 				F289CFC01ED71F6F00373595 /* TopicViewController.m in Sources */,
 				F242DD8A1EBCB2BB005AC411 /* CourseButton.m in Sources */,
+				6E18ECD71F3AFCE90014B177 /* IntroductionViewController.m in Sources */,
+				6E18ECC81F3AFCE90014B177 /* OriginalCYCell.m in Sources */,
+				6E18ECD21F3AFCE90014B177 /* BeautyViewController.m in Sources */,
 				F242DDBC1EBCB2BB005AC411 /* QuerNoteView.m in Sources */,
+				6E18ECC71F3AFCE90014B177 /* OriginalCY.m in Sources */,
 				F242DF021EBCB2BC005AC411 /* ExamScheduleViewController.m in Sources */,
 				F242DEB81EBCB2BC005AC411 /* CoverView.m in Sources */,
+				6E18ECCE1F3AFCE90014B177 /* StatisticsTable.m in Sources */,
 				F21DA5CB1ED17A9C003EE411 /* TopicBtn.m in Sources */,
 				F242DE601EBCB2BC005AC411 /* AddRemindViewController.m in Sources */,
-				6E1D6C951F3966EF005ED0F3 /* CQUPTStudentsCell.m in Sources */,
 				F242DE681EBCB2BC005AC411 /* ExamViewController.m in Sources */,
-				6E1D6C9A1F3966EF005ED0F3 /* CQUPTDataRootViewController.m in Sources */,
 				F242DDA71EBCB2BB005AC411 /* MapViewController.m in Sources */,
 				F242DE6D1EBCB2BC005AC411 /* WeekChooseViewController.m in Sources */,
-				6E1D6CA41F3966EF005ED0F3 /* DailyLifeViewController.m in Sources */,
 				F242DEDA1EBCB2BC005AC411 /* MBCommunityModel.m in Sources */,
 				F242DDB71EBCB2BB005AC411 /* QuerCircleView.m in Sources */,
 				F242DDF81EBCB2BB005AC411 /* ShakeViewController.m in Sources */,
 				F242DECB1EBCB2BC005AC411 /* UIImage+Helper.m in Sources */,
 				F242DDBA1EBCB2BB005AC411 /* QuerLoginModel.m in Sources */,
+				6E18ECCA1F3AFCE90014B177 /* UIImage+Circle.m in Sources */,
 				F242DEBC1EBCB2BC005AC411 /* MainView.m in Sources */,
 				F242DEDD1EBCB2BC005AC411 /* UIShortTapGestureRecognizer.m in Sources */,
 				F242DF801EBCB2BC005AC411 /* ViewController.m in Sources */,
@@ -3148,39 +3431,38 @@
 				F242DD931EBCB2BB005AC411 /* FinderViewController.m in Sources */,
 				F242DD8B1EBCB2BB005AC411 /* CourseView.m in Sources */,
 				F242DEF91EBCB2BC005AC411 /* AboutMePraiseTableViewCell.m in Sources */,
-				6E1D6C981F3966EF005ED0F3 /* OriginalCYCell.m in Sources */,
 				F242DFB51EBD9E2C005AC411 /* LostAndFoundButton.m in Sources */,
 				F222868B1EED21260017516C /* HZLShareView.m in Sources */,
 				F242DE5E1EBCB2BC005AC411 /* RemindTableViewCell.m in Sources */,
 				F242DDFA1EBCB2BB005AC411 /* DetailDishView.m in Sources */,
 				F242DEC91EBCB2BC005AC411 /* NSNull+Helper.m in Sources */,
+				6E18ECD81F3AFCE90014B177 /* QQGroupViewController.m in Sources */,
 				F242DF171EBCB2BC005AC411 /* SettingViewController.m in Sources */,
 				F242DEE61EBCB2BC005AC411 /* MBPhotoContainerView.m in Sources */,
-				6E1D6CA21F3966EF005ED0F3 /* CampusEnvironmentViewController.m in Sources */,
 				F242DE521EBCB2BC005AC411 /* LoginViewController.m in Sources */,
 				F242DDB81EBCB2BB005AC411 /* QuerCurveView.m in Sources */,
 				F289CFC11ED71F6F00373595 /* TopicSearchViewController.m in Sources */,
+				6E18ECC61F3AFCE90014B177 /* CQUPTStudentsViewController.m in Sources */,
 				F242DEE91EBCB2BC005AC411 /* MBComment_ViewModel.m in Sources */,
 				F242DF061EBCB2BC005AC411 /* PickView.m in Sources */,
 				F22286A31EED33510017516C /* ImageWithLabels.m in Sources */,
+				6E18ECD61F3AFCE90014B177 /* FoodViewController.m in Sources */,
 				F242DE551EBCB2BC005AC411 /* BaseMatter.m in Sources */,
 				F242DE561EBCB2BC005AC411 /* BaseTableViewController.m in Sources */,
 				F242DF0F1EBCB2BC005AC411 /* MyMessagesTableViewCell.m in Sources */,
-				6E1D6CA01F3966EF005ED0F3 /* SegmentView.m in Sources */,
-				6E1D6CA61F3966EF005ED0F3 /* IntroductionViewController.m in Sources */,
 				F242DF071EBCB2BC005AC411 /* ExamGradeViewController.m in Sources */,
 				F242DED21EBCB2BC005AC411 /* MBCommuityDetailsViewController.m in Sources */,
+				6E18ECD91F3AFCE90014B177 /* StuBedroomViewController.m in Sources */,
 				F242DE6A1EBCB2BC005AC411 /* LessonButtonController.m in Sources */,
 				F242DE6B1EBCB2BC005AC411 /* LessonController.m in Sources */,
 				F242DF0B1EBCB2BC005AC411 /* MyInfoModel.m in Sources */,
 				F242DD8C1EBCB2BB005AC411 /* CourseViewController.m in Sources */,
 				F242DF041EBCB2BC005AC411 /* EmptyClassViewController.m in Sources */,
+				6E18ECCC1F3AFCE90014B177 /* EmploymentRateViewController.m in Sources */,
 				F242DF7F1EBCB2BC005AC411 /* ORWRequestCache.m in Sources */,
 				F242DE541EBCB2BC005AC411 /* VerifyMyInfoViewController.m in Sources */,
 				F242DE571EBCB2BC005AC411 /* BaseViewController.m in Sources */,
-				6E1D6CA31F3966EF005ED0F3 /* CanteenViewController.m in Sources */,
 				F242DE5C1EBCB2BC005AC411 /* DetailRemindTableViewCell.m in Sources */,
-				6E1D6C9C1F3966EF005ED0F3 /* MostDifficultSubjectsViewController.m in Sources */,
 				F242DED91EBCB2BC005AC411 /* MBCommentModel.m in Sources */,
 				F242DEE81EBCB2BC005AC411 /* MBSegmentedView.m in Sources */,
 				F242DEE71EBCB2BC005AC411 /* MBReplyView.m in Sources */,
@@ -3188,10 +3470,10 @@
 				F242DFB61EBD9E2C005AC411 /* LostTableViewCell.m in Sources */,
 				F242DEB51EBCB2BC005AC411 /* LessonRemindNotification.m in Sources */,
 				F242DEBF1EBCB2BC005AC411 /* TimeChooseScrollView.m in Sources */,
-				6E1D6CA11F3966EF005ED0F3 /* BeautyViewController.m in Sources */,
 				F242DEBA1EBCB2BC005AC411 /* LessonButton.m in Sources */,
 				F242DE661EBCB2BC005AC411 /* DetailRemindViewController.m in Sources */,
 				F242DFB81EBD9E2C005AC411 /* LZConfirmButton.m in Sources */,
+				6E18ECD11F3AFCE90014B177 /* SegmentView.m in Sources */,
 				F242DEEA1EBCB2BC005AC411 /* MBCommunity_ViewModel.m in Sources */,
 				F242DFAE1EBD9E2C005AC411 /* LZIssueSucceedViewController.m in Sources */,
 				F242DE641EBCB2BC005AC411 /* DetailPageController.m in Sources */,
@@ -3200,8 +3482,8 @@
 				F242DEC11EBCB2BC005AC411 /* WeekScrollView.m in Sources */,
 				F242DDB61EBCB2BB005AC411 /* PointingCircleView.m in Sources */,
 				F289CFBB1ED71F6800373595 /* TopicRequest.m in Sources */,
+				6E18ECC51F3AFCE90014B177 /* CQUPTStudentsCell.m in Sources */,
 				F242DFAD1EBD9E2C005AC411 /* LostViewController.m in Sources */,
-				6E1D6CA71F3966EF005ED0F3 /* QQGroupViewController.m in Sources */,
 				F242DD911EBCB2BB005AC411 /* CommunityViewController.m in Sources */,
 				F242DFA81EBD9E2C005AC411 /* DetailLostViewController.m in Sources */,
 				F242DF7D1EBCB2BC005AC411 /* MOHImageParamModel.m in Sources */,
@@ -3213,7 +3495,6 @@
 				F242DEE51EBCB2BC005AC411 /* MBPhotoBrowser.m in Sources */,
 				F242DF091EBCB2BC005AC411 /* GradeView.m in Sources */,
 				F242DDC41EBCB2BB005AC411 /* WebViewController.m in Sources */,
-				6E1D6CA81F3966EF005ED0F3 /* StuBedroomViewController.m in Sources */,
 				F242DECD1EBCB2BC005AC411 /* MBCommentCell.m in Sources */,
 				F242DE701EBCB2BC005AC411 /* TimeHandle.m in Sources */,
 				F242DFB91EBD9E2C005AC411 /* LZDatePicker.m in Sources */,
@@ -3225,10 +3506,12 @@
 				F242DDC11EBCB2BB005AC411 /* QuerRemindViewController.m in Sources */,
 				F242DEBB1EBCB2BC005AC411 /* LessonNumLabel.m in Sources */,
 				F242DFAC1EBD9E2C005AC411 /* LostTableViewController.m in Sources */,
-				6E1D6C9D1F3966EF005ED0F3 /* StatisticsTable.m in Sources */,
 				F242DF131EBCB2BC005AC411 /* QGERestTimeCourseViewController.m in Sources */,
+				6E18ECCF1F3AFCE90014B177 /* HomePageViewController.m in Sources */,
+				6E18ECCD1F3AFCE90014B177 /* MostDifficultSubjectsViewController.m in Sources */,
 				F242DEE21EBCB2BC005AC411 /* MBBrowserItem.m in Sources */,
 				F242DFAA1EBD9E2C005AC411 /* IssueTableViewController.m in Sources */,
+				6E18ECC21F3AFCE90014B177 /* AppearView.m in Sources */,
 				F242DDFE1EBCB2BB005AC411 /* ShopDetailViewController.m in Sources */,
 				F242DF111EBCB2BC005AC411 /* QGERestDetailViewController.m in Sources */,
 				F242DEFB1EBCB2BC005AC411 /* AboutMeTableViewCell.m in Sources */,
@@ -3236,10 +3519,10 @@
 				F242DFB31EBD9E2C005AC411 /* IconTableViewCell.m in Sources */,
 				F242DE5B1EBCB2BC005AC411 /* UIImage+Color.m in Sources */,
 				F242DEE41EBCB2BC005AC411 /* MBInputView.m in Sources */,
+				6E18ECD31F3AFCE90014B177 /* CampusEnvironmentViewController.m in Sources */,
 				F289CF851ED5637800373595 /* DetailBannnerView.m in Sources */,
 				F242DF0C1EBCB2BC005AC411 /* MyInfoViewController.m in Sources */,
 				F242DFB21EBD9E2C005AC411 /* CategoryChooseView.m in Sources */,
-				6E1D6C961F3966EF005ED0F3 /* CQUPTStudentsViewController.m in Sources */,
 				F242DDB01EBCB2BB005AC411 /* InstallRoomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

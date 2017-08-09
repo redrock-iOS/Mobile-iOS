@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CQUPTStudentsViewController : UIViewController
-
+- (void)getTheStudentsName:(NSArray *)name;
 @end

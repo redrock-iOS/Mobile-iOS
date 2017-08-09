@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CQUPTStudentsCell : UITableViewCell
-
+@property (strong, nonatomic) UILabel *idLabel;
+@property (strong, nonatomic) UIImageView *imagesView;
+@property (strong, nonatomic) UILabel *contextLabel;
+@property (strong, nonatomic) UILabel *cutline;
 @end
+
