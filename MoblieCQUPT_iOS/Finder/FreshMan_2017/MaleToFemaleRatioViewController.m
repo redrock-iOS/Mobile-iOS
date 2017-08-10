@@ -6,17 +6,26 @@
 //  Copyright © 2017年 topkid. All rights reserved.
 //
 
+#import "OriginalCY.h"
+#import "StatisticsTable.h"
 #import <AFNetworking.h>
 #import "MaleToFemaleRatioViewController.h"
 
+#define KHEIGHT [UIScreen mainScreen].bounds.size.height
+#define KWIDTH [UIScreen mainScreen].bounds.size.width
+
 @interface MaleToFemaleRatioViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
-@property NSMutableArray *array;
+
 @property (strong, nonatomic) UIPickerView *pickerView;
 @property (strong, nonatomic) UIButton *collegeBtn;
 @property (strong, nonatomic) UIToolbar *toolBar;
 @property (strong, nonatomic) UIView *backgroundGrayView;//遮盖来显示灰色的view
 @property (strong, nonatomic) UIView *rootView;//放置toolBar和pickerView的view
 @property (strong, nonatomic) UIView *blueView;//pickerView每一个cell的背景色view
+@property (strong, nonatomic) NSArray *collegeArray;//学院数组
+@property (strong, nonatomic) NSArray *maleRatioArray;
+
+@property (strong, nonatomic) StatisticsTable *circle;//动画view
 @property NSInteger didSeclecter;
 
 @end
@@ -25,12 +34,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *animateView = [[UIView alloc] initWithFrame:CGRectMake(50, 200, 194, 168)];
-    animateView.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:animateView];
+    self.collegeArray = @[@"通信与信息工程学院", @"光电工程学院", @"经济管理学院", @"计算机科学与技术学院", @"外国语学院", @"生物信息学院", @"网络空间安全与信息法学院", @"自动化学院", @"先进制造工程学院", @"体育学院", @"理学院", @"传媒艺术学院", @"软件工程学院", @"国际半导体学院", @"国际学院", @"全校"];
+        self.maleRatioArray = @[@"0.70170895908856", @"0.75974025974026", @"0.47773032336791", @"0.78189994378865", @"0.19402985074627", @"0.58082706766917", @"0.31578947368421", @"0.81203473945409", @"0.91925465838509", @"0.79888268156425", @"0.70185185185185", @"0.29898648648649", @"0.84781188765513", @"0.83630470016207", @"0.75757575757576", @"0.66471399035148"];
     
+    [self layoutAnimateView];
     [self layoutPickerView];
     [self layoutCollegeButton];
+}
+
+- (void)layoutAnimateView {
+    NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
+//    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
+//    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
+    NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
+    NSArray *color = @[buleColor, pinkColor];
+    //距离左右各90,上下平分
+    double width = KWIDTH - 180;
+    double height = width;
+    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+    self.circle = circle;
+    self.circle.backgroundColor = [UIColor whiteColor];
+
+    [self.view addSubview:self.circle];
+}
+
+
+- (void)addAnimateWithMale:(double)male Female:(double)female {
+    NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
+//    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
+//    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
+    NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
+    NSArray *color = @[buleColor, pinkColor];
+    
+    NSNumber *num1 = [NSNumber numberWithDouble:male];
+    NSNumber *num2 = [NSNumber numberWithDouble:female];
+    NSDictionary *class1 = @{@"name":@"男", @"score": num1};
+    NSDictionary *class2 = @{@"name":@"女", @"score": num2};
+    NSArray<NSDictionary* > *detail = @[class1, class2];
+    
+//距离左右各90,上下平分
+    double width = KWIDTH - 180;
+    double height = width;
+    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+    self.circle = circle;
+    
+    [self.circle drawLinesWithDetail:detail With:color];
+    self.circle.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self.view addSubview:self.circle];
+    
+//让选择器在最上面
+    [self.view bringSubviewToFront:self.rootView];
 }
 
 
@@ -86,10 +141,15 @@
 
 
 - (void)tapCollegeBtn {
+    if (!self.rootView) {
+        [self layoutPickerView];
+    }
+    self.rootView.alpha = 1;
+    self.rootView.backgroundColor = [UIColor whiteColor];
+    
 //获取window
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    self.backgroundGrayView= [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.backgroundGrayView.backgroundColor = [UIColor brownColor];
+    self.backgroundGrayView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
 //创建遮盖view
     self.backgroundGrayView = [[UIView alloc] init];
@@ -97,7 +157,7 @@
     self.backgroundGrayView.translatesAutoresizingMaskIntoConstraints = NO;
     self.backgroundGrayView.backgroundColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:0.7];
     
-    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.height - self.rootView.bounds.size.height];
+    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.height - self.rootView.bounds.size.height - 20];
     [self.backgroundGrayView addConstraint:height];
     
     NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.width];
@@ -127,6 +187,7 @@
         self.pickerView.hidden = YES;
         self.toolBar.hidden = YES;
         self.blueView.hidden = YES;
+        self.rootView.alpha = 0;
     }
     
     [self.backgroundGrayView removeFromSuperview];
@@ -140,11 +201,16 @@
         self.pickerView.hidden = YES;
         self.toolBar.hidden = YES;
         self.blueView.hidden = YES;
+        self.rootView.alpha = 0;
     }
+    
+    [self.circle removeFromSuperview];
+    
+    
     
     [self.backgroundGrayView removeFromSuperview];
     
-    NSInteger i = [self.pickerView selectedRowInComponent:0];
+    NSInteger row = [self.pickerView selectedRowInComponent:0];
 
 #pragma mark - 网络请求
 //网络请求
@@ -159,10 +225,19 @@
 //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
 //    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
 //            NSDictionary *dic = responseobject;
-//            NSLog(@"%@", dic);
+////            NSLog(@"%@", dic);
+//        //male
+//        double male = [dic[@"Data"][row][@"MenRatio"] doubleValue];
+//        //female
+//        double female = [dic[@"Data"][row][@"WomenRatio"] doubleValue];
+//        [self addAnimateWithMale:male Female:female];
 //    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
 //        NSLog(@"请求失败,error:%@", error);
 //    }];
+    
+    double male = [self.maleRatioArray[row] doubleValue];
+    double female = 1 - male;
+    [self addAnimateWithMale:male Female:female];
 }
 
 
@@ -171,6 +246,7 @@
 #pragma mark - rootView
 //    pickerView和toolBar放在这一个view上
     UIView *rootView = [[UIView alloc] init];
+    
     rootView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:rootView];
     self.rootView = rootView;
@@ -290,7 +366,7 @@
 //指定每个表盘上有几行数据
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return 8;
+    return self.collegeArray.count;
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
@@ -318,7 +394,7 @@
     myView.backgroundColor= [UIColor clearColor];
     
     UILabel *myLabel = [[UILabel alloc] init];
-    myLabel.text = @"hahahahahahah";
+    myLabel.text = self.collegeArray[row];
     myLabel.translatesAutoresizingMaskIntoConstraints = NO;
     myLabel.textAlignment = NSTextAlignmentCenter;
     myLabel.font = [UIFont systemFontOfSize:14];
