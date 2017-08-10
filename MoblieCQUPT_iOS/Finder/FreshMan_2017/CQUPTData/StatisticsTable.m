@@ -51,7 +51,7 @@
 }
 - (void)drawLinesWithDetail:(NSArray<NSDictionary*>*) context With:(NSArray<NSArray *> *) color {
     for (int i = 0; i < context.count; i ++) {
-        [self removeFromSuperview];
+//        [self removeFromSuperview];
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.width/2) radius:self.frame.size.width/2 - (_lineWidth+_blankWidth) * (i+1)   startAngle:-M_PI/2 endAngle:M_PI * 2 * [context[i][@"score"]  floatValue] - M_PI/2 clockwise:YES];
         CAShapeLayer *sideshape = [CAShapeLayer layer];
         CAShapeLayer *shape = [CAShapeLayer layer];
