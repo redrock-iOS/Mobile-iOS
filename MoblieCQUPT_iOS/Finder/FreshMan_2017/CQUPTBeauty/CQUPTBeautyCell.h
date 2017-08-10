@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CQUPTBeautyCell : UITableViewCell
-
+@property(strong, nonatomic) UILabel *contextLabel;
+@property(strong, nonatomic) UIImageView *imagesView;
+-(void)setContextLabelText:(NSString *)text;
 @end

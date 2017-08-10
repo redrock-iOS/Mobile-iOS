@@ -41,46 +41,25 @@
 		6E18ECDC1F3AFCE90014B177 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC721F3AFCE90014B177 /* close@3x.png */; };
 		6E18ECDD1F3AFCE90014B177 /* 军训特辑@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */; };
 		6E18ECDE1F3AFCE90014B177 /* 军训特辑@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */; };
-		6E18ECDF1F3AFCE90014B177 /* 0491201班.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC761F3AFCE90014B177 /* 0491201班.png */; };
-		6E18ECE01F3AFCE90014B177 /* 0491201班.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC771F3AFCE90014B177 /* 0491201班.txt */; };
 		6E18ECE11F3AFCE90014B177 /* 04991401班.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC781F3AFCE90014B177 /* 04991401班.png */; };
-		6E18ECE21F3AFCE90014B177 /* 04991401班.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC791F3AFCE90014B177 /* 04991401班.txt */; };
 		6E18ECE31F3AFCE90014B177 /* 20-810宿舍.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */; };
-		6E18ECE41F3AFCE90014B177 /* 20-810宿舍.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */; };
 		6E18ECE51F3AFCE90014B177 /* 丛广林.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7C1F3AFCE90014B177 /* 丛广林.png */; };
-		6E18ECE61F3AFCE90014B177 /* 丛广林.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */; };
 		6E18ECE71F3AFCE90014B177 /* 冯益青.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7E1F3AFCE90014B177 /* 冯益青.png */; };
-		6E18ECE81F3AFCE90014B177 /* 冯益青.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */; };
 		6E18ECE91F3AFCE90014B177 /* 刘国栋.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC801F3AFCE90014B177 /* 刘国栋.png */; };
-		6E18ECEA1F3AFCE90014B177 /* 刘国栋.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC811F3AFCE90014B177 /* 刘国栋.txt */; };
 		6E18ECEB1F3AFCE90014B177 /* 刘志凡.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC821F3AFCE90014B177 /* 刘志凡.png */; };
-		6E18ECEC1F3AFCE90014B177 /* 刘志凡.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC831F3AFCE90014B177 /* 刘志凡.txt */; };
 		6E18ECED1F3AFCE90014B177 /* 刘志宗.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC841F3AFCE90014B177 /* 刘志宗.png */; };
-		6E18ECEE1F3AFCE90014B177 /* 刘志宗.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC851F3AFCE90014B177 /* 刘志宗.txt */; };
 		6E18ECEF1F3AFCE90014B177 /* 刘慧鹏.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */; };
-		6E18ECF01F3AFCE90014B177 /* 刘慧鹏.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */; };
 		6E18ECF11F3AFCE90014B177 /* 刘锐.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC881F3AFCE90014B177 /* 刘锐.png */; };
-		6E18ECF21F3AFCE90014B177 /* 刘锐.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC891F3AFCE90014B177 /* 刘锐.txt */; };
 		6E18ECF31F3AFCE90014B177 /* 姜玉琦.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */; };
-		6E18ECF41F3AFCE90014B177 /* 姜玉琦.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */; };
 		6E18ECF51F3AFCE90014B177 /* 热则耶·吐尔洪.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */; };
-		6E18ECF61F3AFCE90014B177 /* 热则耶·吐尔洪.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */; };
 		6E18ECF71F3AFCE90014B177 /* 王婷.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8E1F3AFCE90014B177 /* 王婷.png */; };
-		6E18ECF81F3AFCE90014B177 /* 王婷.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC8F1F3AFCE90014B177 /* 王婷.txt */; };
 		6E18ECF91F3AFCE90014B177 /* 王秋毅.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC901F3AFCE90014B177 /* 王秋毅.png */; };
-		6E18ECFA1F3AFCE90014B177 /* 王秋毅.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC911F3AFCE90014B177 /* 王秋毅.txt */; };
 		6E18ECFB1F3AFCE90014B177 /* 王金鸡.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC921F3AFCE90014B177 /* 王金鸡.png */; };
-		6E18ECFC1F3AFCE90014B177 /* 王金鸡.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC931F3AFCE90014B177 /* 王金鸡.txt */; };
 		6E18ECFD1F3AFCE90014B177 /* 田彬人.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC941F3AFCE90014B177 /* 田彬人.png */; };
-		6E18ECFE1F3AFCE90014B177 /* 田彬人.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC951F3AFCE90014B177 /* 田彬人.txt */; };
 		6E18ECFF1F3AFCE90014B177 /* 谢贵燕.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC961F3AFCE90014B177 /* 谢贵燕.png */; };
-		6E18ED001F3AFCE90014B177 /* 谢贵燕.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */; };
 		6E18ED011F3AFCE90014B177 /* 谭威.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC981F3AFCE90014B177 /* 谭威.png */; };
-		6E18ED021F3AFCE90014B177 /* 谭威.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC991F3AFCE90014B177 /* 谭威.txt */; };
 		6E18ED031F3AFCE90014B177 /* 郭鑫.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */; };
-		6E18ED041F3AFCE90014B177 /* 郭鑫.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */; };
 		6E18ED051F3AFCE90014B177 /* 马晨歌.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */; };
-		6E18ED061F3AFCE90014B177 /* 马晨歌.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */; };
 		6E18ED071F3AFCE90014B177 /* 粉色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */; };
 		6E18ED081F3AFCE90014B177 /* 粉色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */; };
 		6E18ED091F3AFCE90014B177 /* 绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */; };
@@ -116,6 +95,11 @@
 		6E18ED271F3AFCE90014B177 /* 重邮风采@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECBF1F3AFCE90014B177 /* 重邮风采@3x.png */; };
 		6E18ED281F3AFCE90014B177 /* 黄色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECC01F3AFCE90014B177 /* 黄色@2x.png */; };
 		6E18ED291F3AFCE90014B177 /* 黄色@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ECC11F3AFCE90014B177 /* 黄色@3x.png */; };
+		6E18ED2B1F3AFE6E0014B177 /* 0491201班.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED2A1F3AFE6E0014B177 /* 0491201班.png */; };
+		6E18ED341F3C1D210014B177 /* 春日落樱.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED301F3C1D210014B177 /* 春日落樱.PNG */; };
+		6E18ED351F3C1D210014B177 /* 冬至暮雪.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED311F3C1D210014B177 /* 冬至暮雪.PNG */; };
+		6E18ED361F3C1D210014B177 /* 立夏蝉鸣.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED321F3C1D210014B177 /* 立夏蝉鸣.PNG */; };
+		6E18ED371F3C1D210014B177 /* 杏染秋色.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED331F3C1D210014B177 /* 杏染秋色.PNG */; };
 		CE41EE121C1FE1A2004C873A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41EE111C1FE1A2004C873A /* ViewController.m */; };
 		CE4334471BE7C52D000C407D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4334461BE7C52D000C407D /* NotificationCenter.framework */; };
 		CE43344D1BE7C52D000C407D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43344C1BE7C52D000C407D /* TodayViewController.m */; };
@@ -638,46 +622,25 @@
 		6E18EC721F3AFCE90014B177 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
 		6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@2x.png"; sourceTree = "<group>"; };
 		6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "军训特辑@3x.png"; sourceTree = "<group>"; };
-		6E18EC761F3AFCE90014B177 /* 0491201班.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0491201班.png"; sourceTree = "<group>"; };
-		6E18EC771F3AFCE90014B177 /* 0491201班.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "0491201班.txt"; sourceTree = "<group>"; };
 		6E18EC781F3AFCE90014B177 /* 04991401班.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04991401班.png"; sourceTree = "<group>"; };
-		6E18EC791F3AFCE90014B177 /* 04991401班.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "04991401班.txt"; sourceTree = "<group>"; };
 		6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-810宿舍.png"; sourceTree = "<group>"; };
-		6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20-810宿舍.txt"; sourceTree = "<group>"; };
 		6E18EC7C1F3AFCE90014B177 /* 丛广林.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "丛广林.png"; sourceTree = "<group>"; };
-		6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "丛广林.txt"; sourceTree = "<group>"; };
 		6E18EC7E1F3AFCE90014B177 /* 冯益青.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冯益青.png"; sourceTree = "<group>"; };
-		6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "冯益青.txt"; sourceTree = "<group>"; };
 		6E18EC801F3AFCE90014B177 /* 刘国栋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘国栋.png"; sourceTree = "<group>"; };
-		6E18EC811F3AFCE90014B177 /* 刘国栋.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘国栋.txt"; sourceTree = "<group>"; };
 		6E18EC821F3AFCE90014B177 /* 刘志凡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘志凡.png"; sourceTree = "<group>"; };
-		6E18EC831F3AFCE90014B177 /* 刘志凡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘志凡.txt"; sourceTree = "<group>"; };
 		6E18EC841F3AFCE90014B177 /* 刘志宗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘志宗.png"; sourceTree = "<group>"; };
-		6E18EC851F3AFCE90014B177 /* 刘志宗.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘志宗.txt"; sourceTree = "<group>"; };
 		6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘慧鹏.png"; sourceTree = "<group>"; };
-		6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘慧鹏.txt"; sourceTree = "<group>"; };
 		6E18EC881F3AFCE90014B177 /* 刘锐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刘锐.png"; sourceTree = "<group>"; };
-		6E18EC891F3AFCE90014B177 /* 刘锐.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "刘锐.txt"; sourceTree = "<group>"; };
 		6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "姜玉琦.png"; sourceTree = "<group>"; };
-		6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "姜玉琦.txt"; sourceTree = "<group>"; };
 		6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "热则耶·吐尔洪.png"; sourceTree = "<group>"; };
-		6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "热则耶·吐尔洪.txt"; sourceTree = "<group>"; };
 		6E18EC8E1F3AFCE90014B177 /* 王婷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王婷.png"; sourceTree = "<group>"; };
-		6E18EC8F1F3AFCE90014B177 /* 王婷.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王婷.txt"; sourceTree = "<group>"; };
 		6E18EC901F3AFCE90014B177 /* 王秋毅.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王秋毅.png"; sourceTree = "<group>"; };
-		6E18EC911F3AFCE90014B177 /* 王秋毅.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王秋毅.txt"; sourceTree = "<group>"; };
 		6E18EC921F3AFCE90014B177 /* 王金鸡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "王金鸡.png"; sourceTree = "<group>"; };
-		6E18EC931F3AFCE90014B177 /* 王金鸡.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "王金鸡.txt"; sourceTree = "<group>"; };
 		6E18EC941F3AFCE90014B177 /* 田彬人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "田彬人.png"; sourceTree = "<group>"; };
-		6E18EC951F3AFCE90014B177 /* 田彬人.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "田彬人.txt"; sourceTree = "<group>"; };
 		6E18EC961F3AFCE90014B177 /* 谢贵燕.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "谢贵燕.png"; sourceTree = "<group>"; };
-		6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "谢贵燕.txt"; sourceTree = "<group>"; };
 		6E18EC981F3AFCE90014B177 /* 谭威.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "谭威.png"; sourceTree = "<group>"; };
-		6E18EC991F3AFCE90014B177 /* 谭威.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "谭威.txt"; sourceTree = "<group>"; };
 		6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "郭鑫.png"; sourceTree = "<group>"; };
-		6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "郭鑫.txt"; sourceTree = "<group>"; };
 		6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "马晨歌.png"; sourceTree = "<group>"; };
-		6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "马晨歌.txt"; sourceTree = "<group>"; };
 		6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@2x.png"; sourceTree = "<group>"; };
 		6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粉色@3x.png"; sourceTree = "<group>"; };
 		6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色@2x.png"; sourceTree = "<group>"; };
@@ -713,6 +676,11 @@
 		6E18ECBF1F3AFCE90014B177 /* 重邮风采@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "重邮风采@3x.png"; sourceTree = "<group>"; };
 		6E18ECC01F3AFCE90014B177 /* 黄色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@2x.png"; sourceTree = "<group>"; };
 		6E18ECC11F3AFCE90014B177 /* 黄色@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黄色@3x.png"; sourceTree = "<group>"; };
+		6E18ED2A1F3AFE6E0014B177 /* 0491201班.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0491201班.png"; sourceTree = "<group>"; };
+		6E18ED301F3C1D210014B177 /* 春日落樱.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "春日落樱.PNG"; sourceTree = "<group>"; };
+		6E18ED311F3C1D210014B177 /* 冬至暮雪.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冬至暮雪.PNG"; sourceTree = "<group>"; };
+		6E18ED321F3C1D210014B177 /* 立夏蝉鸣.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立夏蝉鸣.PNG"; sourceTree = "<group>"; };
+		6E18ED331F3C1D210014B177 /* 杏染秋色.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "杏染秋色.PNG"; sourceTree = "<group>"; };
 		BA10D639E65F33ACE628A0EB /* Pods-MoblieCQUPT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoblieCQUPT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoblieCQUPT_iOS/Pods-MoblieCQUPT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CE25501F1C15BD9500BCDDB8 /* ClassWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassWidget.entitlements; sourceTree = "<group>"; };
 		CE41EE101C1FE1A2004C873A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -1396,10 +1364,9 @@
 				6E18EC471F3AFCE90014B177 /* OriginalCY.m */,
 				6E18EC481F3AFCE90014B177 /* OriginalCYCell.h */,
 				6E18EC491F3AFCE90014B177 /* OriginalCYCell.m */,
+				6E18ED2F1F3B390D0014B177 /* support */,
 				6E18EC4A1F3AFCE90014B177 /* StuRootViewController.h */,
 				6E18EC4B1F3AFCE90014B177 /* StuRootViewController.m */,
-				6E18EC4C1F3AFCE90014B177 /* UIImage+Circle.h */,
-				6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */,
 			);
 			path = CQUPTBeauty;
 			sourceTree = "<group>";
@@ -1447,16 +1414,20 @@
 		6E18EC701F3AFCE90014B177 /* 图标 */ = {
 			isa = PBXGroup;
 			children = (
+				6E18ED301F3C1D210014B177 /* 春日落樱.PNG */,
+				6E18ED311F3C1D210014B177 /* 冬至暮雪.PNG */,
+				6E18ED321F3C1D210014B177 /* 立夏蝉鸣.PNG */,
+				6E18ED331F3C1D210014B177 /* 杏染秋色.PNG */,
+				6E18EC751F3AFCE90014B177 /* 同学 */,
+				6E18ECA21F3AFCE90014B177 /* 老师 */,
 				6E18EC711F3AFCE90014B177 /* close@2x.png */,
 				6E18EC721F3AFCE90014B177 /* close@3x.png */,
 				6E18EC731F3AFCE90014B177 /* 军训特辑@2x.png */,
 				6E18EC741F3AFCE90014B177 /* 军训特辑@3x.png */,
-				6E18EC751F3AFCE90014B177 /* 同学 */,
 				6E18EC9E1F3AFCE90014B177 /* 粉色@2x.png */,
 				6E18EC9F1F3AFCE90014B177 /* 粉色@3x.png */,
 				6E18ECA01F3AFCE90014B177 /* 绿色@2x.png */,
 				6E18ECA11F3AFCE90014B177 /* 绿色@3x.png */,
-				6E18ECA21F3AFCE90014B177 /* 老师 */,
 				6E18ECB61F3AFCE90014B177 /* 蓝色@2x.png */,
 				6E18ECB71F3AFCE90014B177 /* 蓝色@3x.png */,
 				6E18ECB81F3AFCE90014B177 /* 返回@2x.png */,
@@ -1476,46 +1447,26 @@
 		6E18EC751F3AFCE90014B177 /* 同学 */ = {
 			isa = PBXGroup;
 			children = (
-				6E18EC761F3AFCE90014B177 /* 0491201班.png */,
-				6E18EC771F3AFCE90014B177 /* 0491201班.txt */,
+				6E18ED2A1F3AFE6E0014B177 /* 0491201班.png */,
 				6E18EC781F3AFCE90014B177 /* 04991401班.png */,
-				6E18EC791F3AFCE90014B177 /* 04991401班.txt */,
 				6E18EC7A1F3AFCE90014B177 /* 20-810宿舍.png */,
-				6E18EC7B1F3AFCE90014B177 /* 20-810宿舍.txt */,
 				6E18EC7C1F3AFCE90014B177 /* 丛广林.png */,
-				6E18EC7D1F3AFCE90014B177 /* 丛广林.txt */,
 				6E18EC7E1F3AFCE90014B177 /* 冯益青.png */,
-				6E18EC7F1F3AFCE90014B177 /* 冯益青.txt */,
 				6E18EC801F3AFCE90014B177 /* 刘国栋.png */,
-				6E18EC811F3AFCE90014B177 /* 刘国栋.txt */,
 				6E18EC821F3AFCE90014B177 /* 刘志凡.png */,
-				6E18EC831F3AFCE90014B177 /* 刘志凡.txt */,
 				6E18EC841F3AFCE90014B177 /* 刘志宗.png */,
-				6E18EC851F3AFCE90014B177 /* 刘志宗.txt */,
 				6E18EC861F3AFCE90014B177 /* 刘慧鹏.png */,
-				6E18EC871F3AFCE90014B177 /* 刘慧鹏.txt */,
 				6E18EC881F3AFCE90014B177 /* 刘锐.png */,
-				6E18EC891F3AFCE90014B177 /* 刘锐.txt */,
 				6E18EC8A1F3AFCE90014B177 /* 姜玉琦.png */,
-				6E18EC8B1F3AFCE90014B177 /* 姜玉琦.txt */,
 				6E18EC8C1F3AFCE90014B177 /* 热则耶·吐尔洪.png */,
-				6E18EC8D1F3AFCE90014B177 /* 热则耶·吐尔洪.txt */,
 				6E18EC8E1F3AFCE90014B177 /* 王婷.png */,
-				6E18EC8F1F3AFCE90014B177 /* 王婷.txt */,
 				6E18EC901F3AFCE90014B177 /* 王秋毅.png */,
-				6E18EC911F3AFCE90014B177 /* 王秋毅.txt */,
 				6E18EC921F3AFCE90014B177 /* 王金鸡.png */,
-				6E18EC931F3AFCE90014B177 /* 王金鸡.txt */,
 				6E18EC941F3AFCE90014B177 /* 田彬人.png */,
-				6E18EC951F3AFCE90014B177 /* 田彬人.txt */,
 				6E18EC961F3AFCE90014B177 /* 谢贵燕.png */,
-				6E18EC971F3AFCE90014B177 /* 谢贵燕.txt */,
 				6E18EC981F3AFCE90014B177 /* 谭威.png */,
-				6E18EC991F3AFCE90014B177 /* 谭威.txt */,
 				6E18EC9A1F3AFCE90014B177 /* 郭鑫.png */,
-				6E18EC9B1F3AFCE90014B177 /* 郭鑫.txt */,
 				6E18EC9C1F3AFCE90014B177 /* 马晨歌.png */,
-				6E18EC9D1F3AFCE90014B177 /* 马晨歌.txt */,
 			);
 			path = "同学";
 			sourceTree = "<group>";
@@ -1544,6 +1495,15 @@
 				6E18ECB51F3AFCE90014B177 /* 高非.jpg */,
 			);
 			path = "老师";
+			sourceTree = "<group>";
+		};
+		6E18ED2F1F3B390D0014B177 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				6E18EC4C1F3AFCE90014B177 /* UIImage+Circle.h */,
+				6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 		C66265BA2143171179039C97 /* Pods */ = {
@@ -2928,7 +2888,6 @@
 				F242DEF41EBCB2BC005AC411 /* 图片7.jpg in Resources */,
 				F242DEF01EBCB2BC005AC411 /* 图片3.jpg in Resources */,
 				F242DF341EBCB2BC005AC411 /* emptyClassTag2.png in Resources */,
-				6E18ECEC1F3AFCE90014B177 /* 刘志凡.txt in Resources */,
 				6E18ED151F3AFCE90014B177 /* 罗元.jpg in Resources */,
 				F242DDE01EBCB2BB005AC411 /* lost_image_place@3x.png in Resources */,
 				F242DDE71EBCB2BB005AC411 /* lost_image_time@2x.png in Resources */,
@@ -2975,7 +2934,6 @@
 				F242DDF71EBCB2BB005AC411 /* 电费查询@3x.png in Resources */,
 				F242DF441EBCB2BC005AC411 /* icon_menu_3@2x.png in Resources */,
 				F242DE931EBCB2BC005AC411 /* 左三角@3x.png in Resources */,
-				6E18ED061F3AFCE90014B177 /* 马晨歌.txt in Resources */,
 				F242DF451EBCB2BC005AC411 /* icon_menu_4@2x.png in Resources */,
 				F242DEFA1EBCB2BC005AC411 /* AboutMePraiseTableViewCell.xib in Resources */,
 				F242DFAB1EBD9E2C005AC411 /* IssueTableViewController.xib in Resources */,
@@ -3001,7 +2959,6 @@
 				F242DF361EBCB2BC005AC411 /* GQsection.png in Resources */,
 				F242DF3B1EBCB2BC005AC411 /* 夜间模式@2x.png in Resources */,
 				F242DE821EBCB2BC005AC411 /* 书@3x.png in Resources */,
-				6E18ECF81F3AFCE90014B177 /* 王婷.txt in Resources */,
 				F242DE9C1EBCB2BC005AC411 /* 时间@2x.png in Resources */,
 				F242DF1F1EBCB2BC005AC411 /* 60-2.png in Resources */,
 				F242DF241EBCB2BC005AC411 /* 智妍4.jpg in Resources */,
@@ -3010,7 +2967,6 @@
 				F242DEC81EBCB2BC005AC411 /* cancel.png in Resources */,
 				F242DED51EBCB2BC005AC411 /* MBCommunityViewController.xib in Resources */,
 				F242DE711EBCB2BC005AC411 /* add@2x.png in Resources */,
-				6E18ECE61F3AFCE90014B177 /* 丛广林.txt in Resources */,
 				F242DF3C1EBCB2BC005AC411 /* 我的动态@2x.png in Resources */,
 				6E18ECEF1F3AFCE90014B177 /* 刘慧鹏.png in Resources */,
 				F242DDAC1EBCB2BB005AC411 /* doneImage.png in Resources */,
@@ -3025,16 +2981,13 @@
 				F242DF031EBCB2BC005AC411 /* ExamScheduleViewController.xib in Resources */,
 				F242DE881EBCB2BC005AC411 /* 地点@2x.png in Resources */,
 				6E18ED1E1F3AFCE90014B177 /* 蓝色@2x.png in Resources */,
-				6E18ECF41F3AFCE90014B177 /* 姜玉琦.txt in Resources */,
 				F242DE7D1EBCB2BC005AC411 /* 下拉@2x.png in Resources */,
-				6E18ECFE1F3AFCE90014B177 /* 田彬人.txt in Resources */,
 				F242DE9A1EBCB2BC005AC411 /* 无课@2x.png in Resources */,
 				F242DDEB1EBCB2BB005AC411 /* ok.png in Resources */,
 				F22286B11EED39840017516C /* icon_share_weibo@2x.png in Resources */,
 				F242DEAD1EBCB2BC005AC411 /* 返回箭头@3x.png in Resources */,
 				F242DF281EBCB2BC005AC411 /* iconfont-more.png in Resources */,
 				F242DED11EBCB2BC005AC411 /* comment1.png in Resources */,
-				6E18ECE01F3AFCE90014B177 /* 0491201班.txt in Resources */,
 				F242DF011EBCB2BC005AC411 /* ExamScheduleTableViewCell.xib in Resources */,
 				F242DDEF1EBCB2BB005AC411 /* shake_match.mp3 in Resources */,
 				6E18ED281F3AFCE90014B177 /* 黄色@2x.png in Resources */,
@@ -3047,8 +3000,8 @@
 				F242DF401EBCB2BC005AC411 /* 考试安排@2x.png in Resources */,
 				F242DEF11EBCB2BC005AC411 /* 图片4.jpg in Resources */,
 				F242DE8B1EBCB2BC005AC411 /* 多课0@3x.png in Resources */,
+				6E18ED2B1F3AFE6E0014B177 /* 0491201班.png in Resources */,
 				F242DF1D1EBCB2BC005AC411 /* 40-2.png in Resources */,
-				6E18ECE41F3AFCE90014B177 /* 20-810宿舍.txt in Resources */,
 				F242DF4B1EBCB2BC005AC411 /* iconfont-location.png in Resources */,
 				F242DD881EBCB2BB005AC411 /* LaunchScreen.xib in Resources */,
 				F242DF251EBCB2BC005AC411 /* courseMengbi.jpg in Resources */,
@@ -3058,17 +3011,14 @@
 				F21A8FA91ED9679F0093FBC4 /* noTopicIcon.png in Resources */,
 				F242DF201EBCB2BC005AC411 /* calendar.png in Resources */,
 				6E18ECE71F3AFCE90014B177 /* 冯益青.png in Resources */,
-				6E18ECEA1F3AFCE90014B177 /* 刘国栋.txt in Resources */,
 				F242DE651EBCB2BC005AC411 /* DetailPageController.xib in Resources */,
 				6E18ED051F3AFCE90014B177 /* 马晨歌.png in Resources */,
 				F242DDE41EBCB2BB005AC411 /* lost_image_success@3x.png in Resources */,
 				6E18ECE91F3AFCE90014B177 /* 刘国栋.png in Resources */,
-				6E18ECFC1F3AFCE90014B177 /* 王金鸡.txt in Resources */,
 				F242DE761EBCB2BC005AC411 /* remind1@3x.png in Resources */,
 				F242DE611EBCB2BC005AC411 /* AddRemindViewController.xib in Resources */,
 				F242DEED1EBCB2BC005AC411 /* 叉叉.png in Resources */,
 				6E18ED101F3AFCE90014B177 /* 朱伟.jpg in Resources */,
-				6E18ECF21F3AFCE90014B177 /* 刘锐.txt in Resources */,
 				F242DE991EBCB2BC005AC411 /* 无考试@3x.png in Resources */,
 				F242DF051EBCB2BC005AC411 /* EmptyClassViewController.xib in Resources */,
 				F242DF2E1EBCB2BC005AC411 /* iconfont-password.png in Resources */,
@@ -3076,7 +3026,6 @@
 				F242DEA21EBCB2BC005AC411 /* 类型@2x.png in Resources */,
 				F242DE7A1EBCB2BC005AC411 /* remind@3x.png in Resources */,
 				6E18ED191F3AFCE90014B177 /* 郑继明.jpg in Resources */,
-				6E18ECE21F3AFCE90014B177 /* 04991401班.txt in Resources */,
 				F242DF0D1EBCB2BC005AC411 /* MyInfoViewController.xib in Resources */,
 				F242DE981EBCB2BC005AC411 /* 无考试@2x.png in Resources */,
 				F242DF351EBCB2BC005AC411 /* GQclass.png in Resources */,
@@ -3164,13 +3113,11 @@
 				F242DECE1EBCB2BC005AC411 /* MBCommentCell.xib in Resources */,
 				F242DDED1EBCB2BB005AC411 /* redrock_new@2x.png in Resources */,
 				F242DF391EBCB2BC005AC411 /* 关于@2x.png in Resources */,
-				6E18ECEE1F3AFCE90014B177 /* 刘志宗.txt in Resources */,
 				F242DE531EBCB2BC005AC411 /* LoginViewController.xib in Resources */,
 				F242DEF31EBCB2BC005AC411 /* 图片6.jpg in Resources */,
 				F242DE851EBCB2BC005AC411 /* 启动页.jpg in Resources */,
 				F242DDD01EBCB2BB005AC411 /* lost_image_describe@3x.png in Resources */,
 				F242DF431EBCB2BC005AC411 /* icon_menu_2@2x.png in Resources */,
-				6E18ECE81F3AFCE90014B177 /* 冯益青.txt in Resources */,
 				F242DDD91EBCB2BB005AC411 /* lost_image_lacktel@2x.png in Resources */,
 				F242DE871EBCB2BC005AC411 /* 周数@3x.png in Resources */,
 				6E18ED241F3AFCE90014B177 /* 重邮数据@2x.png in Resources */,
@@ -3186,7 +3133,6 @@
 				F242DE841EBCB2BC005AC411 /* 删除@3x.png in Resources */,
 				F242DDC61EBCB2BB005AC411 /* cqupt1@2x.jpg in Resources */,
 				F2BE9C261EDB047200569A2B /* topic_image_frame@3x.png in Resources */,
-				6E18ECDF1F3AFCE90014B177 /* 0491201班.png in Resources */,
 				6E18ED1A1F3AFCE90014B177 /* 闵绪国.jpg in Resources */,
 				F242DF331EBCB2BC005AC411 /* emptyClassTag1.png in Resources */,
 				F242DF291EBCB2BC005AC411 /* iconfont-tag.png in Resources */,
@@ -3200,7 +3146,6 @@
 				F242DF501EBCB2BC005AC411 /* 掌上重邮60-3.png in Resources */,
 				F242DEF21EBCB2BC005AC411 /* 图片5.jpg in Resources */,
 				F289CF951ED6E20D00373595 /* topic_image_alltopic@2x.png in Resources */,
-				6E18ED001F3AFCE90014B177 /* 谢贵燕.txt in Resources */,
 				F242DEAA1EBCB2BC005AC411 /* 老师@2x.png in Resources */,
 				F242DDD71EBCB2BB005AC411 /* lost_image_lackplace@2x.png in Resources */,
 				F242DFB41EBD9E2C005AC411 /* IconTableViewCell.xib in Resources */,
@@ -3210,16 +3155,15 @@
 				6E18ECFD1F3AFCE90014B177 /* 田彬人.png in Resources */,
 				F242DE631EBCB2BC005AC411 /* DetailLessonController.xib in Resources */,
 				F242DEDF1EBCB2BC005AC411 /* support1.png in Resources */,
-				6E18ECFA1F3AFCE90014B177 /* 王秋毅.txt in Resources */,
+				6E18ED361F3C1D210014B177 /* 立夏蝉鸣.PNG in Resources */,
 				F242DF261EBCB2BC005AC411 /* iconfont-backTag.png in Resources */,
 				F242DE5D1EBCB2BC005AC411 /* DetailRemindTableViewCell.xib in Resources */,
 				F242DDCE1EBCB2BB005AC411 /* lost_image_com@3x.png in Resources */,
+				6E18ED351F3C1D210014B177 /* 冬至暮雪.PNG in Resources */,
 				F242DF371EBCB2BC005AC411 /* GQtime.png in Resources */,
-				6E18ED041F3AFCE90014B177 /* 郭鑫.txt in Resources */,
 				F242DF4A1EBCB2BC005AC411 /* iconfont-clock.png in Resources */,
 				F242DEF81EBCB2BC005AC411 /* XBSAboutViewController.xib in Resources */,
 				F22286B31EED39840017516C /* icon_share_qq@2x.png in Resources */,
-				6E18ECF61F3AFCE90014B177 /* 热则耶·吐尔洪.txt in Resources */,
 				F242DF381EBCB2BC005AC411 /* 与我相关@2x.png in Resources */,
 				F242DF161EBCB2BC005AC411 /* RestTimeDetailView.xib in Resources */,
 				6E18ECF71F3AFCE90014B177 /* 王婷.png in Resources */,
@@ -3232,10 +3176,8 @@
 				F242DDAA1EBCB2BB005AC411 /* angleImage.png in Resources */,
 				F21A8FAA1ED9679F0093FBC4 /* arrowIcon.png in Resources */,
 				6E18ED031F3AFCE90014B177 /* 郭鑫.png in Resources */,
-				6E18ECF01F3AFCE90014B177 /* 刘慧鹏.txt in Resources */,
 				F242DF3A1EBCB2BC005AC411 /* 反馈信息@2x.png in Resources */,
 				F21A8FAB1ED9679F0093FBC4 /* aNumIcon.png in Resources */,
-				6E18ED021F3AFCE90014B177 /* 谭威.txt in Resources */,
 				6E18ECDC1F3AFCE90014B177 /* close@3x.png in Resources */,
 				F242DDE11EBCB2BB005AC411 /* lost_image_QQ@2x.png in Resources */,
 				F242DDA81EBCB2BB005AC411 /* MapViewController.xib in Resources */,
@@ -3251,12 +3193,14 @@
 				F242DF421EBCB2BC005AC411 /* icon_menu_1@2x.png in Resources */,
 				F289CF941ED6E20D00373595 /* topic_image_alltopic@3x.png in Resources */,
 				F242DED01EBCB2BC005AC411 /* MBCommunityCellTableViewCell.xib in Resources */,
+				6E18ED341F3C1D210014B177 /* 春日落樱.PNG in Resources */,
 				F2BE9C1A1EDAEC7D00569A2B /* topic_image_join@3x.png in Resources */,
 				F242DE861EBCB2BC005AC411 /* 周数@2x.png in Resources */,
 				F242DEAE1EBCB2BC005AC411 /* 选择@2x.png in Resources */,
 				F242DDF61EBCB2BB005AC411 /* 电费查询@2x.png in Resources */,
 				6E18ECDB1F3AFCE90014B177 /* close@2x.png in Resources */,
 				F242DDEE1EBCB2BB005AC411 /* shake@2x.png in Resources */,
+				6E18ED371F3C1D210014B177 /* 杏染秋色.PNG in Resources */,
 				6E18ED181F3AFCE90014B177 /* 袁帅.jpg in Resources */,
 				F242DEC71EBCB2BC005AC411 /* addPhoto.jpg in Resources */,
 				F242DEEF1EBCB2BC005AC411 /* 图片2.jpg in Resources */,

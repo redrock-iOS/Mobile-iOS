@@ -43,9 +43,6 @@
     _titleScrollView.showsVerticalScrollIndicator = NO;
     [_titleScrollView flashScrollIndicators];
     
-    UIView *cuttingLine = [[UIView alloc]initWithFrame:CGRectMake(0, kTitleHeight-1, _titleScrollView.contentSize.width, 1)];
-    cuttingLine.backgroundColor = [UIColor colorWithRed:226/255.0 green:227/255.0 blue:229/255.0 alpha:1];
-    
     _btnArray = [NSMutableArray<UIButton *> array];
     for (int i = 0; i < self.controllers.count; i ++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -65,8 +62,7 @@
     }
     _sliderView = [[UIView alloc]initWithFrame:CGRectMake(0, kTitleHeight-2, self.titleBtnWidth, 2)];
     _sliderView.backgroundColor = MAIN_COLOR;
-    
-    [_titleScrollView addSubview:cuttingLine];
+
     [_titleScrollView addSubview:self.sliderView];
     [self addSubview:self.titleScrollView];
 }

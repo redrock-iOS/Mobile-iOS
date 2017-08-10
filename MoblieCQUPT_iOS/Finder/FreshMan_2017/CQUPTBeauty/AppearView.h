@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AppearView : UIView
-- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string With:(UIImage *)image;
+@property UIImageView *closeImage;
+- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string AndContext:(NSString *) context;
 @end
