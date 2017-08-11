@@ -100,6 +100,10 @@
 		6E18ED351F3C1D210014B177 /* 冬至暮雪.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED311F3C1D210014B177 /* 冬至暮雪.PNG */; };
 		6E18ED361F3C1D210014B177 /* 立夏蝉鸣.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED321F3C1D210014B177 /* 立夏蝉鸣.PNG */; };
 		6E18ED371F3C1D210014B177 /* 杏染秋色.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6E18ED331F3C1D210014B177 /* 杏染秋色.PNG */; };
+		8268758E1F3C9F14006168CD /* BeautyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8268758C1F3C9F14006168CD /* BeautyTableViewCell.m */; };
+		8268758F1F3C9F14006168CD /* BeautyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8268758D1F3C9F14006168CD /* BeautyTableViewCell.xib */; };
+		826875981F3D4A94006168CD /* IntroductionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 826875961F3D4A94006168CD /* IntroductionTableViewCell.m */; };
+		826875991F3D4A94006168CD /* IntroductionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826875971F3D4A94006168CD /* IntroductionTableViewCell.xib */; };
 		82DE8FD01F3C7BDE00072530 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC01F3C7BDE00072530 /* 0.png */; };
 		82DE8FD11F3C7BDE00072530 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC11F3C7BDE00072530 /* 1.jpg */; };
 		82DE8FD21F3C7BDE00072530 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC21F3C7BDE00072530 /* 1.png */; };
@@ -108,11 +112,8 @@
 		82DE8FD51F3C7BDE00072530 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC51F3C7BDE00072530 /* 4.png */; };
 		82DE8FD61F3C7BDE00072530 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC61F3C7BDE00072530 /* 5.png */; };
 		82DE8FD71F3C7BDE00072530 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FC71F3C7BDE00072530 /* 6.png */; };
-		82DE8FD81F3C7BDE00072530 /* CampusEnvironmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE8FC91F3C7BDE00072530 /* CampusEnvironmentCell.m */; };
 		82DE8FD91F3C7BDE00072530 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE8FCB1F3C7BDE00072530 /* MyTableViewCell.m */; };
 		82DE8FDA1F3C7BDE00072530 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FCC1F3C7BDE00072530 /* MyTableViewCell.xib */; };
-		82DE8FDB1F3C7BDE00072530 /* StuBedroomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE8FCE1F3C7BDE00072530 /* StuBedroomCellTableViewCell.m */; };
-		82DE8FDC1F3C7BDE00072530 /* StuBedroomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82DE8FCF1F3C7BDE00072530 /* StuBedroomCellTableViewCell.xib */; };
 		CE41EE121C1FE1A2004C873A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41EE111C1FE1A2004C873A /* ViewController.m */; };
 		CE4334471BE7C52D000C407D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4334461BE7C52D000C407D /* NotificationCenter.framework */; };
 		CE43344D1BE7C52D000C407D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43344C1BE7C52D000C407D /* TodayViewController.m */; };
@@ -694,6 +695,12 @@
 		6E18ED311F3C1D210014B177 /* 冬至暮雪.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冬至暮雪.PNG"; sourceTree = "<group>"; };
 		6E18ED321F3C1D210014B177 /* 立夏蝉鸣.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "立夏蝉鸣.PNG"; sourceTree = "<group>"; };
 		6E18ED331F3C1D210014B177 /* 杏染秋色.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "杏染秋色.PNG"; sourceTree = "<group>"; };
+		8268758B1F3C9F14006168CD /* BeautyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyTableViewCell.h; sourceTree = "<group>"; };
+		8268758C1F3C9F14006168CD /* BeautyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyTableViewCell.m; sourceTree = "<group>"; };
+		8268758D1F3C9F14006168CD /* BeautyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeautyTableViewCell.xib; sourceTree = "<group>"; };
+		826875951F3D4A94006168CD /* IntroductionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionTableViewCell.h; sourceTree = "<group>"; };
+		826875961F3D4A94006168CD /* IntroductionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionTableViewCell.m; sourceTree = "<group>"; };
+		826875971F3D4A94006168CD /* IntroductionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionTableViewCell.xib; sourceTree = "<group>"; };
 		82DE8FC01F3C7BDE00072530 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		82DE8FC11F3C7BDE00072530 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		82DE8FC21F3C7BDE00072530 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -702,14 +709,9 @@
 		82DE8FC51F3C7BDE00072530 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		82DE8FC61F3C7BDE00072530 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		82DE8FC71F3C7BDE00072530 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
-		82DE8FC81F3C7BDE00072530 /* CampusEnvironmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusEnvironmentCell.h; sourceTree = "<group>"; };
-		82DE8FC91F3C7BDE00072530 /* CampusEnvironmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusEnvironmentCell.m; sourceTree = "<group>"; };
 		82DE8FCA1F3C7BDE00072530 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		82DE8FCB1F3C7BDE00072530 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		82DE8FCC1F3C7BDE00072530 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
-		82DE8FCD1F3C7BDE00072530 /* StuBedroomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuBedroomCellTableViewCell.h; sourceTree = "<group>"; };
-		82DE8FCE1F3C7BDE00072530 /* StuBedroomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuBedroomCellTableViewCell.m; sourceTree = "<group>"; };
-		82DE8FCF1F3C7BDE00072530 /* StuBedroomCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StuBedroomCellTableViewCell.xib; sourceTree = "<group>"; };
 		BA10D639E65F33ACE628A0EB /* Pods-MoblieCQUPT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoblieCQUPT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoblieCQUPT_iOS/Pods-MoblieCQUPT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CE25501F1C15BD9500BCDDB8 /* ClassWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassWidget.entitlements; sourceTree = "<group>"; };
 		CE41EE101C1FE1A2004C873A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -1418,38 +1420,32 @@
 		6E18EC5D1F3AFCE90014B177 /* StuStrategyDetailVC */ = {
 			isa = PBXGroup;
 			children = (
-				82DE8FC01F3C7BDE00072530 /* 0.png */,
-				82DE8FC11F3C7BDE00072530 /* 1.jpg */,
-				82DE8FC21F3C7BDE00072530 /* 1.png */,
-				82DE8FC31F3C7BDE00072530 /* 2.png */,
-				82DE8FC41F3C7BDE00072530 /* 3.png */,
-				82DE8FC51F3C7BDE00072530 /* 4.png */,
-				82DE8FC61F3C7BDE00072530 /* 5.png */,
-				82DE8FC71F3C7BDE00072530 /* 6.png */,
-				82DE8FC81F3C7BDE00072530 /* CampusEnvironmentCell.h */,
-				82DE8FC91F3C7BDE00072530 /* CampusEnvironmentCell.m */,
+				8268758A1F3C7E48006168CD /* 校园环境图标 */,
 				82DE8FCA1F3C7BDE00072530 /* MyTableViewCell.h */,
 				82DE8FCB1F3C7BDE00072530 /* MyTableViewCell.m */,
 				82DE8FCC1F3C7BDE00072530 /* MyTableViewCell.xib */,
-				82DE8FCD1F3C7BDE00072530 /* StuBedroomCellTableViewCell.h */,
-				82DE8FCE1F3C7BDE00072530 /* StuBedroomCellTableViewCell.m */,
-				82DE8FCF1F3C7BDE00072530 /* StuBedroomCellTableViewCell.xib */,
-				6E18EC5E1F3AFCE90014B177 /* BeautyViewController.h */,
-				6E18EC5F1F3AFCE90014B177 /* BeautyViewController.m */,
 				6E18EC601F3AFCE90014B177 /* CampusEnvironmentViewController.h */,
 				6E18EC611F3AFCE90014B177 /* CampusEnvironmentViewController.m */,
+				6E18EC6C1F3AFCE90014B177 /* StuBedroomViewController.h */,
+				6E18EC6D1F3AFCE90014B177 /* StuBedroomViewController.m */,
 				6E18EC621F3AFCE90014B177 /* CanteenViewController.h */,
 				6E18EC631F3AFCE90014B177 /* CanteenViewController.m */,
+				8268758B1F3C9F14006168CD /* BeautyTableViewCell.h */,
+				8268758C1F3C9F14006168CD /* BeautyTableViewCell.m */,
+				8268758D1F3C9F14006168CD /* BeautyTableViewCell.xib */,
+				6E18EC681F3AFCE90014B177 /* IntroductionViewController.h */,
+				6E18EC691F3AFCE90014B177 /* IntroductionViewController.m */,
+				6E18EC6A1F3AFCE90014B177 /* QQGroupViewController.h */,
+				826875951F3D4A94006168CD /* IntroductionTableViewCell.h */,
+				826875961F3D4A94006168CD /* IntroductionTableViewCell.m */,
+				826875971F3D4A94006168CD /* IntroductionTableViewCell.xib */,
+				6E18EC6B1F3AFCE90014B177 /* QQGroupViewController.m */,
 				6E18EC641F3AFCE90014B177 /* DailyLifeViewController.h */,
 				6E18EC651F3AFCE90014B177 /* DailyLifeViewController.m */,
 				6E18EC661F3AFCE90014B177 /* FoodViewController.h */,
 				6E18EC671F3AFCE90014B177 /* FoodViewController.m */,
-				6E18EC681F3AFCE90014B177 /* IntroductionViewController.h */,
-				6E18EC691F3AFCE90014B177 /* IntroductionViewController.m */,
-				6E18EC6A1F3AFCE90014B177 /* QQGroupViewController.h */,
-				6E18EC6B1F3AFCE90014B177 /* QQGroupViewController.m */,
-				6E18EC6C1F3AFCE90014B177 /* StuBedroomViewController.h */,
-				6E18EC6D1F3AFCE90014B177 /* StuBedroomViewController.m */,
+				6E18EC5E1F3AFCE90014B177 /* BeautyViewController.h */,
+				6E18EC5F1F3AFCE90014B177 /* BeautyViewController.m */,
 				6E18EC6E1F3AFCE90014B177 /* StuStrategyRootViewController.h */,
 				6E18EC6F1F3AFCE90014B177 /* StuStrategyRootViewController.m */,
 			);
@@ -1549,6 +1545,21 @@
 				6E18EC4D1F3AFCE90014B177 /* UIImage+Circle.m */,
 			);
 			name = support;
+			sourceTree = "<group>";
+		};
+		8268758A1F3C7E48006168CD /* 校园环境图标 */ = {
+			isa = PBXGroup;
+			children = (
+				82DE8FC01F3C7BDE00072530 /* 0.png */,
+				82DE8FC11F3C7BDE00072530 /* 1.jpg */,
+				82DE8FC21F3C7BDE00072530 /* 1.png */,
+				82DE8FC31F3C7BDE00072530 /* 2.png */,
+				82DE8FC41F3C7BDE00072530 /* 3.png */,
+				82DE8FC51F3C7BDE00072530 /* 4.png */,
+				82DE8FC61F3C7BDE00072530 /* 5.png */,
+				82DE8FC71F3C7BDE00072530 /* 6.png */,
+			);
+			name = "校园环境图标";
 			sourceTree = "<group>";
 		};
 		C66265BA2143171179039C97 /* Pods */ = {
@@ -2887,7 +2898,7 @@
 					};
 					CEF61B291B82BC950014B980 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = WTP66K3RCH;
+						DevelopmentTeam = 858P7PGZLD;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -3022,9 +3033,9 @@
 				6E18ED111F3AFCE90014B177 /* 漆晶.jpg in Resources */,
 				F242DDD11EBCB2BB005AC411 /* lost_image_infocategory@2x.png in Resources */,
 				F242DF2B1EBCB2BC005AC411 /* iconfont_meizhou.png in Resources */,
+				826875991F3D4A94006168CD /* IntroductionTableViewCell.xib in Resources */,
 				F242DEFE1EBCB2BC005AC411 /* AboutMeViewController.xib in Resources */,
 				F242DDDD1EBCB2BB005AC411 /* lost_image_many@2x.png in Resources */,
-				82DE8FDC1F3C7BDE00072530 /* StuBedroomCellTableViewCell.xib in Resources */,
 				F242DF301EBCB2BC005AC411 /* edit.png in Resources */,
 				F242DDFB1EBCB2BB005AC411 /* loading@2x.png in Resources */,
 				F242DF031EBCB2BC005AC411 /* ExamScheduleViewController.xib in Resources */,
@@ -3180,6 +3191,7 @@
 				F242DE911EBCB2BC005AC411 /* 完成@3x.png in Resources */,
 				6E18ED0A1F3AFCE90014B177 /* 绿色@3x.png in Resources */,
 				F242DF321EBCB2BC005AC411 /* emptyClassTag.png in Resources */,
+				8268758F1F3C9F14006168CD /* BeautyTableViewCell.xib in Resources */,
 				F242DF4E1EBCB2BC005AC411 /* iconfont-week.png in Resources */,
 				F242DDF51EBCB2BB005AC411 /* 失物招领@3x.png in Resources */,
 				F242DE841EBCB2BC005AC411 /* 删除@3x.png in Resources */,
@@ -3401,7 +3413,6 @@
 				6E18ECC81F3AFCE90014B177 /* OriginalCYCell.m in Sources */,
 				6E18ECD21F3AFCE90014B177 /* BeautyViewController.m in Sources */,
 				F242DDBC1EBCB2BB005AC411 /* QuerNoteView.m in Sources */,
-				82DE8FDB1F3C7BDE00072530 /* StuBedroomCellTableViewCell.m in Sources */,
 				6E18ECC71F3AFCE90014B177 /* OriginalCY.m in Sources */,
 				F242DF021EBCB2BC005AC411 /* ExamScheduleViewController.m in Sources */,
 				F242DEB81EBCB2BC005AC411 /* CoverView.m in Sources */,
@@ -3441,6 +3452,7 @@
 				F242DEE61EBCB2BC005AC411 /* MBPhotoContainerView.m in Sources */,
 				F242DE521EBCB2BC005AC411 /* LoginViewController.m in Sources */,
 				F242DDB81EBCB2BB005AC411 /* QuerCurveView.m in Sources */,
+				8268758E1F3C9F14006168CD /* BeautyTableViewCell.m in Sources */,
 				F289CFC11ED71F6F00373595 /* TopicSearchViewController.m in Sources */,
 				6E18ECC61F3AFCE90014B177 /* CQUPTStudentsViewController.m in Sources */,
 				F242DEE91EBCB2BC005AC411 /* MBComment_ViewModel.m in Sources */,
@@ -3518,8 +3530,8 @@
 				F242DEFB1EBCB2BC005AC411 /* AboutMeTableViewCell.m in Sources */,
 				F26A5ADD1EC82B8700AC09F9 /* MBCommunityHandle.m in Sources */,
 				F242DFB31EBD9E2C005AC411 /* IconTableViewCell.m in Sources */,
-				82DE8FD81F3C7BDE00072530 /* CampusEnvironmentCell.m in Sources */,
 				F242DE5B1EBCB2BC005AC411 /* UIImage+Color.m in Sources */,
+				826875981F3D4A94006168CD /* IntroductionTableViewCell.m in Sources */,
 				F242DEE41EBCB2BC005AC411 /* MBInputView.m in Sources */,
 				6E18ECD31F3AFCE90014B177 /* CampusEnvironmentViewController.m in Sources */,
 				F289CF851ED5637800373595 /* DetailBannnerView.m in Sources */,
@@ -3694,7 +3706,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MoblieCQUPT_iOS/掌上重邮.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WTP66K3RCH;
+				DEVELOPMENT_TEAM = 858P7PGZLD;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoblieCQUPT_iOS/PrefixHeader.pch";
@@ -3711,7 +3723,7 @@
 					"\"${PODS_ROOT}/Headers/Public/libxml2.2\"",
 				);
 				INFOPLIST_FILE = MoblieCQUPT_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3734,7 +3746,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MoblieCQUPT_iOS/掌上重邮.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WTP66K3RCH;
+				DEVELOPMENT_TEAM = 858P7PGZLD;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MoblieCQUPT_iOS/PrefixHeader.pch";
@@ -3751,7 +3763,7 @@
 					"\"${PODS_ROOT}/Headers/Public/libxml2.2\"",
 				);
 				INFOPLIST_FILE = MoblieCQUPT_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

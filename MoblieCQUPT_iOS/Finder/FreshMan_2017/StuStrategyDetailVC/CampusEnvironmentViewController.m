@@ -6,7 +6,8 @@
 //  Copyright © 2017年 topkid. All rights reserved.
 //
 
-#import "CampusEnvironmentCell.h"
+//#import "CampusEnvironmentCell.h"
+#import "MyTableViewCell.h"
 #import "CampusEnvironmentViewController.h"
 
 @interface CampusEnvironmentViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -31,8 +32,6 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
-//        _tableView.allowsSelection = NO;
-        
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         return _tableView;
     }
@@ -53,25 +52,32 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *idStr = @"cell";
-    CampusEnvironmentCell *cell = [tableView dequeueReusableCellWithIdentifier:idStr];
+    static NSString *ID = @"cell";
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     if (!cell) {
-        cell = [[CampusEnvironmentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:idStr];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];
     }
+    cell.secondNameLabel.hidden = YES;
+    cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)indexPath.row]];
-    NSMutableAttributedString *nameStr = [[NSMutableAttributedString alloc] initWithString:self.nameArray[indexPath.row]];
-    [nameStr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"PingFang-SC-Medium" size:15.0] range:NSMakeRange(0, 2)];
     cell.nameLabel.text = self.nameArray[indexPath.row];
+    cell.nameLabel.font = [UIFont systemFontOfSize:15];
     cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
+    cell.descriptionLabel.font = [UIFont systemFontOfSize:13];
+    cell.descriptionLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 343 / 375.0 * [UIScreen mainScreen].bounds.size.width;
+    return UITableViewAutomaticDimension;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 500;
 }
 
 - (void)didReceiveMemoryWarning {

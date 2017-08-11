@@ -7,12 +7,12 @@
 //
 
 #import "StuBedroomViewController.h"
-#import "StuBedroomCellTableViewCell.h"
+#import "MyTableViewCell.h"
 
 @interface StuBedroomViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSMutableDictionary *height;
+
 @end
 
 @implementation StuBedroomViewController
@@ -28,20 +28,10 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
-        //        _tableView.allowsSelection = NO;
-        
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         return _tableView;
     }
     return _tableView;
-}
-
-- (NSMutableDictionary *)height {
-    if (! _height) {
-        _height = [NSMutableDictionary dictionary];
-    }
-    
-    return _height;
 }
 
 - (void)viewDidLoad {
@@ -52,33 +42,31 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    StuBedroomCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"StuBedroomCellTableViewCell" owner:nil options:nil] lastObject];;
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];;
     }
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    cell.nameLabel.text = @"233";
-//    cell.numberLabel.text = @"asfsfasd";
-//    if (indexPath.row == 1) {
-//    cell.descriptionLabel.text = @"sdjagfvsdkvafjvsjfvskjdavfbdjkvfbdjzkfbauvfsjvfuaBKufgvbuzsjbkfjhsdkzgbuzdsgsdthrdtgdrfgdjhgkbdsjkgbjzsgbfdskbgiudxgbudsbgudkbrgkdxubguftgbdxjkbgjdxkbgurkbgdjzbfgseibgdizlbgiseurgbdjkbgjdxbgjksbzdjfgkbsgesdubrfgkdzrgiuerlsnkxjfbgvnirlbgnzdjklbngfiseulbgkjdlnfgiueslgndzfilbgn";
-//    }
-//    else {
-//        cell.descriptionLabel.text = @"哈哈";
-//    }
-    cell = [cell cell:cell IndexPath:indexPath];
+    cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    [cell layoutIfNeeded];
-    NSLog(@"cell.height----->%lf", cell.height);
-    self.height[@(indexPath.row)] = @(cell.height);
+    cell.nameLabel.font = [UIFont systemFontOfSize:15];
+    
+    cell.secondNameLabel.font = [UIFont systemFontOfSize:13];
+    cell.secondNameLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
+
+    cell.descriptionLabel.font = [UIFont systemFontOfSize:13];
+    cell.descriptionLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
+    
+    cell.myImageView.contentMode = UIViewContentModeScaleToFill;
+
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.height[@(indexPath.row)] doubleValue];
+    return UITableViewAutomaticDimension;
 }
 
-//返回估计高度。先执行创建cell在执行cell高度
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 500;
 }
