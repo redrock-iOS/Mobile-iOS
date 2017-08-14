@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage(Circle)
-+ (UIImage *)cutCircleImage:(NSString *)imageName;
++ (UIImage *)cutCircleImage:(UIImage *)imageName;
 @end

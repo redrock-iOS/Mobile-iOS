@@ -23,7 +23,7 @@
     // Drawing code
 }
 */
-- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string AndContext:(NSString *)context{
+- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string With:(NSString *) imagee AndContext:(NSString *) context{
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor colorWithRed:189/255.0  green:189/255.0 blue:189/255.0 alpha:0.5];
@@ -39,8 +39,13 @@
         
         UIImageView *peopleImage = [[UIImageView alloc] init];
         [peopleImage setContentScaleFactor:[[UIScreen mainScreen] scale]];
-//        peopleImage.contentMode =  UIViewContentModeScaleAspectFill;
-        peopleImage.image = [UIImage cutCircleImage:string];
+        NSURL *picUrl = [NSURL URLWithString:imagee];
+        NSData *data = [NSData dataWithContentsOfURL:picUrl];
+        UIImage *image = [UIImage imageWithData:data];
+        peopleImage.contentMode = UIViewContentModeScaleAspectFill;
+        peopleImage.layer.cornerRadius = 50;
+        peopleImage.clipsToBounds = YES;
+        peopleImage.image = image;
         [displayView addSubview:peopleImage];
         
         UILabel *nameText = [[UILabel alloc]init];

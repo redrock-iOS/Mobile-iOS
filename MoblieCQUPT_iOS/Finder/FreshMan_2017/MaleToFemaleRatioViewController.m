@@ -6,7 +6,7 @@
 //  Copyright © 2017年 topkid. All rights reserved.
 //
 
-#import "OriginalCY.h"
+
 #import "StatisticsTable.h"
 #import <AFNetworking.h>
 #import "MaleToFemaleRatioViewController.h"

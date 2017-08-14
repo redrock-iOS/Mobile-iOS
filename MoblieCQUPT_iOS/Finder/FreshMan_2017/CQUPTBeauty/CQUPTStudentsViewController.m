@@ -10,14 +10,15 @@
 #import "CQUPTStudentsCell.h"
 #import "UIImage+Circle.h"
 #import "AppearView.h"
-
-
+#import "UIImageView+WebCache.h"
+#import "AFNetWorking.h"
+#define url @"http://yangruixin.com/test/apiForText.php"
 @interface CQUPTStudentsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)UITableView *tableView;
-
+@property (strong, nonatomic)NSMutableArray *contextArray;
 @property (nonatomic, copy)NSMutableArray *dataArray;
 
-@property (strong, nonatomic)NSArray *nameArray;
+@property (strong, nonatomic)NSMutableArray *nameArray;
 
 @property (strong, nonatomic)AppearView *viewS;
 @end
@@ -26,19 +27,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 120) style:UITableViewStylePlain];
+    _contextArray = [[NSMutableArray alloc]init];
+    _dataArray = [[NSMutableArray alloc]init];
+    _nameArray = [[NSMutableArray alloc]init];
+    _detailArray = [[NSMutableArray alloc]init];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 65) style:UITableViewStylePlain];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _dataArray = [[NSMutableArray alloc] init];
+//    _dataArray = [[NSMutableArray alloc] init];
     self.tableView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
-    [self.view addSubview:_tableView];
+    [self download];
+    
     
 }
-- (void)getTheStudentsName:(NSArray *)name AndContext:(NSArray *) context{
-    _nameArray = name;
-    _contextArray = context;
+
+- (void)download{
+    NSDictionary *params = @{@"RequestType": @"excellentStu"};
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]init];
+    NSMutableSet *acceptableSet = [NSMutableSet setWithSet:manager.responseSerializer.acceptableContentTypes];
+    [acceptableSet addObject:@"text/html"];
+    manager.responseSerializer.acceptableContentTypes = acceptableSet;
+    [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id  responseObject) {
+        NSDictionary *dic = responseObject;
+        _dataArray = [dic objectForKey:@"Data"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+        [self.view addSubview:_tableView];
+        [self.tableView reloadData];
+        });
+    }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"失败了");
+    }];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *reuse = @"cell";
@@ -48,14 +69,21 @@
         
     }
     
-    cell.idLabel.text = _nameArray[indexPath.row];
-    cell.imagesView.image = [UIImage cutCircleImage:_nameArray[indexPath.row]];
-    cell.contextLabel.text = _contextArray[indexPath.row];
+    cell.idLabel.text = _dataArray[indexPath.row][@"name"];
+    _nameArray[indexPath.row] = _dataArray[indexPath.row][@"name"];
+    NSURL *picUrl = [NSURL URLWithString:_dataArray[indexPath.row][@"url"]];
+    _contextArray[indexPath.row] = _dataArray[indexPath.row][@"url"];
+    NSData *data = [NSData dataWithContentsOfURL:picUrl];
+    UIImage *image = [UIImage imageWithData:data];
+//    image = [UIImage cutCircleImage:image];
+    cell.imagesView.image = image;
+    _detailArray[indexPath.row] = _dataArray[indexPath.row][@"resume"];
+    cell.contextLabel.text = _dataArray[indexPath.row][@"motto"];
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _nameArray.count;
+    return _dataArray.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -74,10 +102,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    _viewS = [[AppearView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)WithString:_nameArray[indexPath.row] AndContext:_contextArray[indexPath.row]];
+    _viewS = [[AppearView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)WithString:_nameArray[indexPath.row] With: _contextArray[indexPath.row] AndContext:_detailArray[indexPath.row]];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
     _viewS.closeImage.userInteractionEnabled = YES;
     [_viewS.closeImage addGestureRecognizer:tapRecognizer];
+    [_viewS addGestureRecognizer:tapRecognizer];
     [self.view.window addSubview:_viewS];
 }
 - (void)tap{

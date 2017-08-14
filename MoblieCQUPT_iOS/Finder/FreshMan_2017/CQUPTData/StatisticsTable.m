@@ -52,7 +52,7 @@
 - (void)drawLinesWithDetail:(NSArray<NSDictionary*>*) context With:(NSArray<NSArray *> *) color {
     for (int i = 0; i < context.count; i ++) {
 //        [self removeFromSuperview];
-        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.width/2) radius:self.frame.size.width/2 - (_lineWidth+_blankWidth) * (i+1)   startAngle:-M_PI/2 endAngle:M_PI * 2 * [context[i][@"score"]  floatValue] - M_PI/2 clockwise:YES];
+        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.width/2) radius:self.frame.size.width/2 - (_lineWidth+_blankWidth) * (i+1)   startAngle:-M_PI/2 endAngle:M_PI * 2 * [context[i][@"score"]  floatValue] - 0.06 - M_PI/2 clockwise:YES];
         CAShapeLayer *sideshape = [CAShapeLayer layer];
         CAShapeLayer *shape = [CAShapeLayer layer];
         
@@ -86,10 +86,10 @@
         [shape addAnimation:checkAnimation forKey:@"checkAnimation"];
         [sideshape addAnimation:checkAnimation forKey:@"checkAnimation"];
        
-        UILabel *detailLable = [self newLable:CGRectMake(self.frame.size.width/2 - 35,_lineWidth+ (_lineWidth+_blankWidth)*i - 2, 22, 18) WithContext:[context[i][@"score"] floatValue] WithColor:color[i][0]];
+        UILabel *detailLable = [self newLable:CGRectMake(self.frame.size.width/2 - 35,_lineWidth+ (_lineWidth+_blankWidth)*i - 2, 22, 18) WithContext:[self turnFloat: context[i][@"score"]] WithColor:color[i][0]];
         [self addSubview:detailLable];
         
-        UILabel *lables = [self detailLable:CGRectMake(self.self.frame.size.width/context.count * i + 50,self.frame.size.width + 20,  50, 50) WithContext:context[i] With:color[i]];
+        UILabel *lables = [self detailLable:CGRectMake(SCREENWIDTH / 2 - 75,self.frame.size.width + 50 * i,  50, 40) WithContext:context[i] With:color[i]];
         [self addSubview:lables];
         
     }
@@ -146,10 +146,23 @@
     [string appendAttributedString:contextText];
     lable.attributedText = string;
     POPSpringAnimation *ani = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
-    ani.toValue = @(lable.frame.origin.x + frame.origin.x);
+    ani.toValue = @(frame.origin.x);
     ani.springBounciness = 10.0f;
     [lable pop_addAnimation:ani forKey:@"position"];
 //    NSArray<UILabel *> * lables = @[lable, colorLable];
     return lable;
+}
+- (float)turnFloat:(NSNumber *)number{
+    float newNumber = [number floatValue];
+    int turn = newNumber * 100;
+    newNumber *= 100;
+    if (newNumber-turn > 0.5) {
+        newNumber = (newNumber+1)/100;
+    }
+    else{
+        newNumber = newNumber/100;
+    }
+    return newNumber;
+    
 }
 @end

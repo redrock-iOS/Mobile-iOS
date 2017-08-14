@@ -10,5 +10,5 @@
 
 @interface AppearView : UIView
 @property UIImageView *closeImage;
-- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string AndContext:(NSString *) context;
+- (instancetype)initWithFrame:(CGRect )frame WithString:(NSString *) string With:(NSString *) imagee AndContext:(NSString *) context;
 @end

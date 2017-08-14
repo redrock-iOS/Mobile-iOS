@@ -8,6 +8,7 @@
 
 #import "CQUPTStudentsCell.h"
 #import "Masonry.h"
+#import "UIImageView+WebCache.h"
 @implementation CQUPTStudentsCell
 
 - (void)awakeFromNib {
@@ -18,13 +19,15 @@
     self = [super initWithStyle:style reuseIdentifier:
             reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         //添加控件
         _imagesView = [[UIImageView alloc]init];
-        
         [_imagesView setContentScaleFactor:[[UIScreen mainScreen] scale]];
-        _imagesView.contentMode =  UIViewContentModeScaleAspectFill;
+        _imagesView.contentMode =UIViewContentModeScaleAspectFill;
         CGFloat fromH = 10;
         CGFloat fromW = 26;
+        _imagesView.layer.cornerRadius = 35;
+        _imagesView.clipsToBounds = YES;
         [self.contentView addSubview: _imagesView];
         
         _idLabel = [[UILabel alloc]init];
@@ -44,6 +47,7 @@
         [self.contextLabel addSubview:award];
         
         UIImageView * lab= [[UIImageView alloc] init];
+        lab.image = [UIImage imageNamed:@"pointer"];
         [self addSubview:lab];
         
         _cutline = [[UILabel alloc] init];
@@ -68,10 +72,16 @@
             make.width.mas_equalTo(@52);
         }];
         [ _contextLabel mas_makeConstraints:^(MASConstraintMaker *maker){
-//            maker.top.equalTo(self).centerY.offset(-10);
-            maker.top.mas_equalTo(self.idLabel.mas_bottom).offset(9);
-            maker.left.mas_equalTo(award.mas_right).offset(10);
+
+            maker.top.mas_equalTo(self.idLabel.mas_bottom).offset(10);
+            maker.left.mas_equalTo(award.mas_right).offset(0);
             maker.right.mas_equalTo(self.mas_right).offset(-55);
+        }];
+        [lab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(_contextLabel.mas_right).offset(10);
+            make.top.mas_equalTo(self).offset(35);
+            make.bottom.mas_equalTo(self).offset(-35);
+            make.right.mas_equalTo(self).offset(-35);
         }];
         [_cutline mas_makeConstraints:^(MASConstraintMaker *maker){
             maker.height.mas_equalTo(1);
@@ -89,7 +99,7 @@
 
 -(void)setFrame:(CGRect)frame{
     
-    frame.origin.y += 3;
+    frame.origin.y += 8;
     
 
     
