@@ -23,7 +23,7 @@
 @property (strong, nonatomic) UIView *rootView;//放置toolBar和pickerView的view
 @property (strong, nonatomic) UIView *blueView;//pickerView每一个cell的背景色view
 @property (strong, nonatomic) NSArray *collegeArray;//学院数组
-@property (strong, nonatomic) NSArray *maleRatioArray;
+@property (strong, nonatomic) NSMutableArray *maleRatioArray;
 
 @property (strong, nonatomic) StatisticsTable *circle;//动画view
 @property NSInteger didSeclecter;
@@ -35,11 +35,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.collegeArray = @[@"通信与信息工程学院", @"光电工程学院", @"经济管理学院", @"计算机科学与技术学院", @"外国语学院", @"生物信息学院", @"网络空间安全与信息法学院", @"自动化学院", @"先进制造工程学院", @"体育学院", @"理学院", @"传媒艺术学院", @"软件工程学院", @"国际半导体学院", @"国际学院", @"全校"];
-        self.maleRatioArray = @[@"0.70170895908856", @"0.75974025974026", @"0.47773032336791", @"0.78189994378865", @"0.19402985074627", @"0.58082706766917", @"0.31578947368421", @"0.81203473945409", @"0.91925465838509", @"0.79888268156425", @"0.70185185185185", @"0.29898648648649", @"0.84781188765513", @"0.83630470016207", @"0.75757575757576", @"0.66471399035148"];
+//    self.maleRatioArray = @[@"0.70170895908856", @"0.75974025974026", @"0.47773032336791", @"0.78189994378865", @"0.19402985074627", @"0.58082706766917", @"0.31578947368421", @"0.81203473945409", @"0.91925465838509", @"0.79888268156425", @"0.70185185185185", @"0.29898648648649", @"0.84781188765513", @"0.83630470016207", @"0.75757575757576", @"0.66471399035148"];
     
+    self.maleRatioArray = [[NSMutableArray alloc] init];
     [self layoutAnimateView];
     [self layoutPickerView];
     [self layoutCollegeButton];
+}
+
+- (void)getRatioDataWithCollege: (NSString *)college {
+    NSDictionary *parameters = @{
+                                 @"RequestType":@"SexRatio"
+                                 };
+    
+    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        
+        double menRatio;
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            if ([college isEqualToString:dic[@"Data"][i][@"college"]]) {
+                menRatio = [dic[@"Data"][i][@"MenRatio"] doubleValue];
+                break;
+            }
+        }
+        
+        [self addAnimateWithMale:menRatio Female:1.0-menRatio];
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
 }
 
 - (void)layoutAnimateView {
@@ -178,8 +206,6 @@
 }
 
 - (void)tapToBackAction {
-    NSInteger i = [self.pickerView selectedRowInComponent:0];
-    NSLog(@"----> %ld", (long)i);
     if (self.pickerView.hidden == YES) {
         ;
     }
@@ -194,6 +220,7 @@
 }
 
 - (void)tapPickerBtn {
+    [self.collegeBtn setTitle:self.collegeArray[_didSeclecter] forState:UIControlStateNormal];
     if (self.pickerView.hidden == YES) {
         ;
     }
@@ -203,41 +230,11 @@
         self.blueView.hidden = YES;
         self.rootView.alpha = 0;
     }
-    
-    [self.circle removeFromSuperview];
-    
-    
-    
-    [self.backgroundGrayView removeFromSuperview];
-    
     NSInteger row = [self.pickerView selectedRowInComponent:0];
-
-#pragma mark - 网络请求
-//网络请求
-//    NSDictionary *parameters = @{
-//                                 @"RequestType":@"SexRatio"
-//                                 };
-//    
-//    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
-//    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
-//    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
-//            NSDictionary *dic = responseobject;
-////            NSLog(@"%@", dic);
-//        //male
-//        double male = [dic[@"Data"][row][@"MenRatio"] doubleValue];
-//        //female
-//        double female = [dic[@"Data"][row][@"WomenRatio"] doubleValue];
-//        [self addAnimateWithMale:male Female:female];
-//    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-//        NSLog(@"请求失败,error:%@", error);
-//    }];
-    
-    double male = [self.maleRatioArray[row] doubleValue];
-    double female = 1 - male;
-    [self addAnimateWithMale:male Female:female];
+    [self getRatioDataWithCollege:self.collegeArray[row]];
+    [self.circle removeFromSuperview];
+    [self.backgroundGrayView removeFromSuperview];
+//    [self getRatioDataWithCollege:self.collegeArray[row]];
 }
 
 

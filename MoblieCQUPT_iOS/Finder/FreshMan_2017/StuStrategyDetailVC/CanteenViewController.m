@@ -12,7 +12,10 @@
 @interface CanteenViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSMutableDictionary *height;
+@property (strong, nonatomic) NSMutableArray *urlStrArray;
+@property (strong, nonatomic) NSMutableArray *nameArray;
+@property (strong, nonatomic) NSMutableArray *descriptionArray;
+
 @end
 
 @implementation CanteenViewController
@@ -38,7 +41,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.nameArray = [[NSMutableArray alloc] init];
+    self.urlStrArray = [[NSMutableArray alloc] init];
+    self.descriptionArray = [[NSMutableArray alloc] init];
+    [self getData];
     [self.view addSubview:self.tableView];
+}
+
+- (void)getData {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    
+    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=Canteen" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            self.descriptionArray[i] = dic[@"Data"][i][@"resume"];
+            self.urlStrArray[i] = dic[@"Data"][i][@"url"][0];
+            self.nameArray[i] = dic[@"Data"][i][@"name"];
+        }
+        [self.tableView reloadData];
+        
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+    
 }
 
 
@@ -48,6 +76,18 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];;
     }
+    if (self.urlStrArray) {
+        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+        
+        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        
+        cell.nameLabel.text = self.nameArray[indexPath.row];
+        cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
+    }
+    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
+    cell.myImageView.layer.cornerRadius = 3;
+    cell.myImageView.layer.masksToBounds = YES;
+    cell.secondNameLabel.hidden = YES;
     cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -73,7 +113,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    if (self.urlStrArray) {
+        return self.urlStrArray.count;
+    }
+    else {
+        return 6;
+    }
 }
 
 

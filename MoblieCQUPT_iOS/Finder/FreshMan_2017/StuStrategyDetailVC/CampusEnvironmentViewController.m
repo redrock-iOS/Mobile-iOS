@@ -6,15 +6,16 @@
 //  Copyright © 2017年 topkid. All rights reserved.
 //
 
-//#import "CampusEnvironmentCell.h"
+#import <AFNetworking.h>
 #import "MyTableViewCell.h"
 #import "CampusEnvironmentViewController.h"
 
 @interface CampusEnvironmentViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) NSArray *nameArray;
-@property (strong, nonatomic) NSArray *descriptionArray;
+@property (strong, nonatomic) NSMutableArray *nameArray;
+@property (strong, nonatomic) NSMutableArray *descriptionArray;
+@property (strong, nonatomic) NSMutableArray *urlStrArray;
 
 @end
 
@@ -32,7 +33,6 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         return _tableView;
     }
     return _tableView;
@@ -41,14 +41,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.nameArray = [[NSArray alloc] initWithObjects:@"巍巍南山，美丽重邮", @"科创信科楼", @"数字图书馆", @"夕阳下的二教", @"高山流水", @"雨红莲", @"仰望八教", nil];
-    self.descriptionArray = [[NSArray alloc] initWithObjects:@"站在腾飞广场，做着属于我们的腾飞梦，从这一刻便开启了你的大学新篇章。秉持“修德、博学、求实、创新”校训，书写你的重邮梦。很高兴能与你在重邮相遇。", @"挑战杯、创青春、互联网+、数模……在各类创新创业竞赛中，都可以看到重邮人的身影，他们不断地充实着大学生活，和重邮人在一起，自己在会变得更好。", @"在这里，时间变慢，重邮人的脚步变快。从图书馆开门到熄灯，总会看到埋头学习的重邮人，一整天都可以在窗户透过的光芒里，全神贯注。没错，爱学习的重邮人最好看啦！", @"伴着余晖，二教像披着一层朦胧的纱幔，金黄的银杏叶妆点着她的美。漫步在春华秋实广场，邂逅一场邮苑专属浪漫。", @"在重邮信科楼旁的高山流水只是简单一个缩影，却包含了重邮学子的内心广阔。流水溅射过青松，把一切都转换为学子的高山俯仰之情。", @"红砖绿荫的映衬下的雨红莲，是重邮人的活动聚集地。丰富的校园活动常常在这里开展，洋着重邮人的活力，展示重邮浓厚的校园文化。", @"八教是传媒艺术学院的学子艺术灵感的发源地，创意在这里闪亮聚集，也是重邮人乘风破浪，扬帆起航的象征。勇敢追梦吧，重邮学子们。", nil];
+    self.nameArray = [[NSMutableArray alloc] init];
+    self.descriptionArray = [[NSMutableArray alloc] init];
+    self.urlStrArray = [[NSMutableArray alloc] init];
     
+    [self getData];
     [self.view addSubview:self.tableView];
 }
 
+- (void)getData {
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    
+    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=SchoolBuildings" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            self.nameArray[i] = dic[@"Data"][i][@"title"];
+            self.descriptionArray[i] = dic[@"Data"][i][@"content"];
+            self.urlStrArray[i] = dic[@"Data"][i][@"url"][0];
+        }
+        [self.tableView reloadData];
+        
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.nameArray.count;
+    if (self.nameArray) {
+        return self.nameArray.count;
+    }
+    else {
+        return 10;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,16 +86,40 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];
     }
+    if (self.urlStrArray) {
+//        NSURL *imageUrl = [NSURL URLWithString:self.urlStrArray[indexPath.row]];
+        
+//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
+//        cell.myImageView.image = image;
+
+//        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+        
+        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+    }
+    
+    if (self.nameArray) {
+        cell.nameLabel.text = self.nameArray[indexPath.row];
+    }
+    
+    if (self.descriptionArray) {
+        cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
+    }
     cell.secondNameLabel.hidden = YES;
     cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
-    cell.myImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)indexPath.row]];
-    cell.nameLabel.text = self.nameArray[indexPath.row];
+    cell.myImageView.layer.cornerRadius = 3;
+    cell.myImageView.layer.masksToBounds = YES;
+    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
+    
     cell.nameLabel.font = [UIFont systemFontOfSize:15];
-    cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
+
     cell.descriptionLabel.font = [UIFont systemFontOfSize:13];
     cell.descriptionLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
+    
+    
     
     return cell;
 }

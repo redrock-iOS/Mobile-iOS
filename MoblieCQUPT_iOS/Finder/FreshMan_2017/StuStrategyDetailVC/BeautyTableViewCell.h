@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *positionImageView;
 @property (weak, nonatomic) IBOutlet UILabel *viewLabel;
 @property (weak, nonatomic) IBOutlet UILabel *positionLabel;
+@property (weak, nonatomic) IBOutlet UIView *bottomGrayView;
 
 @end

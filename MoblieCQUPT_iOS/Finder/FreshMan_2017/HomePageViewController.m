@@ -10,6 +10,7 @@
 #import "StuStrategyRootViewController.h"
 #import "CQUPTDataRootViewController.h"
 #import "StuRootViewController.h"
+#import "MilitaryTrainingRootViewController.h"
 @interface HomePageViewController ()
 
 @end
@@ -24,8 +25,7 @@
 
 
 - (void)tapFirstBtn {
-    StuStrategyRootViewController *stuVC = [[StuStrategyRootViewController alloc] init];
-    
+    StuStrategyRootViewController *stuVC = [[StuStrategyRootViewController alloc] init];    
     [self.navigationController pushViewController:stuVC animated:YES];
 }
 - (void)tapSecondBtn{
@@ -36,6 +36,10 @@
 - (void)tapThirdBtn {
      CQUPTDataRootViewController *CQUPTDataVC = [[CQUPTDataRootViewController alloc] init];
     [self.navigationController pushViewController:CQUPTDataVC animated:YES];
+}
+- (void)tapFourthBtn {
+    MilitaryTrainingRootViewController *MTVC = [[MilitaryTrainingRootViewController alloc] init];
+    [self.navigationController pushViewController:MTVC animated:YES];
 }
 
 - (void)layoutButton {
@@ -70,9 +74,9 @@
     
         double width = [UIScreen mainScreen].bounds.size.width - 36.0;
     
-        double heigth = 121/340.0 * width;
-    NSLayoutConstraint *heigthConstraint = [NSLayoutConstraint constraintWithItem:firstBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
-    [firstBtn addConstraint:heigthConstraint];
+//        double heigth = 121/340.0 * width;
+//    NSLayoutConstraint *heigthConstraint = [NSLayoutConstraint constraintWithItem:firstBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
+//    [firstBtn addConstraint:heigthConstraint];
     
 
 /*
@@ -101,8 +105,8 @@
     NSLayoutConstraint *topConstraint1 = [NSLayoutConstraint constraintWithItem:secBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:firstBtn attribute:NSLayoutAttributeBottom multiplier:1.0 constant:27];
     [self.view addConstraint:topConstraint1];
 
-    NSLayoutConstraint *heigthConstraint1 = [NSLayoutConstraint constraintWithItem:secBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
-    [secBtn addConstraint:heigthConstraint1];
+//    NSLayoutConstraint *heigthConstraint1 = [NSLayoutConstraint constraintWithItem:secBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
+//    [secBtn addConstraint:heigthConstraint1];
     
 /*
  重邮数据
@@ -130,8 +134,8 @@
     NSLayoutConstraint *topConstraint2 = [NSLayoutConstraint constraintWithItem:thirdBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:secBtn attribute:NSLayoutAttributeBottom multiplier:1.0 constant:27];
     [self.view addConstraint:topConstraint2];
     
-    NSLayoutConstraint *heigthConstraint2 = [NSLayoutConstraint constraintWithItem:thirdBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
-    [thirdBtn addConstraint:heigthConstraint2];
+//    NSLayoutConstraint *heigthConstraint2 = [NSLayoutConstraint constraintWithItem:thirdBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
+//    [thirdBtn addConstraint:heigthConstraint2];
     
 /*
  军训热辑
@@ -143,6 +147,7 @@
     fourthBtn.backgroundColor = [UIColor whiteColor];
 
     [fourthBtn setBackgroundImage:[UIImage imageNamed:@"军训特辑"] forState:UIControlStateNormal];
+    [fourthBtn addTarget:self action:@selector(tapFourthBtn) forControlEvents:UIControlEventTouchUpInside];
     fourthBtn.adjustsImageWhenDisabled = NO;
     fourthBtn.adjustsImageWhenHighlighted = NO;
     
@@ -157,8 +162,21 @@
     NSLayoutConstraint *topConstraint3 = [NSLayoutConstraint constraintWithItem:fourthBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:thirdBtn attribute:NSLayoutAttributeBottom multiplier:1.0 constant:27];
     [self.view addConstraint:topConstraint3];
     
-    NSLayoutConstraint *heigthConstraint3 = [NSLayoutConstraint constraintWithItem:fourthBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
-    [fourthBtn addConstraint:heigthConstraint3];
+//    NSLayoutConstraint *heigthConstraint3 = [NSLayoutConstraint constraintWithItem:fourthBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:heigth];
+//    [fourthBtn addConstraint:heigthConstraint3];
+    
+    NSLayoutConstraint *heigthConstraint1 = [NSLayoutConstraint constraintWithItem:firstBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:secBtn attribute:NSLayoutAttributeHeight multiplier:1 constant:0];
+    [self.view addConstraint:heigthConstraint1];
+    
+    NSLayoutConstraint *heigthConstraint2 = [NSLayoutConstraint constraintWithItem:secBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:thirdBtn attribute:NSLayoutAttributeHeight multiplier:1 constant:0];
+    [self.view addConstraint:heigthConstraint2];
+    
+    NSLayoutConstraint *heigthConstraint3 = [NSLayoutConstraint constraintWithItem:thirdBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:fourthBtn attribute:NSLayoutAttributeHeight multiplier:1 constant:0];
+    [self.view addConstraint:heigthConstraint3];
+    
+    NSLayoutConstraint *heigthConstraint4 = [NSLayoutConstraint constraintWithItem:fourthBtn attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:-27];
+    [self.view addConstraint:heigthConstraint4];
+    
 }
 
 

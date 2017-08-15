@@ -20,32 +20,32 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1i-Op-u8b">
-                        <rect key="frame" x="18" y="26" width="284" height="151.5"/>
+                        <rect key="frame" x="18" y="24" width="284" height="151.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Q1i-Op-u8b" secondAttribute="height" multiplier="15:8" id="nZN-41-hMR"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-Ii-nWf">
-                        <rect key="frame" x="18" y="190.5" width="42" height="21"/>
+                        <rect key="frame" x="18" y="188.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuN-Do-jQ2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="6"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="8" id="22A-5q-gJi"/>
+                            <constraint firstAttribute="height" constant="6" id="22A-5q-gJi"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqj-Lm-iXL">
-                        <rect key="frame" x="68" y="191" width="42" height="21"/>
+                        <rect key="frame" x="68" y="189" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啊啊啊啊啊啊啊啊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o0-Dg-dP5">
-                        <rect key="frame" x="18" y="225" width="284" height="84.5"/>
+                        <rect key="frame" x="18" y="223" width="284" height="86.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                 <outlet property="nameLabel" destination="vtc-Ii-nWf" id="cT5-Yj-myw"/>
                 <outlet property="secondNameLabel" destination="Rqj-Lm-iXL" id="yan-ly-drx"/>
             </connections>
-            <point key="canvasLocation" x="-126" y="-34.5"/>
+            <point key="canvasLocation" x="-209" y="-37"/>
         </tableViewCell>
     </objects>
 </document>

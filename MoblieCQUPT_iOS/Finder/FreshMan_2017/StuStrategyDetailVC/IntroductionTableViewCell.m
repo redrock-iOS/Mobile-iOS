@@ -21,4 +21,10 @@
     // Configure the view for the selected state
 }
 
+- (CGFloat)height {
+    if (self.contentLabel7.hidden == YES)
+        return CGRectGetMaxY(_contentLabel6.frame) + 23;
+    else
+        return CGRectGetMaxY(_contentLabel7.frame) + 23;
+}
 @end
