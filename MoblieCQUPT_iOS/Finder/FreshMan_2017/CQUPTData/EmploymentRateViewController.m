@@ -41,6 +41,33 @@
     [self layoutCollegeButton];
 }
 
+- (void)getRatioDataWithCollege: (NSString *)college {
+    NSDictionary *parameters = @{
+                                 @"RequestType":@"WorkRatio"
+                                 };
+    
+    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        
+        double ratio;
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            if ([college isEqualToString:dic[@"Data"][i][@"college"]]) {
+                ratio = [dic[@"Data"][i][@"ratio"] doubleValue];
+                break;
+            }
+        }
+        
+        [self addAnimateWithEmploymentRatio:ratio UnemploymentRatio:1.0-ratio];
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+}
+
 - (void)layoutAnimateView {
     NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
     NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
@@ -193,6 +220,7 @@
 }
 
 - (void)tapPickerBtn {
+    [self.collegeBtn setTitle:self.collegeArray[_didSeclecter] forState:UIControlStateNormal];
     if (self.pickerView.hidden == YES) {
         ;
     }
@@ -202,39 +230,11 @@
         self.blueView.hidden = YES;
         self.rootView.alpha = 0;
     }
-    
     NSInteger row = [self.pickerView selectedRowInComponent:0];
-
+    [self getRatioDataWithCollege:self.collegeArray[row]];
 //先移除已有的图，再创建新的
     [self.circle removeFromSuperview];
-    
     [self.backgroundGrayView removeFromSuperview];
-    
-#pragma mark - 网络请求
-    //网络请求
-//    NSDictionary *parameters = @{
-//                                 @"RequestType":@"SexRatio"
-//                                 };
-//    
-//    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
-//    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.responseSerializer = [AFJSONResponseSerializer serializer];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
-//    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
-//        NSDictionary *dic = responseobject;
-//        //            NSLog(@"%@", dic);
-//        //male
-//        double male = [dic[@"Data"][row][@"MenRatio"] doubleValue];
-//        //female
-//        double female = [dic[@"Data"][row][@"WomenRatio"] doubleValue];
-//        [self addAnimateWithMale:male Female:female];
-//    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-//        NSLog(@"请求失败,error:%@", error);
-//    }];
-    double employment = [self.employmentRatio[row] doubleValue];
-    double unemployment = 1 - employment;
-    [self addAnimateWithEmploymentRatio:employment UnemploymentRatio:unemployment];
 }
 
 

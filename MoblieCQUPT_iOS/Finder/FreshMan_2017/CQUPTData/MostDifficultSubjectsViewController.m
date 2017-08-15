@@ -15,46 +15,134 @@
 
 @interface MostDifficultSubjectsViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (strong, nonatomic) UIPickerView *pickerView;
+@property (strong, nonatomic) UIPickerView *pickerView1;
+@property (strong, nonatomic) UIPickerView *pickerView2;
 @property (strong, nonatomic) UIButton *collegeBtn;
 @property (strong, nonatomic) UIButton *subjectBtn;
 @property (strong, nonatomic) UIToolbar *toolBar;
 @property (strong, nonatomic) UIView *backgroundGrayView;//遮盖来显示灰色的view
 @property (strong, nonatomic) UIView *rootView;//放置toolBar和pickerView的view
 @property (strong, nonatomic) UIView *blueView;//pickerView每一个cell的背景色view
-@property (strong, nonatomic) NSArray *collegeArray;//学院数组
-@property (strong, nonatomic) NSArray *subjectArray;//专业数组
-@property (strong, nonatomic) NSArray *courseArray;//课程数组
+@property (strong, nonatomic) NSMutableArray *collegeArray;//学院数组
+@property (strong, nonatomic) NSMutableArray *subjectArray;//专业数组
+@property (strong, nonatomic) NSMutableArray *failClass;//最难课程数组
 
 @property (strong, nonatomic) StatisticsTable *circle;//动画view
 //@property NSInteger didSeclecter;
 @property BOOL isCollege;
-@property BOOL shouldTapCollege;
-@property NSInteger rowForCollege;
 @property NSInteger rowForSubject;
+@property NSInteger rowForCollege;
+@property NSInteger numForSubjectArray;
+@property NSInteger alwaysRowForCollege;
+@property NSInteger alwaysRowForSubject;
+@property NSInteger isFirst;
 
 @end
 
 @implementation MostDifficultSubjectsViewController
 
+- (void) getDataWithCollege: (NSString *)college subject:(NSString *)subject {
+#pragma mark - 网络请求
+    NSDictionary *parameters = @{
+                                 @"RequestType":@"FailRatio"
+                                 };
+    
+    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        
+        NSMutableArray *subArray = [[NSMutableArray alloc] init];
+        NSMutableArray *numArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            if ([subject isEqualToString:dic[@"Data"][i][@"major"]]) {
+                [numArray addObject:dic[@"Data"][i][@"ratio"]];
+                [subArray addObject:dic[@"Data"][i][@"course"]];
+            }
+        }
+        
+        [self addAnimateWithSubject:subArray number:numArray];
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+}
+
+- (void)getCollegeArrayData {
+    NSDictionary *parameters = @{
+                                 @"RequestType":@"FailRatio"
+                                 };
+    
+    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+        
+//获取学院数组
+        for (int i = 0, flag = 0; i < [dic[@"Data"] count]; i++) {
+            for (int j = 0; j < self.collegeArray.count; j++) {
+                if ([dic[@"Data"][i][@"college"] isEqualToString:self.collegeArray[j]]) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0) {
+                [self.collegeArray addObject:dic[@"Data"][i][@"college"]];
+            }
+            flag = 0;
+        }
+
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+}
+
+- (void)getSubjectArrayWithCollege: (NSString *)college {
+    NSDictionary *parameters = @{
+                                 @"RequestType":@"FailRatio"
+                                 };
+    
+    NSString *url = @"http://www.yangruixin.com/test/apiRatio.php";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
+    [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+        NSDictionary *dic = responseobject;
+
+        if (self.subjectArray != nil) {
+            [self.subjectArray removeAllObjects];
+        }
+        for (int i = 0; i < [dic[@"Data"] count]; i++) {
+            if ([college isEqualToString:dic[@"Data"][i][@"college"]]) {
+                i += 2;
+                [self.subjectArray addObject:dic[@"Data"][i][@"major"]];
+            }
+        }
+        
+    }failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        NSLog(@"请求失败,error:%@", error);
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.collegeArray = @[@"经济管理学院", @"通信与信息工程学院", @"经济管理学院", @"计算机科学与技术学院", @"外国语学院", @"生物信息学院", @"网络空间安全与信息法学院", @"自动化学院", @"先进制造工程学院", @"体育学院", @"理学院", @"传媒艺术学院", @"软件工程学院", @"国际半导体学院", @"国际学院", @"全校"];
-    self.subjectArray =
-  @[
-    @[@"工商管理类", @"工程管理"], @[@"广电与数字媒体类", @""]
-  ];
+    [self getCollegeArrayData];
+
+    self.failClass = [[NSMutableArray alloc] init];
+    self.subjectArray = [[NSMutableArray alloc] init];
+    self.collegeArray = [[NSMutableArray alloc] init];
     
-    self.courseArray =
-  @[
-    @[
-            @[@"高等数学B(下)", @"线性代数B"], @[@"C语言程序设计", @"高等数学B(下)",@"线性代数B"]
-            ],
-            @[@"高等数学A(下)", @"大学物理A（上）", @"线性代数A"]
-  ];
-    
+    [self getCollegeArrayData];
     self.isCollege = YES;
-    self.shouldTapCollege = YES;
+    self.rowForCollege = 0;
+    self.rowForSubject = 0;
+    self.isFirst = 1;
     [self layoutAnimateView];
     [self layoutPickerView];
     [self layoutCollegeButton];
@@ -64,9 +152,9 @@
 - (void)layoutAnimateView {
     NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
     //    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
-    //    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
+    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
     NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
-    NSArray *color = @[buleColor, pinkColor];
+    NSArray *color = @[buleColor, pinkColor, yellowColor];
     //距离左右各90,上下平分
     double width = KWIDTH - 180;
     double height = width;
@@ -78,35 +166,38 @@
 }
 
 
-//- (void)addAnimateWithClass1:(NSDictionary *)class1 Class2:(NSDictionary *)female Class3:(NSDictionary *)class3{
-//    NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
-//    //    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
-//        NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
-//    NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
-//   
-//    NSArray *color = @[buleColor, pinkColor, yellowColor];
-//    
-//    NSNumber *num1 = [NSNumber numberWithDouble:male];
-//    NSNumber *num2 = [NSNumber numberWithDouble:female];
-//    NSDictionary *class1 = @{@"name":@"男", @"score": num1};
-//    NSDictionary *class2 = @{@"name":@"女", @"score": num2};
-//    NSArray<NSDictionary* > *detail = @[class1, class2];
-//    
-//    //距离左右各90,上下平分
-//    double width = KWIDTH - 180;
-//    double height = width;
-//    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
-//    self.circle = circle;
-//    
-//    [self.circle drawLinesWithDetail:detail With:color];
-//    self.circle.backgroundColor = [UIColor whiteColor];
-//    
-//    
-//    [self.view addSubview:self.circle];
-//    
-//    //让选择器在最上面
-//    [self.view bringSubviewToFront:self.rootView];
-//}
+- (void)addAnimateWithSubject: (NSMutableArray *)subArray number: (NSMutableArray *)numberArray{
+    NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
+    //    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
+    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
+    NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
+   
+    NSArray *color = @[buleColor, pinkColor, yellowColor];
+    
+    
+    NSNumber *num1 = [NSNumber numberWithDouble:[numberArray[0] doubleValue]];
+    NSNumber *num2 = [NSNumber numberWithDouble:[numberArray[1] doubleValue]];
+    NSNumber *num3 = [NSNumber numberWithDouble:[numberArray[2] doubleValue]];
+    NSDictionary *class1 = @{@"name":subArray[0], @"score": num1};
+    NSDictionary *class2 = @{@"name":subArray[1], @"score": num2};
+    NSDictionary *class3 = @{@"name":subArray[2], @"score": num3};
+    NSArray<NSDictionary* > *detail = @[class1, class2, class3];
+    
+    //距离左右各90,上下平分
+    double width = KWIDTH - 180;
+    double height = width;
+    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+    self.circle = circle;
+    
+    [self.circle drawLinesWithDetail:detail With:color];
+    self.circle.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self.view addSubview:self.circle];
+    
+    //让选择器在最上面
+    [self.view bringSubviewToFront:self.rootView];
+}
 
 
 - (void)layoutCollegeButton {
@@ -201,13 +292,17 @@
 
 
 - (void)tapCollegeBtn {
-        self.isCollege = YES;
     if (!self.rootView) {
         [self layoutPickerView];
     }
-    [self.pickerView reloadAllComponents];
-
     
+    if (self.rowForCollege == -1) {
+        self.rowForCollege = 0;
+        [self.pickerView1 reloadAllComponents];
+    }
+    self.isFirst = 0;
+    self.isCollege = YES;
+    [self.pickerView1 reloadAllComponents];
     self.rootView.alpha = 1;
     self.rootView.backgroundColor = [UIColor whiteColor];
     
@@ -227,11 +322,14 @@
     NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.width];
     [self.backgroundGrayView addConstraint:width];
     
-    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-self.pickerView.bounds.size.height];
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-self.pickerView1.bounds.size.height];
     [window addConstraint:bottom];
     
     //显示选择器界面
-    self.pickerView.hidden = NO;
+    [self.pickerView1 selectRow:self.alwaysRowForCollege inComponent:0 animated:YES];
+    [self pickerView:self.pickerView1 didSelectRow:self.alwaysRowForCollege inComponent:0];
+    self.rowForCollege = self.alwaysRowForCollege;
+    self.pickerView1.hidden = NO;
     self.toolBar.hidden = NO;
     self.blueView.hidden = NO;
     
@@ -242,18 +340,23 @@
 }
 
 - (void)tapSubjectBtn {
-    if (self.shouldTapCollege) {
+    if (_isCollege == YES && self.isFirst == 1) {
         NSLog(@"should tap college");;
+        self.isFirst = 0;
     }
     else {
         if (!self.rootView) {
             [self layoutPickerView];
         }
+        [self.pickerView2 reloadAllComponents];
         self.rootView.alpha = 1;
         self.rootView.backgroundColor = [UIColor whiteColor];
-        
-        self.isCollege = NO;
-        
+//        self.isCollege = NO;
+
+        if (self.rowForSubject == -1) {
+            self.rowForSubject = 0;
+            [self.pickerView2 reloadAllComponents];
+        }
         //获取window
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         self.backgroundGrayView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -270,11 +373,13 @@
         NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.width];
         [self.backgroundGrayView addConstraint:width];
         
-        NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-self.pickerView.bounds.size.height];
+        NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:self.backgroundGrayView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:window attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-self.pickerView2.bounds.size.height];
         [window addConstraint:bottom];
-        
+        [self.pickerView2 selectRow:0 inComponent:0 animated:YES];
         //显示选择器界面
-        self.pickerView.hidden = NO;
+        [self.pickerView2 selectRow:self.alwaysRowForSubject inComponent:0 animated:YES];
+        [self pickerView:self.pickerView2 didSelectRow:self.alwaysRowForSubject inComponent:0];
+        self.pickerView2.hidden = NO;
         self.toolBar.hidden = NO;
         self.blueView.hidden = NO;
         
@@ -286,65 +391,82 @@
 }
 
 - (void)tapToBackAction {
-    NSInteger i = [self.pickerView selectedRowInComponent:0];
-    NSLog(@"----> %ld", (long)i);
-    if (self.pickerView.hidden == YES) {
-        ;
+    if (self.isCollege == YES) {
+        if (self.pickerView1.hidden == YES) {
+            ;
+        }
+        else {
+            self.pickerView1.hidden = YES;
+            self.toolBar.hidden = YES;
+            self.blueView.hidden = YES;
+            self.rootView.alpha = 0;
+        }
+        if (self.isFirst == 0) {
+            self.isCollege = NO;
+        }
     }
     else {
-        self.pickerView.hidden = YES;
-        self.toolBar.hidden = YES;
-        self.blueView.hidden = YES;
-        self.rootView.alpha = 0;
+        if (self.pickerView2.hidden == YES) {
+            ;
+        }
+        else {
+            self.pickerView2.hidden = YES;
+            self.toolBar.hidden = YES;
+            self.blueView.hidden = YES;
+            self.rootView.alpha = 0;
+        }
     }
     
     [self.backgroundGrayView removeFromSuperview];
 }
 
 - (void)tapPickerBtn {
-    if (_isCollege) {
-        if (self.pickerView.hidden == YES) {
+    if (_isCollege == YES) {
+        if (self.pickerView1.hidden == YES) {
             ;
         }
         else {
-            self.pickerView.hidden = YES;
-            self.toolBar.hidden = YES;
+            self.pickerView1.hidden = YES;
             self.blueView.hidden = YES;
             self.rootView.alpha = 0;
+            self.alwaysRowForSubject = 0;
+            [self.subjectBtn setTitle:@"请选择专业" forState:UIControlStateNormal];
+            
         }
-        [self.backgroundGrayView removeFromSuperview];
+        
+        NSLog(@"123456789123456789012345678");
+        
+
+        [self getSubjectArrayWithCollege:self.collegeArray[self.rowForCollege]];
+        [self.collegeBtn setTitle:[NSString stringWithFormat:@"%@", self.collegeArray[self.rowForCollege]] forState:UIControlStateNormal];
+        self.numForSubjectArray = self.rowForCollege;
+        self.rowForCollege = -1;
+        [self.pickerView2 reloadAllComponents];
         self.isCollege = NO;
-        self.shouldTapCollege = NO;
-        NSInteger row = [self.pickerView selectedRowInComponent:0];
-        
-        self.rowForCollege = row;
-        [self.pickerView reloadAllComponents];
-        
     }
     else {
-        if (self.pickerView.hidden == YES) {
+        if (self.pickerView2.hidden == YES) {
             ;
         }
         else {
-            self.pickerView.hidden = YES;
-            self.toolBar.hidden = YES;
+            self.pickerView2.hidden = YES;
             self.blueView.hidden = YES;
             self.rootView.alpha = 0;
         }
-        
+        [self.subjectBtn setTitle:self.subjectArray[self.rowForSubject] forState:UIControlStateNormal];
+        [self getDataWithCollege:self.collegeArray[_numForSubjectArray] subject:self.subjectArray[self.rowForSubject]];
+        self.rowForSubject = -1;
+        [self.pickerView1 reloadAllComponents];
         [self.circle removeFromSuperview];
-        
-        [self.backgroundGrayView removeFromSuperview];
-//        [self addAnimateWithMale:<#(double)#> Female:<#(double)#>]
     }
-//    [self.pickerView selectRow:0 inComponent:0 animated:NO];
+    
+    [self.backgroundGrayView removeFromSuperview];
 }
 
 
 - (void)layoutPickerView {
     
 #pragma mark - rootView
-    //    pickerView和toolBar放在这一个view上
     UIView *rootView = [[UIView alloc] init];
     
     rootView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -388,12 +510,13 @@
     //    pickerView.alpha = 0.3;
     //不影响子视图透明度用[UIColor colorWithRed:1 green:1 blue:1 alpha:0.3]设置透明度
     pickerView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
+    pickerView.tag = 1;
     pickerView.translatesAutoresizingMaskIntoConstraints = NO;
     pickerView.hidden = YES;
     pickerView.showsSelectionIndicator = NO;
     pickerView.delegate = self;
     pickerView.dataSource = self;
-    self.pickerView = pickerView;
+    self.pickerView1 = pickerView;
     [rootView addSubview:pickerView];
     
     
@@ -408,6 +531,32 @@
     [self.view addConstraint:bottomConstraint];
     
     
+//    //创建pickerView2
+    UIPickerView *pickerView2 = [[UIPickerView alloc] init];
+    //    pickerView.alpha = 0.3;
+    //不影响子视图透明度用[UIColor colorWithRed:1 green:1 blue:1 alpha:0.3]设置透明度
+    pickerView2.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
+    pickerView2.tag = 2;
+    pickerView2.translatesAutoresizingMaskIntoConstraints = NO;
+    pickerView2.hidden = YES;
+    pickerView2.showsSelectionIndicator = NO;
+    pickerView2.delegate = self;
+    pickerView2.dataSource = self;
+    self.pickerView2 = pickerView2;
+    [rootView addSubview:pickerView2];
+    
+    
+    NSLayoutConstraint *widthConstraint2 = [NSLayoutConstraint constraintWithItem:pickerView2 attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.width];
+    [pickerView2 addConstraint:widthConstraint2];
+    
+    
+    NSLayoutConstraint *heightConstraint2 = [NSLayoutConstraint constraintWithItem:pickerView2 attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:height];
+    [pickerView2 addConstraint:heightConstraint2];
+    
+    NSLayoutConstraint *bottomConstraint2 = [NSLayoutConstraint constraintWithItem:pickerView2 attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+    [self.view addConstraint:bottomConstraint2];
+    
+    
 #pragma mark - toolBar
     //完成按钮放工具栏
     UIToolbar *toolBar = [[UIToolbar alloc] init];
@@ -420,15 +569,15 @@
     self.toolBar = toolBar;
     
     
-    NSLayoutConstraint *widthConstraint2 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.width];
-    [toolBar addConstraint:widthConstraint2];
+    NSLayoutConstraint *widthConstraint22 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:[UIScreen mainScreen].bounds.size.width];
+    [toolBar addConstraint:widthConstraint22];
     
     
-    NSLayoutConstraint *heightConstraint2 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:40];
-    [toolBar addConstraint:heightConstraint2];
+    NSLayoutConstraint *heightConstraint22 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:40];
+    [toolBar addConstraint:heightConstraint22];
     
-    NSLayoutConstraint *topConstraint2 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:rootView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
-    [rootView addConstraint:topConstraint2];
+    NSLayoutConstraint *topConstraint22 = [NSLayoutConstraint constraintWithItem:toolBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:rootView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0];
+    [rootView addConstraint:topConstraint22];
     
     
 #pragma mark - toolBar's button
@@ -466,12 +615,13 @@
 //指定每个表盘上有几行数据
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    if (_isCollege) {
+    if (pickerView.tag == 1) {
         return self.collegeArray.count;
     }
-    else {
-        return 3;
+    else if (pickerView.tag == 2) {
+        return self.subjectArray.count;
     }
+    return 1;
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
@@ -504,15 +654,19 @@
     myLabel.font = [UIFont systemFontOfSize:14];
     [myView addSubview:myLabel];
     
-    if (_isCollege) {
+    if (pickerView.tag == 1) {
         myLabel.text = self.collegeArray[row];
     }
-    else {
-        myLabel.text = @"subject";
+    else if (pickerView.tag == 2){
+        myLabel.text = self.subjectArray[row];
     }
     
     //选中行改变颜色、字体大小
-    if (self.rowForSubject == row || self.rowForCollege == row) {
+    if (self.rowForSubject == row && pickerView.tag == 2) {
+        myLabel.textColor = [UIColor whiteColor];
+        myLabel.font = [UIFont systemFontOfSize:17];
+    }
+    else if (self.rowForCollege == row && pickerView.tag == 1) {
         myLabel.textColor = [UIColor whiteColor];
         myLabel.font = [UIFont systemFontOfSize:17];
     }
@@ -560,11 +714,14 @@
     
     if (_isCollege == YES){
         self.rowForCollege = row;
+        self.alwaysRowForCollege = row;
+        [self.pickerView1 reloadAllComponents];
     }
-    else {
+    else if (_isCollege == NO){
         self.rowForSubject = row;
+        self.alwaysRowForSubject = row;
+        [self.pickerView2 reloadAllComponents];
     }
-    [self.pickerView reloadAllComponents];
 }
 
 - (void)didReceiveMemoryWarning {

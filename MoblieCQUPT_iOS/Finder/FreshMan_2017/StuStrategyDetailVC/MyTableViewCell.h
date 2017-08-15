@@ -13,8 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-- (CGFloat)height;
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
-- (void)setData;
+@property (weak, nonatomic) IBOutlet UIView *SeparatorView;
 
 @end

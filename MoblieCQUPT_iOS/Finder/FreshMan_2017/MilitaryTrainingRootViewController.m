@@ -1,49 +1,38 @@
 //
-//  CQUPTDataRootViewController.m
-//  TestLayoutButton
+//  MilitaryTrainingRootViewController.m
+//  MoblieCQUPT_iOS
 //
-//  Created by helloworld on 2017/8/5.
-//  Copyright © 2017年 topkid. All rights reserved.
+//  Created by helloworld on 2017/8/13.
+//  Copyright © 2017年 Orange-W. All rights reserved.
 //
-
-#import "CQUPTDataRootViewController.h"
-
-#import "PrefixHeader.pch"
 
 #import "SegmentView.h"
+#import "MilitaryTrainingRootViewController.h"
+#import "MilitaryTrainingTipsViewController.h"
+#import "MilitaryTrainingVideoViewController.h"
 
-//3个VC
-#import "MaleToFemaleRatioViewController.h"
-#import "MostDifficultSubjectsViewController.h"
-#import "EmploymentRateViewController.h"
-
-@interface CQUPTDataRootViewController ()
+@interface MilitaryTrainingRootViewController ()
 
 @end
 
-@implementation CQUPTDataRootViewController
+@implementation MilitaryTrainingRootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"------------------> = %lf", [UIScreen mainScreen].bounds.size.width);
+    
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    MaleToFemaleRatioViewController *VC1 = [[MaleToFemaleRatioViewController alloc] init];
-    VC1.title = @"男女比例";
+    MilitaryTrainingTipsViewController *VC1 = [[MilitaryTrainingTipsViewController alloc] init];
+    VC1.title = @"军训贴士";
     
-    MostDifficultSubjectsViewController *VC2 = [[MostDifficultSubjectsViewController alloc] init];
-    VC2.title = @"最难科目";
+    MilitaryTrainingVideoViewController *VC2 = [[MilitaryTrainingVideoViewController alloc] init];
+    VC2.title = @"军训风采";
     
-    EmploymentRateViewController *VC3 = [[EmploymentRateViewController alloc] init];
-    VC3.title = @"就业率";
-    
-    NSArray *VCArray = [[NSArray alloc] initWithObjects:VC1, VC2, VC3, nil];
+    NSArray *VCArray = [[NSArray alloc] initWithObjects:VC1, VC2, nil];
     
     SegmentView *segmentView = [[SegmentView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height + 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.bounds.size.height - 20) andControllers:VCArray];
     [self.view addSubview:segmentView];
-}
-
--(void)eventWhenScrollSubViewWithIndex:(NSInteger)index{
-    
 }
 
 - (void)didReceiveMemoryWarning {

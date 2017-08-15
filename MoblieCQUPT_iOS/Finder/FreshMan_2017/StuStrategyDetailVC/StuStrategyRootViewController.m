@@ -19,7 +19,7 @@
 #import "FoodViewController.h"
 #import "BeautyViewController.h"
 
-@interface StuStrategyRootViewController ()
+@interface StuStrategyRootViewController ()<SegmentViewScrollerViewDelegate>
 
 @end
 
@@ -53,12 +53,18 @@
 //    [self.view addSubview:topTabView];
     
     SegmentView *segmentView = [[SegmentView alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height + 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.bounds.size.height - 20) andControllers:VCArray];
+    segmentView.eventDelegate = self;
     [self.view addSubview:segmentView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)eventWhenScrollSubViewWithIndex:(NSInteger)index{
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+
 }
 
 /*
