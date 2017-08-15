@@ -23,7 +23,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - self.view.superview.height*50/667 - 64) style:UITableViewStylePlain];
         UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 6)];
         grayView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
         [_tableView addSubview:grayView];
@@ -80,13 +80,12 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"BeautyTableViewCell" owner:nil options:nil] lastObject];;
     }
-    
+    NSString* encodedString = @"";
     if (self.urlStrArray) {
         cell.nameLabel.text = self.nameArray[indexPath.row];
         cell.positionLabel.text = self.positionArray[indexPath.row];
         cell.viewLabel.text = self.commentArray[indexPath.row];
-        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     }
     
     cell.bottomGrayView.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
@@ -105,7 +104,7 @@
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.layer.cornerRadius = 2;
     cell.myImageView.layer.masksToBounds = YES;
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     
     return cell;
 }

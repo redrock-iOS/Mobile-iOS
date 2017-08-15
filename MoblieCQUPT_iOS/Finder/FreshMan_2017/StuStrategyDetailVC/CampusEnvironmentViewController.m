@@ -24,7 +24,7 @@
 //用到的时候才加载
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - self.view.superview.height*50/667 - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.sectionHeaderHeight = 0;
@@ -86,18 +86,12 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];
     }
+    
+    NSString* encodedString = @"";
     if (self.urlStrArray) {
-//        NSURL *imageUrl = [NSURL URLWithString:self.urlStrArray[indexPath.row]];
-        
-//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
-//        cell.myImageView.image = image;
-
-//        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-
-        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     }
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     
     if (self.nameArray) {
         cell.nameLabel.text = self.nameArray[indexPath.row];
@@ -112,7 +106,6 @@
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.layer.cornerRadius = 3;
     cell.myImageView.layer.masksToBounds = YES;
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
     
     cell.nameLabel.font = [UIFont systemFontOfSize:15];
 

@@ -23,7 +23,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - self.view.superview.height*50/667 - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.sectionHeaderHeight = 0;
@@ -76,15 +76,14 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];;
     }
+    NSString* encodedString = @"";
     if (self.urlStrArray) {
-        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
         
         cell.nameLabel.text = self.nameArray[indexPath.row];
         cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
     }
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     cell.myImageView.layer.cornerRadius = 3;
     cell.myImageView.layer.masksToBounds = YES;
     cell.secondNameLabel.hidden = YES;

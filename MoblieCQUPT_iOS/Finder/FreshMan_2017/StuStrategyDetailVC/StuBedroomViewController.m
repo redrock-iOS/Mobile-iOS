@@ -27,7 +27,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - self.view.superview.height*50/667 - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.sectionHeaderHeight = 0;
@@ -87,6 +87,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];;
     }
+    NSString* encodedString = @"";
     if (self.descriptionArray) {
         cell.nameLabel.text = self.nameArray[indexPath.row];
         cell.secondNameLabel.text = self.secondNameArray[indexPath.row];
@@ -95,13 +96,12 @@
         cell.descriptionLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
         cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
     
-        NSString* encodedString = [self.urlStrArray[indexPath.row][0] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row][0] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     }
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.layer.cornerRadius = 3;
     cell.myImageView.layer.masksToBounds = YES;
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
     cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     

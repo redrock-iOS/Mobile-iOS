@@ -72,11 +72,11 @@
     cell.idLabel.text = _dataArray[indexPath.row][@"name"];
     _nameArray[indexPath.row] = _dataArray[indexPath.row][@"name"];
     NSURL *picUrl = [NSURL URLWithString:_dataArray[indexPath.row][@"url"]];
-    _contextArray[indexPath.row] = _dataArray[indexPath.row][@"url"];
-    NSData *data = [NSData dataWithContentsOfURL:picUrl];
-    UIImage *image = [UIImage imageWithData:data];
+//    _contextArray[indexPath.row] = _dataArray[indexPath.row][@"url"];
+//    NSData *data = [NSData dataWithContentsOfURL:picUrl];
+//    UIImage *image = [UIImage imageWithData:data];
 //    image = [UIImage cutCircleImage:image];
-    cell.imagesView.image = image;
+    [cell.imagesView sd_setImageWithURL:picUrl];
     _detailArray[indexPath.row] = _dataArray[indexPath.row][@"resume"];
     cell.contextLabel.text = _dataArray[indexPath.row][@"motto"];
     return cell;
