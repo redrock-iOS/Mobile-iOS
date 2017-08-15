@@ -53,7 +53,7 @@
 
 #define COLOR_PINK1 [UIColor colorWithRed:255/255.0 green:173/255.0 blue:203/255.0 alpha:1]
 #define COLOR_PINK2 [UIColor colorWithRed:255/255.0 green:210/255.0 blue:227/255.0 alpha:1]
-#define COLOR_PINK3 [UIColor colorWithRed:243/255.0 green:245/255.0 blue:203/255.0 alpha:1]
+#define COLOR_PINK3 [UIColor colorWithRed:255/255.0 green:246/255.0 blue:248/255.0 alpha:1]
 #define COLOR_PINK4 [UIColor colorWithRed:255/255.0 green:253/255.0 blue:255/255.0 alpha:1]
 
 #define COLOR_YELLOW1 [UIColor colorWithRed:236/255.0 green:216/255.0 blue:111/255.0 alpha:1]

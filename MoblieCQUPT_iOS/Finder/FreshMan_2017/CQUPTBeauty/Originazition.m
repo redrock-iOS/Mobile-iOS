@@ -10,7 +10,7 @@
 #import "Originazition.h"
 #import "OriginazitionCell.h"
 #import "PrefixHeader.pch"
-#define url @"http://yangruixin.com/test/apiForText.php"
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
 @interface Originazition ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong, nonatomic) NSString *titleA;
 @property(strong, nonatomic) NSString *resumeT;
@@ -58,20 +58,17 @@
     if (indexPath.row == 0) {
         _cell.namesLabel.text = _titleA;
         _cell.detailLabel.text = _resumeT;
-        CGSize size = [_resumeT boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15] }context:nil].size;
-        _height += (size.height + 80);
+//        CGSize size = [_resumeT boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15] }context:nil].size;
+//        _height += (size.height + 80);
     }
     else{
     _cell.namesLabel.text = _dataArray[indexPath.row - 1][@"name"];
     _cell.detailLabel.text =_dataArray[indexPath.row -1][@"resume"];
-    CGSize size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15*SCREENWIDTH/375] }context:nil].size;
-    _height += (size.height + 80);
+//    CGSize size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15*SCREENWIDTH/375] }context:nil].size;
+//    _height += (size.height + 80);
     }
     if (indexPath.row == _dataArray.count ) {
         _cell.cutLine.backgroundColor = [UIColor whiteColor];
-        UIView *views = [[UIView alloc] initWithFrame:CGRectMake(0, _height, SCREENWIDTH, SCREENHEIGHT)];
-        views.backgroundColor = [UIColor whiteColor];
-        [_tablesView addSubview:views];
     }
     return _cell;
 }

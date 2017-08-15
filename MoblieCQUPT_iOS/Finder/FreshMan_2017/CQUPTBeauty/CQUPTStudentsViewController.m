@@ -12,13 +12,10 @@
 #import "AppearView.h"
 #import "UIImageView+WebCache.h"
 #import "AFNetWorking.h"
-#define url @"http://yangruixin.com/test/apiForText.php"
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
 @interface CQUPTStudentsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)UITableView *tableView;
-@property (strong, nonatomic)NSMutableArray *contextArray;
 @property (nonatomic, copy)NSMutableArray *dataArray;
-
-@property (strong, nonatomic)NSMutableArray *nameArray;
 
 @property (strong, nonatomic)AppearView *viewS;
 @end
@@ -27,15 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _contextArray = [[NSMutableArray alloc]init];
     _dataArray = [[NSMutableArray alloc]init];
-    _nameArray = [[NSMutableArray alloc]init];
-    _detailArray = [[NSMutableArray alloc]init];
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 60) style:UITableViewStylePlain];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-//    _dataArray = [[NSMutableArray alloc] init];
     self.tableView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     [self download];
     
@@ -70,14 +63,10 @@
     }
     
     cell.idLabel.text = _dataArray[indexPath.row][@"name"];
-    _nameArray[indexPath.row] = _dataArray[indexPath.row][@"name"];
     NSURL *picUrl = [NSURL URLWithString:_dataArray[indexPath.row][@"url"]];
-    _contextArray[indexPath.row] = _dataArray[indexPath.row][@"url"];
     NSData *data = [NSData dataWithContentsOfURL:picUrl];
     UIImage *image = [UIImage imageWithData:data];
-//    image = [UIImage cutCircleImage:image];
     cell.imagesView.image = image;
-    _detailArray[indexPath.row] = _dataArray[indexPath.row][@"resume"];
     cell.contextLabel.text = _dataArray[indexPath.row][@"motto"];
     return cell;
 }
@@ -102,7 +91,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    _viewS = [[AppearView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)WithString:_nameArray[indexPath.row] With: _contextArray[indexPath.row] AndContext:_detailArray[indexPath.row]];
+    _viewS = [[AppearView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)WithString: _dataArray[indexPath.row][@"name"] With: _dataArray[indexPath.row][@"url"] AndContext:_dataArray[indexPath.row][@"resume"]];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
     _viewS.closeImage.userInteractionEnabled = YES;
     [_viewS.closeImage addGestureRecognizer:tapRecognizer];

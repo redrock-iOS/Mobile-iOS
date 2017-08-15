@@ -20,7 +20,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         _imagesView = [[BigView alloc]init];
         _imagesView.contentMode = UIViewContentModeScaleAspectFill;
-        _imagesView.layer.cornerRadius = 6;
+        _imagesView.layer.cornerRadius = 8;
         _imagesView.clipsToBounds = YES;
         [self.contentView addSubview:_imagesView];
         

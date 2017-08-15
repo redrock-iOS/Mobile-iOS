@@ -56,7 +56,7 @@
     [manager POST:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
         NSDictionary *dic = responseobject;
         
-        double menRatio;
+        double menRatio = 0;
         for (int i = 0; i < [dic[@"Data"] count]; i++) {
             if ([college isEqualToString:dic[@"Data"][i][@"college"]]) {
                 menRatio = [dic[@"Data"][i][@"MenRatio"] doubleValue];
@@ -72,25 +72,30 @@
 
 - (void)layoutAnimateView {
     NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
-//    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
-//    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
     NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
     NSArray *color = @[buleColor, pinkColor];
-    //距离左右各90,上下平分
-    double width = KWIDTH - 180;
-    double height = width;
-    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
-    self.circle = circle;
-    self.circle.backgroundColor = [UIColor whiteColor];
 
+    if ([UIScreen mainScreen].bounds.size.width <= 330) {
+        double width = KWIDTH - 140;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+        self.circle = circle;
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
+    else {
+    //距离左右各90,上下平分
+        double width = KWIDTH - 180;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+        self.circle = circle;
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
     [self.view addSubview:self.circle];
 }
 
 
 - (void)addAnimateWithMale:(double)male Female:(double)female {
     NSArray<UIColor *> *buleColor = @[COLOR_BULE1, COLOR_BULE2, COLOR_BULE3,COLOR_BULE4];
-//    NSArray<UIColor *> *greenColor = @[COLOR_GREEN1, COLOR_GREEN2, COLOR_GREEN3,COLOR_GREEN4];
-//    NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
     NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
     NSArray *color = @[buleColor, pinkColor];
     
@@ -100,14 +105,24 @@
     NSDictionary *class2 = @{@"name":@"女", @"score": num2};
     NSArray<NSDictionary* > *detail = @[class1, class2];
     
-//距离左右各90,上下平分
-    double width = KWIDTH - 180;
-    double height = width;
-    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
-    self.circle = circle;
     
-    [self.circle drawLinesWithDetail:detail With:color];
-    self.circle.backgroundColor = [UIColor whiteColor];
+    if ([UIScreen mainScreen].bounds.size.width <= 330) {
+        double width = KWIDTH - 140;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+        self.circle = circle;
+        [self.circle drawLinesWithDetail:detail With:color];
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
+    else {
+        //距离左右各90,上下平分
+        double width = KWIDTH - 180;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
+        self.circle = circle;
+        [self.circle drawLinesWithDetail:detail With:color];
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
     
     
     [self.view addSubview:self.circle];

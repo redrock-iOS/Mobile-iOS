@@ -10,7 +10,7 @@
 #import "OriginalVideoController.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
-#define url @"http://yangruixin.com/test/apiForText.php"
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
 @interface OriginalViewController ()
 @property(strong, nonatomic) NSMutableArray *dataArray;
 @property(strong, nonatomic) NSArray *videoUrl;
@@ -68,6 +68,10 @@
         names.font = [UIFont systemFontOfSize:13];
         names.numberOfLines = 0;
         [_scroll addSubview:names];
+        
+        UIImageView *begin = [[UIImageView alloc] initWithFrame:CGRectMake(btn.centerX -20, btn.centerY - 20, 40, 40)];
+        begin.image = [UIImage imageNamed:@"播放"];
+        [_scroll addSubview:begin];
     }
 
 }

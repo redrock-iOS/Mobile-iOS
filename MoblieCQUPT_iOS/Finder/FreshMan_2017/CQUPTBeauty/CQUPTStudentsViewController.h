@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CQUPTStudentsViewController : UIViewController
-@property (strong, nonatomic)NSMutableArray *detailArray;
 
 @property (strong, nonatomic)NSArray *imageArray;
-//- (void)getTheStudentsName:(NSArray *)name AndContext:(NSArray *) context;
 @end

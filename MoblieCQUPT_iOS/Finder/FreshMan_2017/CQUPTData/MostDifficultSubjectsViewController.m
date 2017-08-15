@@ -155,12 +155,23 @@
     NSArray<UIColor *> *yellowColor = @[COLOR_YELLOW1, COLOR_YELLOW2, COLOR_YELLOW3,COLOR_YELLOW4];
     NSArray<UIColor *> *pinkColor = @[COLOR_PINK1, COLOR_PINK2, COLOR_PINK3,COLOR_PINK4];
     NSArray *color = @[buleColor, pinkColor, yellowColor];
-    //距离左右各90,上下平分
-    double width = KWIDTH - 180;
-    double height = width;
-    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
-    self.circle = circle;
-    self.circle.backgroundColor = [UIColor whiteColor];
+
+
+    if ([UIScreen mainScreen].bounds.size.width <= 330) {
+        double width = KWIDTH - 140;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 15, width, height ) With:color];
+        self.circle = circle;
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
+    else {
+        //距离左右各90,上下平分
+        double width = KWIDTH - 180;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 15, width, height) With:color];
+        self.circle = circle;
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
     
     [self.view addSubview:self.circle];
 }
@@ -183,15 +194,24 @@
     NSDictionary *class3 = @{@"name":subArray[2], @"score": num3};
     NSArray<NSDictionary* > *detail = @[class1, class2, class3];
     
-    //距离左右各90,上下平分
-    double width = KWIDTH - 180;
-    double height = width;
-    StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 25, width, height) With:color];
-    self.circle = circle;
-    
-    [self.circle drawLinesWithDetail:detail With:color];
-    self.circle.backgroundColor = [UIColor whiteColor];
-    
+
+    if ([UIScreen mainScreen].bounds.size.width <= 330) {
+        double width = KWIDTH - 140;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 15, width, height) With:color];
+        self.circle = circle;
+        [self.circle drawLinesWithDetail:detail With:color];
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
+    else {
+        //距离左右各90,上下平分
+        double width = KWIDTH - 180;
+        double height = width;
+        StatisticsTable *circle =  [[StatisticsTable alloc ]initWithFrame:CGRectMake((KWIDTH - width) / 2.0, (KHEIGHT - 44 - 20 - 47 - height) / 2.0 - 15, width, height) With:color];
+        self.circle = circle;
+        [self.circle drawLinesWithDetail:detail With:color];
+        self.circle.backgroundColor = [UIColor whiteColor];
+    }
     
     [self.view addSubview:self.circle];
     
