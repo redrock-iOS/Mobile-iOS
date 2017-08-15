@@ -24,15 +24,15 @@
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 47)];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - self.view.superview.height*50/667)];
         _scrollView.bounces = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.showsHorizontalScrollIndicator = NO;
         if ([UIScreen mainScreen].bounds.size.width <= 330) {
-            _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 2364 + 40 - 150);
+            _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 2364 + 40 - 110);
         }
         else {
-            _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 2364 + 40);
+            _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 2364 + 60);
         }
         
         UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 6)];

@@ -10,7 +10,7 @@
 #import "CQUPTBeautyCell.h"
 #import "PrefixHeader.pch"
 #import "BigView.h"
-#define url @"http://yangruixin.com/test/apiForText.php"
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
 @interface CQUPTBeautyViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic) NSMutableArray *dataArray;
 @property(strong, nonatomic) UITableView *tableView;
