@@ -12,7 +12,7 @@
 #import "AppearView.h"
 #import "UIImageView+WebCache.h"
 #import "AFNetWorking.h"
-#define url @"http://yangruixin.com/test/apiForText.php"
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
 @interface CQUPTStudentsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)UITableView *tableView;
 @property (strong, nonatomic)NSMutableArray *contextArray;

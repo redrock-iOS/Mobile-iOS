@@ -14,7 +14,7 @@
 #define KWIDTH [UIScreen mainScreen].bounds.size.width
 #define KHEIGHT [UIScreen mainScreen].bounds.size.height
 
-@interface MilitaryTrainingVideoViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MilitaryTrainingVideoViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *photosTitleArray;
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) NSArray *songsArray;
 @property (strong, nonatomic) NSArray *songersArray;
 @property (strong, nonatomic) UIScrollView *scrollView;
+@property (strong, nonatomic) UIView *blackView;
 
 @end
 
@@ -34,7 +35,7 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     
-    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=MilitaryTrainingPhoto" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+    [manager GET:@"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForGuide.php?RequestType=MilitaryTrainingPhoto" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
         NSDictionary *dic = responseobject;
         for (int i = 0; i < [dic[@"Data"][@"title"] count]; i++) {
             self.photoUrlStrArray[i] = dic[@"Data"][@"url"][i];
@@ -98,13 +99,17 @@
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.scrollEnabled = YES;
     
+    NSString *encodedString = @"";
     double distance = 0;
     for (int i = 0; i < 6; i++) {
         if (i == 0) {
             distance = 14;
             UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(distance, 13, 89 / 667.0 * KHEIGHT, 89 / 667.0 * KHEIGHT)];
-            NSString *encodedString = [self.photoUrlStrArray[i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-            [image sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+            encodedString = [self.photoUrlStrArray[i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+            [image sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
+            image.userInteractionEnabled = YES;
+            UITapGestureRecognizer *tapImageGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(enlargePhotos:)];
+            [image addGestureRecognizer:tapImageGesture];
             [scrollView addSubview:image];
             
             UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(14 + (89 / 667.0 * KHEIGHT + 5) * i, 89 / 667.0 * KHEIGHT + 13 + 8, 100, 13)];
@@ -120,12 +125,17 @@
             nameLabel.text = self.photosTitleArray[i];
             nameLabel.textAlignment = NSTextAlignmentCenter;
             [scrollView addSubview:nameLabel];
+            image.tag = i;
             
         } else {
             distance = 5;
             UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(14 + (89 / 667.0 * KHEIGHT + 5) * i, 13, 89 / 667.0 * KHEIGHT, 89 / 667.0 * KHEIGHT)];
-            NSString *encodedString = [self.photoUrlStrArray[i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-            [image sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+            encodedString = [self.photoUrlStrArray[i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+            image.tag = i;
+            [image sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
+            image.userInteractionEnabled = YES;
+            UITapGestureRecognizer *tapImageGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(enlargePhotos:)];
+            [image addGestureRecognizer:tapImageGesture];
             [scrollView addSubview:image];
             
             UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(14 + (89 / 667.0 * KHEIGHT + 5) * i, 89 / 667.0 * KHEIGHT + 13 + 8, 100, 13)];
@@ -345,13 +355,71 @@
 }
 
 - (void)loadVideo:(UITapGestureRecognizer *)sender {
-    NSLog(@"enterenterenter");
     if (sender.view.tag == 1) {
-//        [self.view.superview.navigationController pushViewController:[[MTVideo1 alloc] init] animated:YES];
         [self.view.superview.viewController.navigationController pushViewController:[[MTVideo1 alloc] init]  animated:YES];
     } else if (sender.view.tag == 2) {
         [self.view.superview.viewController.navigationController pushViewController:[[MTVideo2 alloc] init]  animated:YES];
     }
+}
+
+- (void)enlargePhotos:(UIGestureRecognizer *)sender {
+    UIView *view = [[UIView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.frame];
+    self.blackView = view;
+    view.tag = 999;
+    view.backgroundColor = [UIColor blackColor];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [window addSubview:view];
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height / 2.0 - 251/667.0 * [UIScreen mainScreen].bounds.size.height / 2.0, [UIScreen mainScreen].bounds.size.width, 251/667.0 * [UIScreen mainScreen].bounds.size.height + 80)];
+    scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * 6, 251/667.0 * [UIScreen mainScreen].bounds.size.height + 80);
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
+    [scrollView setContentOffset:CGPointMake([UIScreen mainScreen].bounds.size.width * sender.view.tag, 0)];
+    
+    [view addSubview:scrollView];
+    
+    for (int i = 0; i < 6; i++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * [UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, 251/667.0 * [UIScreen mainScreen].bounds.size.height)];
+        
+        NSString *encodedString = [self.photoUrlStrArray[i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        [scrollView addSubview:imageView];
+        
+        UILabel *descritionLabel = [[UILabel alloc] initWithFrame:CGRectMake(i * [UIScreen mainScreen].bounds.size.width + ([UIScreen mainScreen].bounds.size.width / 2.0 - 36), 251/667.0 * [UIScreen mainScreen].bounds.size.height + 25, 72, 15)];
+        descritionLabel.font = [UIFont systemFontOfSize:13];
+        descritionLabel.text = self.photosTitleArray[i];
+        descritionLabel.textAlignment = NSTextAlignmentCenter;
+        descritionLabel.textColor = [UIColor whiteColor];
+        [scrollView addSubview:descritionLabel];
+    }
+    
+    
+    UILabel *numberOfPhotos = [[UILabel alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width / 2.0 - 20, 31, 40, 20)];
+    numberOfPhotos.textColor = [UIColor whiteColor];
+    numberOfPhotos.tag = 111;
+    numberOfPhotos.font = [UIFont systemFontOfSize:17];
+//    numberOfPhotos.text = [NSString stringWithFormat:@"1/6"];
+    [view addSubview:numberOfPhotos];
+    
+    [self scrollViewDidScroll:scrollView];
+    
+//返回手势
+    UITapGestureRecognizer *tapToBackGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapToBack)];
+    [view addGestureRecognizer:tapToBackGesture];
+}
+
+- (void)tapToBack {
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIView *view = [window viewWithTag:999];
+    [view removeFromSuperview];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    int i = scrollView.contentOffset.x / [UIScreen mainScreen].bounds.size.width;
+    UILabel *label = [self.blackView viewWithTag:111];
+    label.text = [NSString stringWithFormat:@"%d/6", i + 1];
 }
 
 - (void)didReceiveMemoryWarning {

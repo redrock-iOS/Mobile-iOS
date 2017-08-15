@@ -22,7 +22,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - self.view.superview.height*50/667 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - (SCREENHEIGHT-64)*50/667 - 64) style:UITableViewStylePlain];
         UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 6)];
         grayView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
         [_tableView addSubview:grayView];
@@ -58,7 +58,7 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     
-    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=LifeInNear" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+    [manager GET:@"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForGuide.php?RequestType=LifeInNear" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
         NSDictionary *dic = responseobject;
         for (int i = 0; i < [dic[@"Data"] count]; i++) {
             self.nameArray[i] = dic[@"Data"][i][@"name"];
