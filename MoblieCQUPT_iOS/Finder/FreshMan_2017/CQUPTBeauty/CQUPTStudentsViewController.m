@@ -31,7 +31,7 @@
     _dataArray = [[NSMutableArray alloc]init];
     _nameArray = [[NSMutableArray alloc]init];
     _detailArray = [[NSMutableArray alloc]init];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 65) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 60) style:UITableViewStylePlain];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;

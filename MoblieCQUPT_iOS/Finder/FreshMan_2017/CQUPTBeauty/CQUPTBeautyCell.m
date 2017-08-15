@@ -19,10 +19,11 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         _imagesView = [[BigView alloc]init];
-        [self.contentView addSubview:_imagesView];
         _imagesView.contentMode = UIViewContentModeScaleAspectFill;
-        _imagesView.clipsToBounds = YES;
         _imagesView.layer.cornerRadius = 6;
+        _imagesView.clipsToBounds = YES;
+        [self.contentView addSubview:_imagesView];
+        
         _namesLabel = [[UILabel alloc] init];
         _namesLabel.font = [UIFont systemFontOfSize:15];
         [self.contentView addSubview:_namesLabel];

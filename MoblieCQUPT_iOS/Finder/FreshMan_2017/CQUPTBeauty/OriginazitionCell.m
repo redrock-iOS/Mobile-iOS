@@ -26,11 +26,11 @@
 }
 - (void)setCell{
     _namesLabel = [[UILabel alloc] init];
-    _namesLabel.font = [UIFont systemFontOfSize:18];
+    _namesLabel.font = [UIFont systemFontOfSize:18*SCREENWIDTH/375];
     [self.contentView addSubview:_namesLabel];
     
     _detailLabel = [[UILabel alloc] init];
-    _detailLabel.font =[UIFont systemFontOfSize:15];
+    _detailLabel.font =[UIFont systemFontOfSize:15*SCREENWIDTH/375];
     _detailLabel.textColor = COLOR_NONEED;
     _detailLabel.numberOfLines = 0;
     [self.contentView addSubview:_detailLabel];

@@ -51,8 +51,8 @@
         [btn setTitle:self.controllers[i].title forState:UIControlStateNormal];
         btn.tag = i;
         btn.titleLabel.font = [UIFont systemFontOfSize:15];
-        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btn setTitleColor:MAIN_COLOR forState:UIControlStateSelected];
+        [btn setTitleColor:[UIColor colorWithRed:163/255.0 green:163/255.0 blue:163/255.0 alpha:1] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor colorWithRed:101/255.0 green:178/255.0 blue:255/255.0 alpha:1] forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
         [_titleScrollView addSubview:btn];
         [_btnArray addObject:btn];
@@ -61,7 +61,7 @@
     [_btnArray firstObject].selected = YES;
     
     _sliderView = [[UIView alloc]initWithFrame:CGRectMake(0, kTitleHeight-2, self.titleBtnWidth, 2)];
-    _sliderView.backgroundColor = MAIN_COLOR;
+    _sliderView.backgroundColor = [UIColor colorWithRed:101/255.0 green:178/255.0 blue:255/255.0 alpha:1];
     
     [_titleScrollView addSubview:self.sliderView];
     [self addSubview:self.titleScrollView];

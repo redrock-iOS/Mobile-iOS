@@ -44,27 +44,30 @@
         [_imagesView1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self).offset(15);
             make.width.mas_equalTo(@((ScreenWidth  - 40)/2));
-            make.height.mas_equalTo(@((ScreenWidth  - 40)/2));
+            make.height.mas_equalTo(@((ScreenWidth  - 40)/2 - 20));
             make.left.mas_equalTo(self).offset(15);
         }];
         [_imagesView2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self).offset(15);
             make.width.mas_equalTo(@((ScreenWidth  - 40)/2));
             make.left.mas_equalTo(_imagesView1.mas_right).offset(10);
-            make.height.mas_equalTo(@((ScreenWidth  - 40)/2));
+            make.height.mas_equalTo(@((ScreenWidth  - 40)/2 - 20));
             make.right.mas_equalTo(self).offset(-15);
+  
         }];
         [_namesLabel1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.imagesView1.mas_bottom).offset(10);
             make.centerX.mas_equalTo(self.imagesView1.mas_centerX);
             make.width.mas_equalTo(@50);
             make.height.mas_equalTo(@20);
+            make.bottom.mas_equalTo(self).offset(-8);
         }];
         [_namesLabel2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.imagesView2.mas_bottom).offset(10);
             make.centerX.mas_equalTo(self.imagesView2.mas_centerX);
             make.width.mas_equalTo(@50);
             make.height.mas_equalTo(@20);
+            make.bottom.mas_equalTo(self).offset(-8);
         }];
     }
     return self;

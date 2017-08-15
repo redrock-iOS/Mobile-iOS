@@ -30,10 +30,7 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate =self;
     _tableView.dataSource = self;
-//    _tableView.rowHeight = UITableViewAutomaticDimension;
     [self download];
-    
-    // Do any additional setup after loading the view.
 }
 - (void)download{
     NSDictionary *params = @{@"RequestType": @"beautyInCQUPT"};
@@ -58,14 +55,12 @@
     if (!_cell) {
         _cell = [[CQUPTBeautyCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
     }
+   
     NSURL *picUrl = [NSURL URLWithString:_dataArray[indexPath.row][@"url"]];
-    _nameText[indexPath.row] = _dataArray[indexPath.row][@"title"];
-    _detailText[indexPath.row] = _dataArray[indexPath.row][@"content"];
-    NSData *data = [NSData dataWithContentsOfURL:picUrl];
-    UIImage *image = [UIImage imageWithData:data];
-    _cell.imagesView.image = image;
-    _cell.namesLabel.text = _nameText[indexPath.row];
-    _cell.contextsLabel.text = _detailText[indexPath.row];
+    [_cell.imagesView sd_setImageWithURL:picUrl];
+
+    _cell.namesLabel.text = _dataArray[indexPath.row][@"title"];
+    _cell.contextsLabel.text = _dataArray[indexPath.row][@"content"];
     return _cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

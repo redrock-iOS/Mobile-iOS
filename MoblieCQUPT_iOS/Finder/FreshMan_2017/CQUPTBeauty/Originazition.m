@@ -64,7 +64,7 @@
     else{
     _cell.namesLabel.text = _dataArray[indexPath.row - 1][@"name"];
     _cell.detailLabel.text =_dataArray[indexPath.row -1][@"resume"];
-    CGSize size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15] }context:nil].size;
+    CGSize size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15*SCREENWIDTH/375] }context:nil].size;
     _height += (size.height + 80);
     }
     if (indexPath.row == _dataArray.count ) {
@@ -84,10 +84,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGSize size;
     if (indexPath.row == 0) {
-        size = [_resumeT boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15] }context:nil].size;
+        size = [_resumeT boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15*SCREENWIDTH/375] }context:nil].size;
     }
     else{
-        size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15] }context:nil].size;
+        size = [_dataArray[indexPath.row -1][@"resume"] boundingRectWithSize:CGSizeMake(SCREENWIDTH - 50, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15*SCREENWIDTH/375] }context:nil].size;
     }
     return size.height + 80;
 }

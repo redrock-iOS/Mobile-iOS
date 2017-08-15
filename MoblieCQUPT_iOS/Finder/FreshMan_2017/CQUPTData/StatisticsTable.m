@@ -9,6 +9,7 @@
 #import "StatisticsTable.h"
 #import "POP.h"
 #import "PrefixHeader.pch"
+#import "Masonry.h"
 @interface StatisticsTable()<CAAnimationDelegate>
 
 @property NSArray<NSArray*> *colors;
@@ -52,7 +53,7 @@
 - (void)drawLinesWithDetail:(NSArray<NSDictionary*>*) context With:(NSArray<NSArray *> *) color {
     for (int i = 0; i < context.count; i ++) {
 //        [self removeFromSuperview];
-        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.width/2) radius:self.frame.size.width/2 - (_lineWidth+_blankWidth) * (i+1)   startAngle:-M_PI/2 endAngle:M_PI * 2 * [context[i][@"score"]  floatValue] - 0.06 - M_PI/2 clockwise:YES];
+        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.width/2) radius:self.frame.size.width/2 - (_lineWidth+_blankWidth) * (i+1)   startAngle:-M_PI/2 + 0.06* 375/SCREENWIDTH endAngle:M_PI * 2 * [context[i][@"score"]  floatValue] - 0.06* 600/SCREENWIDTH - M_PI/2 clockwise:YES];
         CAShapeLayer *sideshape = [CAShapeLayer layer];
         CAShapeLayer *shape = [CAShapeLayer layer];
         
@@ -61,7 +62,7 @@
         sideshape.fillColor = [UIColor clearColor].CGColor;
         sideshape.strokeColor = [(color[i][0]) CGColor];
         sideshape.lineCap = kCALineCapRound;
-        shape.lineJoin = kCALineCapRound;
+        shape.lineJoin = kCALineJoinRound;
         sideshape.path = path.CGPath;
         [self.layer addSublayer:sideshape];
         
@@ -86,10 +87,10 @@
         [shape addAnimation:checkAnimation forKey:@"checkAnimation"];
         [sideshape addAnimation:checkAnimation forKey:@"checkAnimation"];
        
-        UILabel *detailLable = [self newLable:CGRectMake(self.frame.size.width/2 - 35,_lineWidth+ (_lineWidth+_blankWidth)*i - 2, 22, 18) WithContext:[self turnFloat: context[i][@"score"]] WithColor:color[i][0]];
+        UILabel *detailLable = [self newLable:CGRectMake(self.frame.size.width/2 - 35* 375/SCREENWIDTH ,_lineWidth+ (_lineWidth+_blankWidth)*i - 2, 22* SCREENWIDTH /375, 18* SCREENWIDTH /375) WithContext:[self turnFloat: context[i][@"score"]] WithColor:color[i][0]];
         [self addSubview:detailLable];
         
-        UILabel *lables = [self detailLable:CGRectMake(SCREENWIDTH / 2 - 75,self.frame.size.width + 50 * i,  50, 40) WithContext:context[i] With:color[i]];
+        UILabel *lables = [self detailLable:CGRectMake(SCREENWIDTH / 2 - (60 * 375/ SCREENWIDTH ),self.frame.size.width + 50 * i * SCREENWIDTH /375,  100* SCREENWIDTH /375, 25* SCREENWIDTH /375) WithContext:context[i] With:color[i]];
         [self addSubview:lables];
         
     }
@@ -99,7 +100,7 @@
     UILabel *lab = [[UILabel alloc]init];
     lab.frame = frame;
     lab.adjustsFontSizeToFitWidth =  YES;
-    lab.font = [UIFont systemFontOfSize:10];
+    lab.font = [UIFont systemFontOfSize:10* SCREENWIDTH /375];
     POPAnimatableProperty *prop = [POPAnimatableProperty propertyWithName:@"countDown" initializer:^(POPMutableAnimatableProperty *prop) {
         prop.writeBlock = ^(id obj,const CGFloat values[]){
             UILabel *label = (UILabel*)obj;
@@ -119,7 +120,6 @@
 
 - (UILabel *) detailLable:(CGRect)frame WithContext:(NSDictionary *)context With:(NSArray<UIColor *> *)color{
     UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(0, frame.origin.y, frame.size.width, frame.size.height)];
-    lable.adjustsFontSizeToFitWidth = YES;
 
     UIColor *color1 = color[0];
     UIColor *color2 = COLOR_BULE1;
@@ -141,7 +141,7 @@
     }
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc]init];
      NSAttributedString *imagestring = [NSAttributedString attributedStringWithAttachment:imageText];
-    NSAttributedString *contextText = [[NSAttributedString alloc]initWithString:context[@"name"]];
+    NSAttributedString *contextText = [[NSAttributedString alloc]initWithString:[NSString stringWithFormat:@"  %@",context[@"name"]] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:163/255.0 green:163/255.0 blue:163/255.0 alpha:1],NSFontAttributeName:[UIFont systemFontOfSize:15],NSBaselineOffsetAttributeName:@(3)}];
     [string appendAttributedString:imagestring];
     [string appendAttributedString:contextText];
     lable.attributedText = string;

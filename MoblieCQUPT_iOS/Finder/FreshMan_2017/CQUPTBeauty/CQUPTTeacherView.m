@@ -24,16 +24,19 @@
     // Do any additional setup after loading the view.
     _nameText = [[NSMutableArray alloc] init];
 //    _detailText = [[NSMutableArray alloc] init];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 75) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - self.navigationController.navigationBar.frame.size.height - [UIScreen mainScreen].bounds.size.height*50/667 - 60) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate =self;
     _tableView.dataSource = self;
+    _tableView.showsHorizontalScrollIndicator = NO;
+    _tableView.showsVerticalScrollIndicator = NO;
     //    _tableView.rowHeight = UITableViewAutomaticDimension;
     [self download];
     
     // Do any additional setup after loading the view.
 }
+
 - (void)download{
     NSDictionary *params = @{@"RequestType": @"excellentTech"};
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]init];
@@ -81,7 +84,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    return ((ScreenWidth  - 40)/2) + 45;
+    return ((ScreenWidth  - 40)/2) + 32;
     
 }
 

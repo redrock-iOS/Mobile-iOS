@@ -40,7 +40,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)setvideoUrlStr:(NSString *)videoUrlStr {
+
+- (void)setVideoUrlStr:(NSString *)videoUrlStr {
     NSURL *movieUrl = [NSURL URLWithString:videoUrlStr];
     UIWebView *videoView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)];
     videoView.scalesPageToFit = YES;

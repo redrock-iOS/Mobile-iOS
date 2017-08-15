@@ -32,18 +32,18 @@
         
         _idLabel = [[UILabel alloc]init];
         _idLabel.textColor = [UIColor blackColor];
-        _idLabel.font = [UIFont systemFontOfSize:17];
+        _idLabel.font = [UIFont systemFontOfSize:17* SCREENWIDTH / 375];
         [self.contentView addSubview:_idLabel];
         
         _contextLabel = [[UILabel alloc]init];
         _contextLabel.textColor = COLOR_NONEED;
-        _contextLabel.font = [UIFont systemFontOfSize:13];
+        _contextLabel.font = [UIFont systemFontOfSize:13* SCREENWIDTH / 375];
         [self.contentView addSubview:_contextLabel];
         
         UILabel *award = [[UILabel alloc] init];
         award.text = @"颁奖词:";
         award.textColor = COLOR_NONEED;
-        award.font = [UIFont systemFontOfSize:13];
+        award.font = [UIFont systemFontOfSize:13* SCREENWIDTH / 375];
         [self.contextLabel addSubview:award];
         
         UIImageView * lab= [[UIImageView alloc] init];
@@ -69,7 +69,7 @@
         [award mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.idLabel.mas_bottom).offset(10);
             make.left.mas_equalTo(self.imagesView.mas_right).offset(14);
-            make.width.mas_equalTo(@52);
+            make.width.mas_equalTo(@(52* SCREENWIDTH / 375));
         }];
         [ _contextLabel mas_makeConstraints:^(MASConstraintMaker *maker){
 
@@ -100,8 +100,6 @@
 -(void)setFrame:(CGRect)frame{
     
     frame.origin.y += 8;
-    
-
     
     [super setFrame:frame];
     
