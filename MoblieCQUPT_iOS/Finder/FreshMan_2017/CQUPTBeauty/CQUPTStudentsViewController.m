@@ -12,7 +12,11 @@
 #import "AppearView.h"
 #import "UIImageView+WebCache.h"
 #import "AFNetWorking.h"
+<<<<<<< HEAD
 #define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
+=======
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
+>>>>>>> origin/master
 @interface CQUPTStudentsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)UITableView *tableView;
 @property (nonatomic, copy)NSMutableArray *dataArray;
@@ -64,9 +68,18 @@
     
     cell.idLabel.text = _dataArray[indexPath.row][@"name"];
     NSURL *picUrl = [NSURL URLWithString:_dataArray[indexPath.row][@"url"]];
+<<<<<<< HEAD
     NSData *data = [NSData dataWithContentsOfURL:picUrl];
     UIImage *image = [UIImage imageWithData:data];
     cell.imagesView.image = image;
+=======
+//    _contextArray[indexPath.row] = _dataArray[indexPath.row][@"url"];
+//    NSData *data = [NSData dataWithContentsOfURL:picUrl];
+//    UIImage *image = [UIImage imageWithData:data];
+//    image = [UIImage cutCircleImage:image];
+    [cell.imagesView sd_setImageWithURL:picUrl];
+    _detailArray[indexPath.row] = _dataArray[indexPath.row][@"resume"];
+>>>>>>> origin/master
     cell.contextLabel.text = _dataArray[indexPath.row][@"motto"];
     return cell;
 }

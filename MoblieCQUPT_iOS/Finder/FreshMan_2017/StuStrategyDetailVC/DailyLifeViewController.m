@@ -22,7 +22,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - (SCREENHEIGHT-64)*50/667 - 64) style:UITableViewStylePlain];
         UIView *grayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 6)];
         grayView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
         [_tableView addSubview:grayView];
@@ -58,7 +58,7 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     
-    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=LifeInNear" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+    [manager GET:@"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForGuide.php?RequestType=LifeInNear" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
         NSDictionary *dic = responseobject;
         for (int i = 0; i < [dic[@"Data"] count]; i++) {
             self.nameArray[i] = dic[@"Data"][i][@"name"];
@@ -82,12 +82,12 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:@"BeautyTableViewCell" owner:nil options:nil] lastObject];;
     }
     
+    NSString* encodedString = @"";
     if (self.urlStrArray) {
         cell.nameLabel.text = self.nameArray[indexPath.row];
         cell.positionLabel.text = self.positionArray[indexPath.row];
         cell.viewLabel.text = self.commentArray[indexPath.row];
-        NSString* encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     }
     cell.bottomGrayView.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -105,7 +105,7 @@
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.layer.cornerRadius = 2;
     cell.myImageView.layer.masksToBounds = YES;
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     
     return cell;
 }

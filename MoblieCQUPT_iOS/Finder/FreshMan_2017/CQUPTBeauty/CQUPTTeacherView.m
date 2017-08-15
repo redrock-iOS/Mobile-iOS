@@ -9,7 +9,11 @@
 #import "CQUPTTeacherView.h"
 #import "CQUPTTecherCell.h"
 #import "UIImageView+WebCache.h"
+<<<<<<< HEAD
 #define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
+=======
+#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
+>>>>>>> origin/master
 @interface CQUPTTeacherView ()<UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic) NSMutableArray *dataArray;
 @property(strong, nonatomic) UITableView *tableView;

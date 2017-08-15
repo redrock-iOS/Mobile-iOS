@@ -27,7 +27,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 47 - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - (SCREENHEIGHT-64)*50/667 - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.sectionHeaderHeight = 0;
@@ -46,7 +46,7 @@
     [super viewDidLoad];
     
     self.nameArray = [[NSMutableArray alloc] initWithObjects:@"明理苑", @"宁静苑", @"兴业苑", @"知行苑", nil];
-    self.secondNameArray = [[NSMutableArray alloc] initWithObjects:@"（原24—31,39栋）", @"（原8—12，32--35栋）", @"（原17--23栋）", @"（原1—6，15,16栋）" , nil];
+    self.secondNameArray = [[NSMutableArray alloc] initWithObjects:@"（原24—31,39栋）", @"（原8—12，32-35栋）", @"（原17-23栋）", @"（原1—6，15,16栋）" , nil];
     self.urlStrArray = [[NSMutableArray alloc] init];;
     for (int i = 0; i < 4; i++) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
@@ -64,7 +64,7 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain", nil];
     
-    [manager GET:@"http://www.yangruixin.com/test/apiForGuide.php?RequestType=Dormitory" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
+    [manager GET:@"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForGuide.php?RequestType=Dormitory" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseobject) {
         NSDictionary *dic = responseobject;
         for (int i = 0; i < self.urlStrArray.count; i++) {
             self.descriptionArray[i] = dic[@"Data"][i][@"resume"];
@@ -87,6 +87,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"MyTableViewCell" owner:nil options:nil] lastObject];;
     }
+    NSString* encodedString = @"";
     if (self.descriptionArray) {
         cell.nameLabel.text = self.nameArray[indexPath.row];
         cell.secondNameLabel.text = self.secondNameArray[indexPath.row];
@@ -95,13 +96,12 @@
         cell.descriptionLabel.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1];
         cell.descriptionLabel.text = self.descriptionArray[indexPath.row];
     
-        NSString* encodedString = [self.urlStrArray[indexPath.row][0] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
+        encodedString = [self.urlStrArray[indexPath.row][0] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     }
+    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:encodedString] placeholderImage:[UIImage imageNamed:@"占位图"]];
     cell.myImageView.contentMode = UIViewContentModeScaleToFill;
     cell.myImageView.layer.cornerRadius = 3;
     cell.myImageView.layer.masksToBounds = YES;
-    cell.myImageView.image = [UIImage imageNamed:@"占位图"];
     cell.SeparatorView.backgroundColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:242/255.0 alpha:1];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -140,7 +140,6 @@
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     UIView *view = [cell viewWithTag:222];
     [view removeFromSuperview];
-    NSLog(@"------->");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -185,15 +184,7 @@
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(i * [UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, 251)];
         imageView.userInteractionEnabled = NO;
         imageView.contentMode = UIViewContentModeScaleToFill;
-//        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"知行苑%d.jpg", i+1]];
-//        imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.urlStrArray[i]]]];
         NSString *encodedString = [self.urlStrArray[sender.view.tag][i] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
-        
-//            UILabel *numberOfPhotos = [[UILabel alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2.0 - 13) + (i*[UIScreen mainScreen].bounds.size.width), 31, 26, 16)];
-//            numberOfPhotos.textColor = [UIColor whiteColor];
-//        numberOfPhotos.text = [NSString stringWithFormat:@"%d/4", i + 1];
-//        [view addSubview:numberOfPhotos];
-        
         [imageView sd_setImageWithURL:[NSURL URLWithString:encodedString]];
         [scrollView addSubview:imageView];
     }
