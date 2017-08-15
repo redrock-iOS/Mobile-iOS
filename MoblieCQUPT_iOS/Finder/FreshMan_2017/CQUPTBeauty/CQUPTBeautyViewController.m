@@ -10,11 +10,8 @@
 #import "CQUPTBeautyCell.h"
 #import "PrefixHeader.pch"
 #import "BigView.h"
-<<<<<<< HEAD
 #define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
-=======
-#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
->>>>>>> origin/master
+
 @interface CQUPTBeautyViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic) NSMutableArray *dataArray;
 @property(strong, nonatomic) UITableView *tableView;

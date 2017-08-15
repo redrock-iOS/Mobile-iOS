@@ -10,11 +10,9 @@
 #import "Originazition.h"
 #import "OriginazitionCell.h"
 #import "PrefixHeader.pch"
-<<<<<<< HEAD
+
 #define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
-=======
-#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
->>>>>>> origin/master
+
 @interface Originazition ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong, nonatomic) NSString *titleA;
 @property(strong, nonatomic) NSString *resumeT;

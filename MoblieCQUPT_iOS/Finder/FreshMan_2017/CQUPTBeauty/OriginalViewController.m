@@ -10,11 +10,8 @@
 #import "OriginalVideoController.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
-<<<<<<< HEAD
+
 #define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiForText.php"
-=======
-#define url @"http://hongyan.cqupt.edu.cn/welcome/2017/api/apiRatio.php.php"
->>>>>>> origin/master
 @interface OriginalViewController ()
 @property(strong, nonatomic) NSMutableArray *dataArray;
 @property(strong, nonatomic) NSArray *videoUrl;
