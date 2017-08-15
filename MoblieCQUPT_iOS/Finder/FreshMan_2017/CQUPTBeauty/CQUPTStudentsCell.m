@@ -8,6 +8,7 @@
 
 #import "CQUPTStudentsCell.h"
 #import "Masonry.h"
+#import "UIImageView+WebCache.h"
 @implementation CQUPTStudentsCell
 
 - (void)awakeFromNib {
@@ -18,32 +19,35 @@
     self = [super initWithStyle:style reuseIdentifier:
             reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         //添加控件
         _imagesView = [[UIImageView alloc]init];
-        
         [_imagesView setContentScaleFactor:[[UIScreen mainScreen] scale]];
-        _imagesView.contentMode =  UIViewContentModeScaleAspectFill;
+        _imagesView.contentMode =UIViewContentModeScaleAspectFill;
         CGFloat fromH = 10;
         CGFloat fromW = 26;
+        _imagesView.layer.cornerRadius = 35;
+        _imagesView.clipsToBounds = YES;
         [self.contentView addSubview: _imagesView];
         
         _idLabel = [[UILabel alloc]init];
         _idLabel.textColor = [UIColor blackColor];
-        _idLabel.font = [UIFont systemFontOfSize:17];
+        _idLabel.font = [UIFont systemFontOfSize:17* SCREENWIDTH / 375];
         [self.contentView addSubview:_idLabel];
         
         _contextLabel = [[UILabel alloc]init];
         _contextLabel.textColor = COLOR_NONEED;
-        _contextLabel.font = [UIFont systemFontOfSize:13];
+        _contextLabel.font = [UIFont systemFontOfSize:13* SCREENWIDTH / 375];
         [self.contentView addSubview:_contextLabel];
         
         UILabel *award = [[UILabel alloc] init];
         award.text = @"颁奖词:";
         award.textColor = COLOR_NONEED;
-        award.font = [UIFont systemFontOfSize:13];
+        award.font = [UIFont systemFontOfSize:13* SCREENWIDTH / 375];
         [self.contextLabel addSubview:award];
         
         UIImageView * lab= [[UIImageView alloc] init];
+        lab.image = [UIImage imageNamed:@"pointer"];
         [self addSubview:lab];
         
         _cutline = [[UILabel alloc] init];
@@ -65,13 +69,19 @@
         [award mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self.idLabel.mas_bottom).offset(10);
             make.left.mas_equalTo(self.imagesView.mas_right).offset(14);
-            make.width.mas_equalTo(@52);
+            make.width.mas_equalTo(@(52* SCREENWIDTH / 375));
         }];
         [ _contextLabel mas_makeConstraints:^(MASConstraintMaker *maker){
-//            maker.top.equalTo(self).centerY.offset(-10);
-            maker.top.mas_equalTo(self.idLabel.mas_bottom).offset(9);
-            maker.left.mas_equalTo(award.mas_right).offset(10);
+
+            maker.top.mas_equalTo(self.idLabel.mas_bottom).offset(10);
+            maker.left.mas_equalTo(award.mas_right).offset(0);
             maker.right.mas_equalTo(self.mas_right).offset(-55);
+        }];
+        [lab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(_contextLabel.mas_right).offset(10);
+            make.top.mas_equalTo(self).offset(35);
+            make.bottom.mas_equalTo(self).offset(-35);
+            make.right.mas_equalTo(self).offset(-35);
         }];
         [_cutline mas_makeConstraints:^(MASConstraintMaker *maker){
             maker.height.mas_equalTo(1);
@@ -89,9 +99,7 @@
 
 -(void)setFrame:(CGRect)frame{
     
-    frame.origin.y += 3;
-    
-
+    frame.origin.y += 8;
     
     [super setFrame:frame];
     

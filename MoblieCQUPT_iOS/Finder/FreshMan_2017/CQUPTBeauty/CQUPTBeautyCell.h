@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BigView.h"
 @interface CQUPTBeautyCell : UITableViewCell
-@property(strong, nonatomic) UILabel *contextLabel;
-@property(strong, nonatomic) UIImageView *imagesView;
--(void)setContextLabelText:(NSString *)text;
+@property (strong, nonatomic)UILabel *namesLabel;
+@property(strong, nonatomic) UILabel *contextsLabel;
+@property(strong, nonatomic) BigView *imagesView;
+//-(void)setContextLabelText:(NSString *)text;
 @end

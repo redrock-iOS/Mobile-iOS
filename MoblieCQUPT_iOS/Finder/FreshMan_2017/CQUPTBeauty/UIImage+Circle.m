@@ -12,7 +12,14 @@
 - (UIImage *)drawACircle{
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
     CGContextRef cg = UIGraphicsGetCurrentContext();
-    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGFloat lenth;
+    if (self.size.width >= self.size.height) {
+        lenth = self.size.height;
+    }
+    else{
+        lenth = self.size.width;
+    }
+    CGRect rect = CGRectMake(0, 0, lenth, lenth);
     CGContextAddEllipseInRect(cg, rect);
     CGContextClip(cg);
     [self drawInRect:rect];
@@ -20,9 +27,9 @@
     UIGraphicsEndImageContext();
     return image;
 }
-+ (UIImage *)cutCircleImage:(NSString *)imageName
++ (UIImage *)cutCircleImage:(UIImage *)imageName
 {
-    return [[self imageNamed:imageName] drawACircle];
+    return [imageName drawACircle];
 }
 
 @end
