@@ -6,13 +6,14 @@
 //  Copyright (c) 2015年 Orange-W. All rights reserved.
 //
 
+#import "HomePageViewController.h"
 #import "FinderViewController.h"
 #import "ShopViewController.h"
 #import "WebViewController.h"
 #import "ShakeViewController.h"
 #import "CommunityViewController.h"
 #import "MapViewController.h"
-#import "FreshManMainViewController.h"
+//#import "FreshManMainViewController.h"
 #import "LostViewController.h"
 #import "QuerLoginViewController.h"
 #define kCount 3
@@ -158,10 +159,10 @@
       forControlEvents:UIControlEventTouchDown];
     
     [_shakeForShopBtn addTarget:self
-                         action:@selector(enterShake)
+                         action:@selector(enterFreshMan)
                forControlEvents:UIControlEventTouchUpInside];
     [_shakeForShopBtn addTarget:self
-                         action:@selector(enterShake)
+                         action:@selector(enterFreshMan)
                forControlEvents:UIControlEventTouchUpOutside];
     [_shakeForShopBtn addTarget:self
                          action:@selector(clickShake)
@@ -245,8 +246,8 @@
     _mapOfView.backgroundColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1];
 }
 
-- (void)enterShake{
-    ShakeViewController *svc = [[ShakeViewController alloc] init];
+- (void)enterFreshMan{
+    HomePageViewController *svc = [[HomePageViewController alloc] init];
     svc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:svc
                                          animated:YES];
